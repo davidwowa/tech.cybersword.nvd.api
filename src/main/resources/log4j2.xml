@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+    <Properties>
+        <Property name="logFilename">tech.cybersword.nvd.api-${date:yyyy-MM-dd-HH-mm-ss-SSS}</Property>
+    </Properties>
+    <Appenders>
+        <File name="LogFile" fileName="logs/${logFilename}.log">
+            <PatternLayout>
+                <Pattern>%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n</Pattern>
+            </PatternLayout>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Root level="INFO">
+            <AppenderRef ref="LogFile" />
+        </Root>
+    </Loggers>
+</Configuration>
