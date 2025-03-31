@@ -1,0 +1,1908 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.4",
+  "version" : 1,
+  "vulnerabilities" : [
+    {
+      "id" : "CVE-2017-3066",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        502
+      ],
+      "description" : "Adobe ColdFusion 2016 Update 3 and earlier, ColdFusion 11 update 11 and earlier, ColdFusion 10 Update 22 and earlier have a Java deserialization vulnerability in the Apache BlazeDS library. Successful exploitation could lead to arbitrary code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update10:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update11:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update12:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update13:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update14:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update15:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update16:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update17:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update18:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update19:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update20:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update21:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update22:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update5:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update6:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update7:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update8:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update9:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:11.0:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:11.0:update1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:11.0:update10:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:11.0:update11:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:11.0:update2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:11.0:update3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:11.0:update4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:11.0:update5:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:11.0:update6:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:11.0:update7:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:11.0:update8:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:11.0:update9:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:2016:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:2016:update1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:2016:update2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:2016:update3:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2019-8506",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        843
+      ],
+      "description" : "A type confusion issue was addressed with improved memory handling. This issue is fixed in iOS 12.2, tvOS 12.2, watchOS 5.2, Safari 12.1, iTunes 12.9.4 for Windows, iCloud for Windows 7.11. Processing maliciously crafted web content may lead to arbitrary code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:apple:icloud:*:*:*:*:*:windows:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apple:itunes:*:*:*:*:*:windows:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apple:safari:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:iphone_os:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:tvos:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:watchos:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2021-1789",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        843
+      ],
+      "description" : "A type confusion issue was addressed with improved state handling. This issue is fixed in macOS Big Sur 11.2, Security Update 2021-001 Catalina, Security Update 2021-001 Mojave, tvOS 14.4, watchOS 7.3, iOS 14.4 and iPadOS 14.4, Safari 14.0.3. Processing maliciously crafted web content may lead to arbitrary code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:apple:ipados:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:iphone_os:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:mac_os_x:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:mac_os_x:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:mac_os_x:10.14.6:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:mac_os_x:10.14.6:security_update_2019-004:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:mac_os_x:10.14.6:security_update_2019-005:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:mac_os_x:10.14.6:security_update_2019-006:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:mac_os_x:10.14.6:security_update_2019-007:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:mac_os_x:10.14.6:security_update_2020-001:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:mac_os_x:10.14.6:security_update_2020-002:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:mac_os_x:10.14.6:security_update_2020-003:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:mac_os_x:10.14.6:security_update_2020-004:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:mac_os_x:10.14.6:security_update_2020-005:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:mac_os_x:10.14.6:security_update_2020-006:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:mac_os_x:10.14.6:security_update_2020-007:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:mac_os_x:10.14.6:supplemental_update:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:mac_os_x:10.14.6:supplemental_update_2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:mac_os_x:10.15.7:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:mac_os_x:10.15.7:supplemental_update:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:macos:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:tvos:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:watchos:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2021-1870",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        -1
+      ],
+      "description" : "A logic issue was addressed with improved restrictions. This issue is fixed in macOS Big Sur 11.2, Security Update 2021-001 Catalina, Security Update 2021-001 Mojave, iOS 14.4 and iPadOS 14.4. A remote attacker may be able to cause arbitrary code execution. Apple is aware of a report that this issue may have been actively exploited..",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:apple:ipados:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:iphone_os:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:mac_os_x:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:mac_os_x:10.15.7:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:mac_os_x:10.15.7:security_update_2020-001:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:mac_os_x:10.15.7:supplemental_update:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:macos:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2021-1871",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        -1
+      ],
+      "description" : "A logic issue was addressed with improved restrictions. This issue is fixed in macOS Big Sur 11.2, Security Update 2021-001 Catalina, Security Update 2021-001 Mojave, iOS 14.4 and iPadOS 14.4. A remote attacker may be able to cause arbitrary code execution. Apple is aware of a report that this issue may have been actively exploited..",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:apple:ipados:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:iphone_os:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:mac_os_x:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:mac_os_x:10.15.7:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:mac_os_x:10.15.7:security_update_2020:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:mac_os_x:10.15.7:supplemental_update:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:macos:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2021-30661",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        416
+      ],
+      "description" : "A use after free issue was addressed with improved memory management. This issue is fixed in Safari 14.1, iOS 12.5.3, iOS 14.5 and iPadOS 14.5, watchOS 7.4, tvOS 14.5, macOS Big Sur 11.3. Processing maliciously crafted web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been actively exploited..",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:apple:safari:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:ipados:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:iphone_os:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:iphone_os:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:macos:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:tvos:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:watchos:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2021-30665",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "A memory corruption issue was addressed with improved state management. This issue is fixed in watchOS 7.4.1, iOS 14.5.1 and iPadOS 14.5.1, tvOS 14.6, iOS 12.5.3, macOS Big Sur 11.3.1. Processing maliciously crafted web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been actively exploited..",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:apple:ipados:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:iphone_os:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:iphone_os:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:macos:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:tvos:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:watchos:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2022-22620",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        416
+      ],
+      "description" : "A use after free issue was addressed with improved memory management. This issue is fixed in macOS Monterey 12.2.1, iOS 15.3.1 and iPadOS 15.3.1, Safari 15.3 (v. 16612.4.9.1.8 and 15612.4.9.1.8). Processing maliciously crafted web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been actively exploited..",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:apple:safari:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:ipados:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:iphone_os:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:macos:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2022-37042",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        22
+      ],
+      "description" : "Zimbra Collaboration Suite (ZCS) 8.8.15 and 9.0 has mboximport functionality that receives a ZIP archive and extracts files from it. By bypassing authentication (i.e., not having an authtoken), an attacker can upload arbitrary files to the system, leading to directory traversal and remote code execution. NOTE: this issue exists because of an incomplete fix for CVE-2022-27925.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:zimbra:collaboration:8.8.15:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:zimbra:collaboration:9.0.0:-:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2022-32893",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 15.6.1 and iPadOS 15.6.1, macOS Monterey 12.5.1, Safari 15.6.1. Processing maliciously crafted web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been actively exploited.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:apple:safari:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:ipados:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:iphone_os:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:macos:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2022-42856",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        843
+      ],
+      "description" : "A type confusion issue was addressed with improved state handling. This issue is fixed in Safari 16.2, tvOS 16.2, macOS Ventura 13.1, iOS 15.7.2 and iPadOS 15.7.2, iOS 16.1.2. Processing maliciously crafted web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been actively exploited against versions of iOS released before iOS 15.1..",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:apple:safari:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:ipados:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:iphone_os:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:iphone_os:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:macos:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:tvos:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-23529",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        843
+      ],
+      "description" : "A type confusion issue was addressed with improved checks. This issue is fixed in iOS 15.7.4 and iPadOS 15.7.4, iOS 16.3.1 and iPadOS 16.3.1, macOS Ventura 13.2.1, Safari 16.3. Processing maliciously crafted web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been actively exploited.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:apple:safari:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:ipados:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:ipados:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:iphone_os:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:iphone_os:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:macos:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-27899",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.0,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        863
+      ],
+      "description" : "Jenkins 2.393 and earlier, LTS 2.375.3 and earlier creates a temporary file in the default temporary directory with the default permissions for newly created files when uploading a plugin for installation, potentially allowing attackers with access to the Jenkins controller file system to read and write the file before it is used, potentially resulting in arbitrary code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:jenkins:jenkins:*:*:*:*:lts:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:jenkins:jenkins:*:*:*:*:-:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-26262",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.2,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        434
+      ],
+      "description" : "An issue was discovered in Sitecore XP/XM 10.3. As an authenticated Sitecore user, a unrestricted language file upload vulnerability exists the can lead to direct code execution on the content management (CM) server.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:sitecore:experience_manager:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:sitecore:experience_platform:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-23150",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        -1
+      ],
+      "description" : "SA-WR915ND router firmware v17.35.1 was discovered to be vulnerable to code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:lancombg:sa-wr915nd_firmware:17.35.1:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:lancombg:sa-wr915nd:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2022-34412",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        119
+      ],
+      "description" : "Dell PowerEdge BIOS and Dell Precision BIOS contain an Improper SMM communication buffer verification vulnerability. A local malicious user with high Privileges may potentially exploit this vulnerability to perform arbitrary code execution or cause denial of service.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:dell:r6515_firmware:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:dell:r6515:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-27040",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        74
+      ],
+      "description" : "Simple Image Gallery v1.0 was discovered to contain a remote code execution (RCE) vulnerability via the username parameter.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:simple_image_gallery_web_app_project:simple_image_gallery_web_app:1.0:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-0340",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description" : "The Custom Content Shortcode WordPress plugin through 4.0.2 does not validate one of its shortcode attribute, which could allow users with a contributor role and above to include arbitrary files via a traversal attack. This could also allow them to read non PHP files and retrieve their content. RCE could also be achieved if the attacker manage to upload a malicious image containing PHP code, and then include it via the affected attribute, on a default WP install, authors could easily achieve that given that they have the upload_file capability.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:custom_content_shortcode_project:custom_content_shortcode:*:*:*:*:*:wordpress:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-1306",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        94
+      ],
+      "description" : "An authenticated attacker can leverage an exposed resource.db() accessor method to smuggle Python method calls via a Jinja template, which can lead to code execution. This issue was resolved in the Managed and SaaS deployments on February 1, 2023, and in version 23.2.1 of the Self-Managed version of InsightCloudSec.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:rapid7:insightappsec:*:*:*:*:self-managed:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:rapid7:insightcloudsec:*:*:*:*:managed:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:rapid7:insightcloudsec:*:*:*:*:saas:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-0391",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.1,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        321
+      ],
+      "description" : "MGT-COMMERCE CloudPanel ships with a static SSL certificate to encrypt communications to the administrative interface, shared across every installation of CloudPanel. This behavior was observed in version 2.2.0. There has been no indication from the vendor this has been addressed in version 2.2.1.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:mgt-commerce:cloudpanel:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-1168",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.2,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        -1
+      ],
+      "description" : "An authenticated remote code execution vulnerability exists in the AOS-CX Network Analytics Engine. Successful exploitation of this vulnerability results in the ability to execute arbitrary code as a privileged user on the underlying operating system, leading to a complete compromise of the switch running AOS-CX.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:hpe:arubaos-cx:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:hpe:arubaos-cx:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:hpe:arubaos-cx:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:hpe:arubaos-cx:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:hpe:aruba_cx_10000-48y6:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:hpe:aruba_cx_6200f_48g:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:hpe:aruba_cx_6200m_24g:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:hpe:aruba_cx_6300m_24p:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:hpe:aruba_cx_6300m_48g:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:hpe:aruba_cx_6405:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:hpe:aruba_cx_6410:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:hpe:aruba_cx_8320-32:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:hpe:aruba_cx_8320-48p:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:hpe:aruba_cx_8325-32c:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:hpe:aruba_cx_8325-48y8c:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:hpe:aruba_cx_8360-12c:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:hpe:aruba_cx_8360-16y2c:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:hpe:aruba_cx_8360-24xf2c:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:hpe:aruba_cx_8360-32y4c:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:hpe:aruba_cx_8360-48xt4c:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:hpe:aruba_cx_8360-48y6c:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:hpe:aruba_cx_8400:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:hpe:aruba_cx_9300_32d:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-27060",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        -1
+      ],
+      "description" : "LightCMS v1.3.7 was discovered to contain a remote code execution (RCE) vulnerability via the image:make function.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:lightcms_project:lightcms:1.3.7:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2021-3674",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        119
+      ],
+      "description" : "A flaw was found in rizin. The create_section_from_phdr function allocates space for ELF section data by processing the headers. Crafted values in the headers can cause out of bounds reads, which can lead to memory corruption and possibly code execution through the binary object's callback function.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:rizin:rizin:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2022-42498",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "In Pixel cellular firmware, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-240662453References: N/A",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:google:android:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2022-42499",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "In sms_SendMmCpErrMsg of sms_MmConManagement.c, there is a possible out of bounds write due to a heap buffer overflow. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-242001391References: N/A",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:google:android:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-20951",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "In gatt_process_prep_write_rsp of gatt_cl.cc, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-12 Android-12L Android-13Android ID: A-258652631",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:google:android:11.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:google:android:12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:google:android:12.1:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:google:android:13.0:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-20954",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "In SDP_AddAttribute of sdp_db.cc, there is a possible out of bounds write due to an incorrect bounds check. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-12 Android-12L Android-13Android ID: A-261867748",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:google:android:11.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:google:android:12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:google:android:12.1:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:google:android:13.0:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-28676",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        352
+      ],
+      "description" : "A cross-site request forgery (CSRF) vulnerability in Jenkins Convert To Pipeline Plugin 1.0 and earlier allows attackers to create a Pipeline based on a Freestyle project, potentially leading to remote code execution (RCE).",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:jenkins:convert_to_pipeline:*:*:*:*:*:jenkins:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-32373",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        416
+      ],
+      "description" : "A use-after-free issue was addressed with improved memory management. This issue is fixed in watchOS 9.5, tvOS 16.5, macOS Ventura 13.4, iOS 15.7.6 and iPadOS 15.7.6, Safari 16.5, iOS 16.5 and iPadOS 16.5. Processing maliciously crafted web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been actively exploited.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:apple:safari:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:ipados:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:ipados:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:iphone_os:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:iphone_os:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:macos:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:tvos:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:watchos:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-43208",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        78
+      ],
+      "description" : "NextGen Healthcare Mirth Connect before version 4.4.1 is vulnerable to unauthenticated remote code execution. Note that this vulnerability is caused by the incomplete patch of CVE-2023-37679.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:nextgen:mirth_connect:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-23222",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        843
+      ],
+      "description" : "A type confusion issue was addressed with improved checks. This issue is fixed in iOS 17.3 and iPadOS 17.3, macOS Sonoma 14.3, tvOS 17.3. Processing maliciously crafted web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been exploited.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:apple:ipados:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:ipados:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:iphone_os:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:iphone_os:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:macos:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:macos:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:macos:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:tvos:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-22252",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.3,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        416
+      ],
+      "description" : "VMware ESXi, Workstation, and Fusion contain a use-after-free vulnerability in the XHCI USB controller. A malicious actor with local administrative privileges on a virtual machine may exploit this issue to execute code as the virtual machine's VMX process running on the host. On ESXi, the exploitation is contained within the VMX sandbox whereas, on Workstation and Fusion, this may lead to code execution on the machine where Workstation or Fusion is installed.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:vmware:workstation:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_1a:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_1b:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_1c:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_1d:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_1e:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_2a:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_2c:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_2d:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_2e:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3c:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3d:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3e:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3f:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3g:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3i:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3j:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3k:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3l:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3m:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3n:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3o:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0.0:b:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:a:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:b:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:c:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:update_1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:update_1a:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:update_1c:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:update_2:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-23610",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "An out of bounds write due to a missing bounds check in LabVIEW may result in remote code execution. Successful exploitation requires an attacker to provide a user with a specially crafted VI. This vulnerability affects LabVIEW 2024 Q1 and prior versions.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:ni:labview:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2021:-:*:*:-:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2021:sp1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2022:q1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2022:q3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2023:q1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2023:q3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2023:q3_patch1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2023:q3_patch2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2024:q1:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-23611",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "An out of bounds write due to a missing bounds check in LabVIEW may result in remote code execution. Successful exploitation requires an attacker to provide a user with a specially crafted VI. This vulnerability affects LabVIEW 2024 Q1 and prior versions.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:ni:labview:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2021:-:*:*:-:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2021:sp1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2022:q1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2022:q3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2023:q1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2023:q3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2023:q3_patch1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2023:q3_patch2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2024:q1:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-5084",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        434
+      ],
+      "description" : "The Hash Form – Drag & Drop Form Builder plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'file_upload_action' function in all versions up to, and including, 1.1.0. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:hashthemes:hash_form:*:*:*:*:*:wordpress:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-0714",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.1,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        434
+      ],
+      "description" : "The Metform Elementor Contact Form Builder for WordPress is vulnerable to Arbitrary File Upload due to insufficient file type validation in versions up to, and including, 3.2.4. This allows unauthenticated visitors to perform a \"double extension\" attack and upload files containing a malicious extension but ending with a benign extension, which may make remote code execution possible in some configurations.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:wpmet:metform_elementor_contact_form_builder:*:*:*:*:*:wordpress:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-9634",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        502
+      ],
+      "description" : "The GiveWP – Donation Plugin and Fundraising Platform plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 3.16.3 via deserialization of untrusted input from the give_company_name parameter. This makes it possible for unauthenticated attackers to inject a PHP Object. The additional presence of a POP chain allows attackers to achieve remote code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:givewp:givewp:*:*:*:*:*:wordpress:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-52052",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.2,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        646
+      ],
+      "description" : "Wowza Streaming Engine below 4.9.1 permits an authenticated Streaming Engine Manager administrator to define a custom application property and poison a stream target for high-privilege remote code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:wowza:streaming_engine:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:linux:linux_kernel:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-8066",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        434
+      ],
+      "description" : "The File Manager Pro – Filester plugin for WordPress is vulnerable to arbitrary file uploads due to missing validation in the 'fsConnector' function in all versions up to, and including, 1.8.6. This makes it possible for authenticated attackers, with Subscriber-level access and above, and granted permissions by an Administrator, to upload a new .htaccess file allowing them to subsequently upload arbitrary files on the affected site's server which may make remote code execution possible.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:ninjateam:filester:*:*:*:*:*:wordpress:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-9669",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.2,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        22
+      ],
+      "description" : "The File Manager Pro – Filester plugin for WordPress is vulnerable to Local JavaScript File Inclusion in all versions up to, and including, 1.8.5 via the 'fm_locale' parameter. This makes it possible for authenticated attackers, with Administrator-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other “safe” file types can be uploaded and included. The vulnerability was partially patched in version 1.8.5.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:ninjateam:filester:*:*:*:*:*:wordpress:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-12877",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        502
+      ],
+      "description" : "The GiveWP – Donation Plugin and Fundraising Platform plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 3.19.2 via deserialization of untrusted input from the donation form like 'firstName'. This makes it possible for unauthenticated attackers to inject a PHP Object. The additional presence of a POP chain allows attackers to delete arbitrary files on the server that makes remote code execution possible. Please note this was only partially patched in 3.19.3, a fully sufficient patch was not released until 3.19.4. However, another CVE was assigned by another CNA for version 3.19.3 so we will leave this as affecting 3.19.2 and before. We have recommended the vendor use JSON encoding to prevent any further deserialization vulnerabilities from being present.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:givewp:givewp:*:*:*:*:*:wordpress:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-13365",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        434
+      ],
+      "description" : "The Security & Malware scan by CleanTalk plugin for WordPress is vulnerable to arbitrary file uploads due to the plugin uploading and extracting .zip archives when scanning them for malware through the checkUploadedArchive() function in all versions up to, and including, 2.149. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:cleantalk:security_\\&_malware_scan:*:*:*:*:*:wordpress:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-13792",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        94
+      ],
+      "description" : "The WooCommerce Food - Restaurant Menu & Food ordering plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 3.3.2. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:ex-themes:woocommerce_food:*:*:*:*:*:wordpress:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-13353",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        98
+      ],
+      "description" : "The Responsive Addons for Elementor – Free Elementor Addons Plugin and Elementor Templates plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.6.4 via several widgets. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other “safe” file types can be uploaded and included.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:cyberchimps:responsive_addons_for_elementor:*:*:*:*:*:wordpress:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-1128",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        434
+      ],
+      "description" : "The Everest Forms – Contact Forms, Quiz, Survey, Newsletter & Payment Form Builder for WordPress plugin for WordPress is vulnerable to arbitrary file upload, read, and deletion due to missing file type and path validation in the 'format' method of the EVF_Form_Fields_Upload class in all versions up to, and including, 3.0.9.4. This makes it possible for unauthenticated attackers to upload, read, and delete arbitrary files on the affected site's server which may make remote code execution, sensitive information disclosure, or a site takeover possible.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:wpeverest:everest_forms:*:*:*:*:*:wordpress:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-0148",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.6,
+          "vector" : "CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        447
+      ],
+      "description" : "NVIDIA Jetson Linux and IGX OS image contains a vulnerability in the UEFI firmware RCM boot mode, where an unprivileged attacker with physical access to the device could load untrusted code. A successful exploit might lead to code execution, escalation of privileges, data tampering, denial of service, and information disclosure. The scope of the impacts can extend to other components.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    }
+  ]
+}

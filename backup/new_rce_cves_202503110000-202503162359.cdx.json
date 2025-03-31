@@ -1,0 +1,189 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.4",
+  "version" : 1,
+  "vulnerabilities" : [
+    {
+      "id" : "CVE-2025-1119",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        94
+      ],
+      "description" : "The Appointment Booking Calendar — Simply Schedule Appointments Booking Plugin plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 1.6.8.5. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-27107",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        74
+      ],
+      "description" : "Integrated Scripting is a tool for creating scripts for handling complex operations in Integrated Dynamics. Minecraft users who use Integrated Scripting prior to versions 1.21.1-1.0.17, 1.21.4-1.0.9-254, 1.20.1-1.0.13, and 1.19.2-1.0.10 may be vulnerable to arbitrary code execution. By using Java reflection on a thrown exception object it's possible to escape the JavaScript sandbox for IntegratedScripting's Variable Cards, and leverage that to construct arbitrary Java classes and invoke arbitrary Java methods. This vulnerability allows for execution of arbitrary Java methods, and by extension arbitrary native code e.g. from `java.lang.Runtime.exec`, on the Minecraft server by any player with the ability to create and use an IntegratedScripting Variable Card. Versions 1.21.1-1.0.17, 1.21.4-1.0.9-254, 1.20.1-1.0.13, and 1.19.2-1.0.10 fix the issue.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-13913",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        352
+      ],
+      "description" : "The InstaWP Connect – 1-click WP Staging & Migration plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 0.1.0.83. This is due to missing or incorrect nonce validation in the '/migrate/templates/main.php' file. This makes it possible for unauthenticated attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other “safe” file types can be uploaded and included.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-27593",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N"
+        }
+      ],
+      "cwes" : [
+        494
+      ],
+      "description" : "The product can be used to distribute malicious code using SDD Device Drivers due to missing download verification checks, leading to code execution on target systems.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-29384",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "In Tenda AC9 v1.0 V15.03.05.14_multi, the wanMTU parameter of /goform/AdvSetMacMtuWan has a stack overflow vulnerability, which can lead to remote arbitrary code execution.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-29385",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "In Tenda AC9 v1.0 V15.03.05.14_multi, the cloneType parameter of /goform/AdvSetMacMtuWan has a stack overflow vulnerability, which can lead to remote arbitrary code execution.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-29386",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "In Tenda AC9 v1.0 V15.03.05.14_multi, the mac parameter of /goform/AdvSetMacMtuWan has a stack overflow vulnerability, which can lead to remote arbitrary code execution.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-29387",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "In Tenda AC9 v1.0 V15.03.05.14_multi, the wanSpeed parameter of /goform/AdvSetMacMtuWan has a stack overflow vulnerability, which can lead to remote arbitrary code execution.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-54449",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        23
+      ],
+      "description" : "The API used to interact with documents in the application contains two endpoints with a flaw that allows an authenticated attacker to write a file with controlled contents to an arbitrary location on the underlying file system. This can be used to facilitate RCE. An account with ‘read’ and ‘write’ privileges on at least one existing document in the application is required to exploit the vulnerability. Exploitation of this vulnerability would allow an attacker to run commands of their choosing on the underlying operating system of the web server running LogicalDOC.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-1771",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        98
+      ],
+      "description" : "The Traveler theme for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 3.1.8 via the 'hotel_alone_load_more_post' function 'style' parameter. This makes it possible for unauthenticated attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where php file type can be uploaded and included.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    }
+  ]
+}

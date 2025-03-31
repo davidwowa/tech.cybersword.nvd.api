@@ -59,7 +59,11 @@ public class CVEToLaTeX {
                 for (JsonNode vulnerability : vulnerabilities) {
                     String cveId = vulnerability.get("id").asText();
                     String description = vulnerability.get("description").asText();
-                    String score = vulnerability.get("ratings").get(0).get("score").asText();
+                    String score = "no score available";
+                    if (null != vulnerability.get("ratings")
+                            && null != vulnerability.get("ratings").get(0).get("score")) {
+                        score = vulnerability.get("ratings").get(0).get("score").asText();
+                    }
                     String component = ""; // vulnerability.get("source").get("name").asText();
 
                     JsonNode affects = vulnerability.get("affects");
@@ -109,7 +113,7 @@ public class CVEToLaTeX {
 
                     JsonNode cwes = vulnerability.get("cwes");
                     String cwess = "";
-                    if (cwes.isArray()) {
+                    if (null != cwes && cwes.isArray()) {
                         for (JsonNode cwe : cwes) {
                             String cweId = cwe.asText();
                             int cweIdInt = Integer.parseInt(cweId);

@@ -1,0 +1,1541 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.4",
+  "version" : 1,
+  "vulnerabilities" : [
+    {
+      "id" : "CVE-2023-24078",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        94
+      ],
+      "description" : "Real Time Logic FuguHub v8.1 and earlier was discovered to contain a remote code execution (RCE) vulnerability via the component /FuguHub/cmsdocs/.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:realtimelogic:fuguhub:*:*:*:*:*:windows:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2022-45701",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        -1
+      ],
+      "description" : "Arris TG2482A firmware through 9.1.103GEM9 allow Remote Code Execution (RCE) via the ping utility feature.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:commscope:arris_tg2482a_firmware:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:commscope:arris_tg2482a:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-23452",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        306
+      ],
+      "description" : "Missing Authentication for Critical Function in SICK FX0-GPNT v3 Firmware Version V3.04 and V3.05 allows an unprivileged remote attacker to achieve arbitrary remote code execution via maliciously crafted RK512 commands to the listener on TCP port 9000.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:sick:fx0-gpnt00000_firmware:3.04:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:sick:fx0-gpnt00000_firmware:3.05:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:sick:fx0-gpnt00000:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-23453",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        306
+      ],
+      "description" : "Missing Authentication for Critical Function in SICK FX0-GENT v3 Firmware Version V3.04 and V3.05 allows an unprivileged remote attacker to achieve arbitrary remote code execution via maliciously crafted RK512 commands to the listener on TCP port 9000.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:sick:fx0-gent00010_firmware:3.04:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:sick:fx0-gent00010_firmware:3.05:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:sick:fx0-gent00010:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-26314",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        -1
+      ],
+      "description" : "The mono package before 6.8.0.105+dfsg-3.3 for Debian allows arbitrary code execution because the application/x-ms-dos-executable MIME type is associated with an un-sandboxed Mono CLR interpreter.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:mono-project:mono:5.18.0.240\\+dfsg-3:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:mono-project:mono:6.8.0.105\\+dfsg-3:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-24114",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        -1
+      ],
+      "description" : "typecho 1.1/17.10.30 was discovered to contain a remote code execution (RCE) vulnerability via install.php.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:typecho:typecho:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-25266",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        -1
+      ],
+      "description" : "An issue was discovered in Docmosis Tornado prior to version 2.9.5. An authenticated attacker can change the Office directory setting pointing to an arbitrary remote network path. This triggers the execution of the soffice binary under the attackers control leading to arbitrary remote code execution (RCE).",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:docmosis:tornado:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-20655",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        269
+      ],
+      "description" : "In mmsdk, there is a possible escalation of privilege due to a parcel format mismatch. This could lead to local code execution with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07203022; Issue ID: ALPS07203022.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:google:android:10.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:google:android:11.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:google:android:12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:google:android:13.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt2715:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6580:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6735:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6737:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6739:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6753:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6761:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6765:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6768:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6771:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6779:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6781:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6785:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6789:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6833:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6853:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6853t:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6855:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6873:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6877:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6879:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6883:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6885:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6889:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6893:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6895:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6983:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8167:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8167s:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8168:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8173:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8175:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8185:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8192:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8195:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8321:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8362a:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8365:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8385:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8395:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8666:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8667:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8673:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8675:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8765:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8766:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8768:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8771:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8781:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8786:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8788:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8789:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8791:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8791t:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8795t:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8797:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8798:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8871:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8891:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-22514",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "description" : "This High severity RCE (Remote Code Execution) vulnerability was introduced in version 3.4.14 of Sourcetree for Mac and Sourcetree for Windows. This RCE (Remote Code Execution) vulnerability, with a CVSS Score of 7.8, and a CVSS Vector of: CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H which allows an unauthenticated attacker to execute arbitrary code which has high impact to confidentiality, high impact to integrity, high impact to availability, and requires user interaction. Atlassian recommends that Sourcetree for Mac and Sourcetree for Windows customers upgrade to latest version, if you are unable to do so, upgrade your instance to one of the specified supported fixed versions: Sourcetree for Mac and Sourcetree for Windows 3.4: Upgrade to a release greater than or equal to 3.4.15 See the release notes (https://www.sourcetreeapp.com/download-archives). You can download the latest version of Sourcetree for Mac and Sourcetree for Windows from the download center (https://www.sourcetreeapp.com/download-archives). This vulnerability was reported via our Penetration Testing program.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-6123",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization vulnerability affects OpenText ALM Octane version 16.2.100 and above. The vulnerability could result in a remote code execution attack.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:opentext:alm_octane:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-23226",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        -1
+      ],
+      "description" : "The issue was addressed with improved memory handling. This issue is fixed in macOS Sonoma 14.4, visionOS 1.1, iOS 17.4 and iPadOS 17.4, watchOS 10.4, tvOS 17.4. Processing web content may lead to arbitrary code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:apple:ipad_os:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:iphone_os:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:macos:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:tvos:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:visionos:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:watchos:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-3116",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.4,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        -1
+      ],
+      "description" : "pgAdmin <= 8.4 is affected by a Remote Code Execution (RCE) vulnerability through the validate binary path API. This vulnerability allows attackers to execute arbitrary code on the server hosting PGAdmin, posing a severe risk to the database management system's integrity and the security of the underlying data.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:pgadmin:pgadmin_4:*:*:*:*:*:postgresql:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-31807",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        94
+      ],
+      "description" : "TOTOLINK EX200 V4.0.3c.7646_B20201211 was discovered to contain a remote code execution (RCE) vulnerability via the hostTime parameter in the NTPSyncWithHost function.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:totolink:ex200_firmware:4.0.3c.7646_b20201211:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:totolink:ex200:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-31808",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        233
+      ],
+      "description" : "TOTOLINK EX200 V4.0.3c.7646_B20201211 was discovered to contain a remote code execution (RCE) vulnerability via the webWlanIdx parameter in the setWebWlanIdx function.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:totolink:ex200_firmware:4.0.3c.7646_b20201211:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:totolink:ex200:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-31809",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        75
+      ],
+      "description" : "TOTOLINK EX200 V4.0.3c.7646_B20201211 was discovered to contain a remote code execution (RCE) vulnerability via the FileName parameter in the setUpgradeFW function.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:totolink:ex200_firmware:4.0.3c.7646_b20201211:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:totolink:ex200:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-31811",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.0,
+          "vector" : "CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        77
+      ],
+      "description" : "TOTOLINK EX200 V4.0.3c.7646_B20201211 was discovered to contain a remote code execution (RCE) vulnerability via the langType parameter in the setLanguageCfg function.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:totolink:ex200_firmware:4.0.3c.7646_b20201211:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:totolink:ex200:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2021-26344",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.2,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "An out of bounds memory write when processing the AMD PSP1 Configuration Block (APCB) could allow an attacker with access the ability to modify the BIOS image, and the ability to sign the resulting image, to potentially modify the APCB block resulting in arbitrary code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:amd:epyc_7203_firmware:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:amd:epyc_7203:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2022-23815",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "Improper bounds checking in APCB firmware may allow an attacker to perform an out of bounds write, corrupting the APCB entry, potentially leading to arbitrary code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:amd:athlon_silver_3050u_firmware:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:amd:athlon_silver_3050u:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-20578",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        367
+      ],
+      "description" : "A TOCTOU (Time-Of-Check-Time-Of-Use) in SMM may allow an attacker with ring0 privileges and access to the BIOS menu or UEFI shell to modify the communications buffer potentially resulting in arbitrary code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:amd:epyc_8024pn_firmware:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:amd:epyc_8024pn:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0282",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.0,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        121
+      ],
+      "description" : "A stack-based buffer overflow in Ivanti Connect Secure before version 22.7R2.5, Ivanti Policy Secure before version 22.7R1.2, and Ivanti Neurons for ZTA gateways before version 22.7R2.3 allows a remote unauthenticated attacker to achieve remote code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r2.1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r2.2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r2.3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r2.4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:neurons_for_zero-trust_access:22.7:r2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:neurons_for_zero-trust_access:22.7:r2.2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:neurons_for_zero-trust_access:22.7:r2.3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:policy_secure:22.7:r1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:policy_secure:22.7:r1.1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:policy_secure:22.7:r1.2:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-44142",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        -1
+      ],
+      "description" : "The issue was addressed with improved bounds checks. This issue is fixed in GarageBand 10.4.12. Processing a maliciously crafted image may lead to arbitrary code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:apple:garageband:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-20633",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "In wlan AP driver, there is a possible out of bounds write due to an incorrect bounds check. This could lead to remote (proximal/adjacent) code execution with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: WCNCR00400889; Issue ID: MSV-2491.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:mediatek:software_development_kit:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt7603:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt7615:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt7622:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt7915:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-20634",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01289384; Issue ID: MSV-2436.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:mediatek:nr16:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:mediatek:nr17:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:mediatek:nr17r:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt2737:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6813:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6835:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6835t:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6878:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6878m:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6879:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6886:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6895:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6895tt:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6896:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6897:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6899:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6980:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6980d:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6983:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6983t:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6985:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6985t:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6989:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6989t:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6990:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6991:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8673:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8676:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8678:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8795t:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8798:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8863:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-24813",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        44,
+        502
+      ],
+      "description" : "Path Equivalence: 'file.Name' (Internal Dot) leading to Remote Code Execution and/or Information disclosure and/or malicious content added to uploaded files via write enabled Default Servlet in Apache Tomcat. This issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.2, from 10.1.0-M1 through 10.1.34, from 9.0.0.M1 through 9.0.98. If all of the following were true, a malicious user was able to view security sensitive files and/or inject content into those files: - writes enabled for the default servlet (disabled by default) - support for partial PUT (enabled by default) - a target URL for security sensitive uploads that was a sub-directory of a target URL for public uploads - attacker knowledge of the names of security sensitive files being uploaded - the security sensitive files also being uploaded via partial PUT If all of the following were true, a malicious user was able to perform remote code execution: - writes enabled for the default servlet (disabled by default) - support for partial PUT (enabled by default) - application was using Tomcat's file based session persistence with the default storage location - application included a library that may be leveraged in a deserialization attack Users are recommended to upgrade to version 11.0.3, 10.1.35 or 9.0.99, which fixes the issue.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone10:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone11:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone12:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone13:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone14:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone15:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone16:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone17:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone18:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone19:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone20:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone21:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone22:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone23:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone24:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone25:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone26:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone27:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone5:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone6:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone7:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone8:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone9:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone10:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone11:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone12:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone13:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone14:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone15:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone16:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone17:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone18:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone19:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone20:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone5:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone6:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone7:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone8:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone9:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone10:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone11:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone12:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone13:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone14:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone15:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone16:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone17:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone18:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone19:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone20:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone21:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone22:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone23:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone24:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone25:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone5:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone6:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone7:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone8:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone9:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-29384",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "In Tenda AC9 v1.0 V15.03.05.14_multi, the wanMTU parameter of /goform/AdvSetMacMtuWan has a stack overflow vulnerability, which can lead to remote arbitrary code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:tenda:ac9_firmware:15.03.05.14:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:tenda:ac9:1.0:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-29385",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "In Tenda AC9 v1.0 V15.03.05.14_multi, the cloneType parameter of /goform/AdvSetMacMtuWan has a stack overflow vulnerability, which can lead to remote arbitrary code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:tenda:ac9_firmware:15.03.05.14:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:tenda:ac9:1.0:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-29386",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "In Tenda AC9 v1.0 V15.03.05.14_multi, the mac parameter of /goform/AdvSetMacMtuWan has a stack overflow vulnerability, which can lead to remote arbitrary code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:tenda:ac9_firmware:15.03.05.14:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:tenda:ac9:1.0:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-29387",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.1,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "In Tenda AC9 v1.0 V15.03.05.14_multi, the wanSpeed parameter of /goform/AdvSetMacMtuWan has a stack overflow vulnerability, which can lead to remote arbitrary code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:tenda:ac9_firmware:15.03.05.14:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:tenda:ac9:1.0:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-29909",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        191,
+        787
+      ],
+      "description" : "CryptoLib provides a software-only solution using the CCSDS Space Data Link Security Protocol - Extended Procedures (SDLS-EP) to secure communications between a spacecraft running the core Flight System (cFS) and a ground station. In versions 1.3.3 and prior, a heap buffer overflow vulnerability in CryptoLib's `Crypto_TC_ApplySecurity()` allows an attacker to craft a malicious TC frame that causes out-of-bounds memory writes. This can result in denial of service (DoS) or, under certain conditions, remote code execution (RCE). Any application or system that relies on CryptoLib for Telecommand (TC) processing and does not strictly validate incoming TC frames is at risk. This includes satellite ground stations or mission control software where attackers can inject malformed frames. A patch is available at commit c7e8a8745ff4b5e9bd7e500e91358e86d5abedcc.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-29911",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        122
+      ],
+      "description" : "CryptoLib provides a software-only solution using the CCSDS Space Data Link Security Protocol - Extended Procedures (SDLS-EP) to secure communications between a spacecraft running the core Flight System (cFS) and a ground station. A critical heap buffer overflow vulnerability was identified in the `Crypto_AOS_ProcessSecurity` function of CryptoLib versions 1.3.3 and prior. This vulnerability allows an attacker to trigger a Denial of Service (DoS) or potentially execute arbitrary code (RCE) by providing a maliciously crafted AOS frame with an insufficient length. The vulnerability lies in the function `Crypto_AOS_ProcessSecurity`, specifically during the processing of the Frame Error Control Field (FECF). The affected code attempts to read from the `p_ingest` buffer at indices `current_managed_parameters_struct.max_frame_size - 2` and `current_managed_parameters_struct.max_frame_size - 1` without verifying if `len_ingest` is sufficiently large. This leads to a heap buffer overflow when `len_ingest` is smaller than `max_frame_size`. As of time of publication, no known patched versions exist.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-29912",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        122,
+        191
+      ],
+      "description" : "CryptoLib provides a software-only solution using the CCSDS Space Data Link Security Protocol - Extended Procedures (SDLS-EP) to secure communications between a spacecraft running the core Flight System (cFS) and a ground station. In versions 1.3.3 and prior, an unsigned integer underflow in the `Crypto_TC_ProcessSecurity` function of CryptoLib leads to a heap buffer overflow. The vulnerability is triggered when the `fl` (frame length) field in a Telecommand (TC) packet is set to 0. This underflow causes the frame length to be interpreted as 65535, resulting in out-of-bounds memory access. This critical vulnerability can be exploited to cause a denial of service (DoS) or potentially achieve remote code execution. Users of CryptoLib are advised to apply the recommended patch or avoid processing untrusted TC packets until a fix is available.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-29913",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        125,
+        191
+      ],
+      "description" : "CryptoLib provides a software-only solution using the CCSDS Space Data Link Security Protocol - Extended Procedures (SDLS-EP) to secure communications between a spacecraft running the core Flight System (cFS) and a ground station. A critical heap buffer overflow vulnerability was identified in the `Crypto_TC_Prep_AAD` function of CryptoLib versions 1.3.3 and prior. This vulnerability allows an attacker to trigger a Denial of Service (DoS) or potentially execute arbitrary code (RCE) by providing a maliciously crafted telecommand (TC) frame that causes an unsigned integer underflow. The vulnerability lies in the function `Crypto_TC_Prep_AAD`, specifically during the computation of `tc_mac_start_index`. The affected code incorrectly calculates the MAC start index without ensuring it remains within the bounds of the `ingest` buffer. When `tc_mac_start_index` underflows due to an incorrect length calculation, the function attempts to access an out-of-bounds memory location, leading to a segmentation fault. The vulnerability is still present in the repository as of commit `d3cc420ace96d02a5b7e83d88cbd2e48010d5723`.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-2262",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        862
+      ],
+      "description" : "The The Logo Slider – Logo Showcase, Logo Carousel, Logo Gallery and Client Logo Presentation plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 3.7.3. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-2494",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        434
+      ],
+      "description" : "Unrestricted file upload to Softdial Contact Center of Sytel Ltd. This vulnerability could allow an attacker to upload files to the server via the ‘/softdial/phpconsole/upload.php’ endpoint, which is protected by basic HTTP authentication. The files are uploaded to a directory exposed by the web application, which could result in code execution, giving the attacker full control over the server.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-57169",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "A file upload bypass vulnerability exists in SOPlanning 1.53.00, specifically in /process/upload.php. This vulnerability allows remote attackers to bypass upload restrictions and potentially achieve remote code execution by uploading malicious files.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-12563",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        98
+      ],
+      "description" : "The s2Member Pro plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 250214 via the 'template' attribute. This makes it possible for authenticated attackers, with contributor-level and above permissions, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    }
+  ]
+}

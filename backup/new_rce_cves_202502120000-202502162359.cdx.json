@@ -1,0 +1,158 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.4",
+  "version" : 1,
+  "vulnerabilities" : [
+    {
+      "id" : "CVE-2025-0108",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        306
+      ],
+      "description" : "An authentication bypass in the Palo Alto Networks PAN-OS software enables an unauthenticated attacker with network access to the management web interface to bypass the authentication otherwise required by the PAN-OS management web interface and invoke certain PHP scripts. While invoking these PHP scripts does not enable remote code execution, it can negatively impact integrity and confidentiality of PAN-OS. You can greatly reduce the risk of this issue by restricting access to the management web interface to only trusted internal IP addresses according to our recommended best practices deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 . This issue does not affect Cloud NGFW or Prisma Access software.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-24888",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.1,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        22
+      ],
+      "description" : "The SecureDrop Client is a desktop application for journalists to communicate with sources and work with submissions on the SecureDrop Workstation. Prior to version 0.14.1, a malicious SecureDrop Server could obtain code execution on the SecureDrop Client virtual machine (`sd-app`). SecureDrop Server itself has multiple layers of built-in hardening, and is a dedicated physical machine exposed on the internet only via Tor hidden services for the Source and Journalist interfaces, and optionally via remote SSH access over another Tor hidden service. A newsroom's SecureDrop Workstation communicates only with its own dedicated SecureDrop Server. The SecureDrop Client runs in a dedicated Qubes virtual machine, named `sd-app`, as part of the SecureDrop Workstation. The private OpenPGP key used to decrypt submissions and replies is stored in a separate virtual machine and never accessed directly. The vulnerability lies in the code responsible for downloading replies. The filename of the reply is obtained from the `Content-Disposition` HTTP header and used to write the encrypted reply on disk. Note that filenames are generated and sanitized server-side, and files are downloaded in an encrypted format, so a remote attacker who has not achieved server compromise, such as one posing as a source, could not craft the HTTP response necessary for this attack. While the filename is later checked to guard against path traversal before being moved into the Client’s data storage directory, the file has already been written to a potentially arbitrary location. In this case, `safe_move()` would detect the path traversal and fail, leaving the original downloaded file in the attacker-chosen directory. Code execution can be gained by writing an autostart file in `/home/user/.config/autostart/`. Version 0.14.1 fixes the issue. As of time of publication, there is no known evidence of exploitation in the wild. This attack requires a previously compromised SecureDrop Server.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-24889",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.5,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        22
+      ],
+      "description" : "The SecureDrop Client is a desktop application for journalists to communicate with sources and work with submissions on the SecureDrop Workstation. Prior to versions 0.14.1 and 1.0.1, an attacker who has already gained code execution in a virtual machine on the SecureDrop Workstation could gain code execution in the `sd-log` virtual machine by sending a specially crafted log entry. The vulnerability is not exploitable remotely and requires an attacker to already have code execution on one of the other virtual machines (VMs) of the system. Due to the Workstation's underlying usage of Qubes for strong isolation, the vulnerability would have allowed lateral movement between any log-enabled VM and the `sd-log` VM, but no further. The SecureDrop workstation collects logs centrally in an isolated virtual machine named `sd-log` for easy export for support and debugging purposes. The `sd-log` VM is completely isolated from the internet and ingests logs via a narrow Qubes RPC policy that allows for specific inter-VM communication via the Xen vchan protocol used by Qubes's qrexec mechanism. A path traversal bug was found in the logic used to choose where to write the log file for a specific VM: the VM name, used unsanitized in the destination path in `sd-log`, is supplied by the logging VM itself instead of being read from a trusted source, such as the Qubes environment variable `QREXEC_REMOTE_DOMAIN` that is used in the fixed implementation. An attacker could provide an arbitrary source VM name, possibly overwriting logs of other VMs, or writing a file named `syslog.log`, with attacker-controlled content, in arbitrary directories as a low-privileged user. A successful attack could potentially overwrite or add configuration to software that loads configuration files from a directory. This is exploitable to achieve code execution by setting the target directory to `/home/user/.config/autostart/` and letting it write `syslog.log`, because XFCE treats any file in that directory as a `.desktop` file regardless of its extension. Versions 0.14.1 and 1.0.1 contain a patch for this issue.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-53309",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "A stack-based buffer overflow vulnerability exists in Effectmatrix Total Video Converter Command Line (TVCC) 2.50 when an overly long string is passed to the \"-f\" parameter. This can lead to memory corruption, potentially allowing arbitrary code execution or causing a denial of service via specially crafted input.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-53310",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "A Structured Exception Handler based buffer overflow vulnerability exists in Effectmatrix Total Video Converter Command Line (TVCC) 2.50 when a specially crafted file is passed to the -ff parameter. The vulnerability occurs due to improper handling of file input with overly long characters, leading to memory corruption. This can result in arbitrary code execution or denial of service.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-56908",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "In Perfex Crm < 3.2.1, an authenticated attacker can send a crafted HTTP POST request to the affected upload_sales_file endpoint. By providing malicious input in the rel_id parameter, combined with improper input validation, the attacker can bypass restrictions and upload arbitrary files to directories of their choice, potentially leading to remote code execution or server compromise.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-22962",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.2,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        77
+      ],
+      "description" : "A critical remote code execution (RCE) vulnerability exists in the web-based management interface of GatesAir Maxiva UAXT, VAXT transmitters when debugging mode is enabled. An attacker with a valid session ID (sess_id) can send specially crafted POST requests to the /json endpoint, enabling arbitrary command execution on the underlying system. This vulnerability can lead to full system compromise, including unauthorized access, privilege escalation, and potentially full device takeover.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-1302",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        94
+      ],
+      "description" : "Versions of the package jsonpath-plus before 10.3.0 are vulnerable to Remote Code Execution (RCE) due to improper input sanitization. An attacker can execute aribitrary code on the system by exploiting the unsafe default usage of eval='safe' mode. **Note:** This is caused by an incomplete fix for [CVE-2024-21534](https://security.snyk.io/vuln/SNYK-JS-JSONPATHPLUS-7945884).",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2144 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.4",
+  "version" : 1,
+  "vulnerabilities" : [
+    {
+      "id" : "CVE-2024-13543",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "description" : "The Zarinpal Paid Download WordPress plugin through 2.3 does not sanitise and escape a parameter before outputting it back in the page, leading to a Reflected Cross-Site Scripting which could be used against high privilege users such as admin."
+    },
+    {
+      "id" : "CVE-2024-13544",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "description" : "The Zarinpal Paid Download WordPress plugin through 2.3 does not properly validate uploaded files, allowing high privilege users such as admin to upload arbitrary files on the server even when they should not be allowed to (for example in multisite setup)"
+    },
+    {
+      "id" : "CVE-2024-13570",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "description" : "The Stray Random Quotes WordPress plugin through 1.9.9 does not sanitise and escape a parameter before outputting it back in the page, leading to a Reflected Cross-Site Scripting which could be used against high privilege users such as admin."
+    },
+    {
+      "id" : "CVE-2025-1176",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.0,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        119,
+        122
+      ],
+      "description" : "A vulnerability was found in GNU Binutils 2.43 and classified as critical. This issue affects the function _bfd_elf_gc_mark_rsec of the file elflink.c of the component ld. The manipulation leads to heap-based buffer overflow. The attack may be initiated remotely. The complexity of an attack is rather high. The exploitation is known to be difficult. The exploit has been disclosed to the public and may be used. The patch is named f9978defb6fab0bd8583942d97c112b0932ac814. It is recommended to apply a patch to fix this issue."
+    },
+    {
+      "id" : "CVE-2025-1177",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        20,
+        502
+      ],
+      "description" : "A vulnerability was found in dayrui XunRuiCMS 4.6.3. It has been classified as critical. Affected is the function import_add of the file dayrui/Fcms/Control/Admin/Linkage.php. The manipulation leads to deserialization. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2024-13813",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.1,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        732
+      ],
+      "description" : "Insufficient permissions in Ivanti Secure Access Client before version 22.8R1 allows a local authenticated attacker to delete arbitrary files."
+    },
+    {
+      "id" : "CVE-2024-13830",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Reflected XSS in Ivanti Connect Secure before version 22.7R2.6 and Ivanti Policy Secure before version 22.7R1.3 allows a remote unauthenticated attacker to obtain admin privileges. User interaction is required.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r1.1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r1.2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r1.3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r1.4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r1.5:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r2.1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r2.2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r2.3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r2.4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r2.5:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:policy_secure:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:policy_secure:22.7:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:policy_secure:22.7:r1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:policy_secure:22.7:r1.1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:policy_secure:22.7:r1.2:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-13842",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.0,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        321
+      ],
+      "description" : "A hardcoded key in Ivanti Connect Secure before version 22.7R2.3 and Ivanti Policy Secure before version 22.7R1.3 allows a local authenticated attacker with admin privileges to read sensitive data."
+    },
+    {
+      "id" : "CVE-2024-13843",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.0,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        312
+      ],
+      "description" : "Cleartext storage of information in Ivanti Connect Secure before version 22.7R2.6 and Ivanti Policy Secure before version 22.7R1.3 allows a local authenticated attacker with admin privileges to read sensitive data."
+    },
+    {
+      "id" : "CVE-2024-47908",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        78
+      ],
+      "description" : "OS command injection in the admin web console of Ivanti CSA before version 5.0.5 allows a remote authenticated attacker with admin privileges to achieve remote code execution.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-22467",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.9,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        121
+      ],
+      "description" : "A stack-based buffer overflow in Ivanti Connect Secure before version 22.7R2.6 allows a remote authenticated attacker to achieve remote code execution.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-24807",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        345
+      ],
+      "description" : "eprosima Fast DDS is a C++ implementation of the DDS (Data Distribution Service) standard of the OMG (Object Management Group). Prior to versions 2.6.10, 2.10.7, 2.14.5, 3.0.2, 3.1.2, and 3.2.0, per design, PermissionsCA is not full chain validated, nor is the expiration date validated. Access control plugin validates only the S/MIME signature which causes an expired PermissionsCA to be taken as valid. Even though this issue is responsible for allowing `governance/permissions` from an expired PermissionsCA and having the system crash when PermissionsCA is not self-signed and contains the full-chain, the impact is low. Versions 2.6.10, 2.10.7, 2.14.5, 3.0.2, 3.1.2, and 3.2.0 contain a fix for the issue."
+    },
+    {
+      "id" : "CVE-2025-24896",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "cwes" : [
+        613
+      ],
+      "description" : "Misskey is an open source, federated social media platform. Starting in version 12.109.0 and prior to version 2025.2.0-alpha.0, a login token named `token` is stored in a cookie for authentication purposes in Bull Dashboard, but this remains undeleted even after logout is performed. The primary affected users will be users who have logged into Misskey using a public PC or someone else's device, but it's possible that users who have logged out of Misskey before lending their PC to someone else could also be affected. Version 2025.2.0-alpha.0 contains a fix for this issue."
+    },
+    {
+      "id" : "CVE-2025-21391",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.1,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        59
+      ],
+      "description" : "Windows Storage Elevation of Privilege Vulnerability",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_1507:*:*:*:*:*:*:x64:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_1507:*:*:*:*:*:*:x86:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_1607:*:*:*:*:*:*:x64:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_1607:*:*:*:*:*:*:x86:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_1809:*:*:*:*:*:*:x64:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_1809:*:*:*:*:*:*:x86:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_21h2:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_22h2:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_11_22h2:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_11_23h2:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_11_24h2:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_server_2016:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_server_2019:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_server_2022:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_server_2022_23h2:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_server_2025:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-21418",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        122
+      ],
+      "description" : "Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_1607:*:*:*:*:*:*:x64:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_1607:*:*:*:*:*:*:x86:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_1809:*:*:*:*:*:*:x64:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_1809:*:*:*:*:*:*:x86:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_21h2:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_22h2:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_11_22h2:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_11_23h2:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_11_24h2:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_server_2008:-:sp2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_server_2008:r2:sp1:*:*:*:*:x64:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_server_2012:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_server_2012:r2:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_server_2016:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_server_2019:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_server_2022:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_server_2022_23h2:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_server_2025:*:*:*:*:*:*:x64:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0899",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        416
+      ],
+      "description" : "PDF-XChange Editor AcroForm Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the handling of AcroForms. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-25349.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:pdf-xchange:pdf-xchange_editor:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0901",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "PDF-XChange Editor Doc Object Out-Of-Bounds Read Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the handling of Doc objects. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-25372.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:pdf-xchange:pdf-xchange_editor:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0902",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "PDF-XChange Editor XPS File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of XPS files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated object. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-25405.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:pdf-xchange:pdf-xchange_editor:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0903",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        122
+      ],
+      "description" : "PDF-XChange Editor RTF File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of RTF files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-25421.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:pdf-xchange:pdf-xchange_editor:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0904",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "PDF-XChange Editor XPS File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of XPS files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated object. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-25422.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:pdf-xchange:pdf-xchange_editor:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0905",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "PDF-XChange Editor JB2 File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of JB2 files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated object. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-25433.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:pdf-xchange:pdf-xchange_editor:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0906",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "PDF-XChange Editor JB2 File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of JB2 files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated buffer. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-25434.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:pdf-xchange:pdf-xchange_editor:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0907",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "PDF-XChange Editor JB2 File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of JB2 files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated object. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-25435.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:pdf-xchange:pdf-xchange_editor:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0908",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "PDF-XChange Editor U3D File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of U3D files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated buffer. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-25557.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:pdf-xchange:pdf-xchange_editor:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0909",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "PDF-XChange Editor XPS File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of XPS files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated object. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-25678.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:pdf-xchange:pdf-xchange_editor:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0910",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "PDF-XChange Editor U3D File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of U3D files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-25748.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:pdf-xchange:pdf-xchange_editor:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0911",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "PDF-XChange Editor U3D File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of U3D files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated object. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-25957.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:pdf-xchange:pdf-xchange_editor:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-57952",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "In the Linux kernel, the following vulnerability has been resolved: Revert \"libfs: fix infinite directory reads for offset dir\" The current directory offset allocator (based on mtree_alloc_cyclic) stores the next offset value to return in octx->next_offset. This mechanism typically returns values that increase monotonically over time. Eventually, though, the newly allocated offset value wraps back to a low number (say, 2) which is smaller than other already- allocated offset values. Yu Kuai <yukuai3@huawei.com> reports that, after commit 64a7ce76fb90 (\"libfs: fix infinite directory reads for offset dir\"), if a directory's offset allocator wraps, existing entries are no longer visible via readdir/getdents because offset_readdir() stops listing entries once an entry's offset is larger than octx->next_offset. These entries vanish persistently -- they can be looked up, but will never again appear in readdir(3) output. The reason for this is that the commit treats directory offsets as monotonically increasing integer values rather than opaque cookies, and introduces this comparison: if (dentry2offset(dentry) >= last_index) { On 64-bit platforms, the directory offset value upper bound is 2^63 - 1. Directory offsets will monotonically increase for millions of years without wrapping. On 32-bit platforms, however, LONG_MAX is 2^31 - 1. The allocator can wrap after only a few weeks (at worst). Revert commit 64a7ce76fb90 (\"libfs: fix infinite directory reads for offset dir\") to prepare for a fix that can work properly on 32-bit systems and might apply to recent LTS kernels where shmem employs the simple_offset mechanism."
+    },
+    {
+      "id" : "CVE-2025-25349",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "PHPGurukul Daily Expense Tracker System v1.1 is vulnerable to SQL Injection in /dets/add-expense.php via the costitem parameter."
+    },
+    {
+      "id" : "CVE-2025-25351",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "PHPGurukul Daily Expense Tracker System v1.1 is vulnerable to SQL Injection in /dets/add-expense.php via the dateexpense parameter."
+    },
+    {
+      "id" : "CVE-2025-1209",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79,
+        94
+      ],
+      "description" : "A vulnerability classified as problematic has been found in code-projects Wazifa System 1.0. Affected is the function searchuser of the file /search_resualts.php. The manipulation of the argument firstname/lastname leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. There is a typo in the affected file name."
+    },
+    {
+      "id" : "CVE-2025-1210",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability classified as critical was found in code-projects Wazifa System 1.0. Affected by this vulnerability is an unknown functionality of the file /controllers/control.php. The manipulation of the argument to leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-1224",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability classified as critical was found in ywoa up to 2024.07.03. This vulnerability affects the function listNameBySql of the file com/cloudweb/oa/mapper/xml/UserMapper.xml. The manipulation leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. Upgrading to version 2024.07.04 is able to address this issue. It is recommended to upgrade the affected component."
+    },
+    {
+      "id" : "CVE-2025-1225",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        610,
+        611
+      ],
+      "description" : "A vulnerability, which was classified as problematic, has been found in ywoa up to 2024.07.03. This issue affects the function extract of the file c-main/src/main/java/com/redmoon/weixin/aes/XMLParse.java of the component WXCallBack Interface. The manipulation leads to xml external entity reference. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. Upgrading to version 2024.07.04 is able to address this issue. It is recommended to upgrade the affected component."
+    },
+    {
+      "id" : "CVE-2024-12673",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        250
+      ],
+      "description" : "An improper privilege vulnerability was reported in a BIOS customization feature of Lenovo Vantage on SMB notebook devices which could allow a local attacker to elevate privileges on the system. This vulnerability only affects Vantage installed on these devices: * Lenovo V Series (Gen 5) * ThinkBook 14 (Gen 6, 7) * ThinkBook 16 (Gen 6, 7) * ThinkPad E Series (Gen 1)"
+    },
+    {
+      "id" : "CVE-2025-0108",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        306
+      ],
+      "description" : "An authentication bypass in the Palo Alto Networks PAN-OS software enables an unauthenticated attacker with network access to the management web interface to bypass the authentication otherwise required by the PAN-OS management web interface and invoke certain PHP scripts. While invoking these PHP scripts does not enable remote code execution, it can negatively impact integrity and confidentiality of PAN-OS. You can greatly reduce the risk of this issue by restricting access to the management web interface to only trusted internal IP addresses according to our recommended best practices deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 . This issue does not affect Cloud NGFW or Prisma Access software.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0109",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        73
+      ],
+      "description" : "An unauthenticated file deletion vulnerability in the Palo Alto Networks PAN-OS management web interface enables an unauthenticated attacker with network access to the management web interface to delete certain files as the “nobody” user; this includes limited logs and configuration files but does not include system files. You can greatly reduce the risk of this issue by restricting access to the management web interface to only trusted internal IP addresses according to our recommended best practices deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 . This issue does not affect Cloud NGFW or Prisma Access software."
+    },
+    {
+      "id" : "CVE-2025-0110",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        78
+      ],
+      "description" : "A command injection vulnerability in the Palo Alto Networks PAN-OS OpenConfig plugin enables an authenticated administrator with the ability to make gNMI requests to the PAN-OS management web interface to bypass system restrictions and run arbitrary commands. The commands are run as the “__openconfig” user (which has the Device Administrator role) on the firewall. You can greatly reduce the risk of this issue by restricting access to the management web interface to only trusted internal IP addresses according to our recommended best practices deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 ."
+    },
+    {
+      "id" : "CVE-2025-0111",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        73
+      ],
+      "description" : "An authenticated file read vulnerability in the Palo Alto Networks PAN-OS software enables an authenticated attacker with network access to the management web interface to read files on the PAN-OS filesystem that are readable by the “nobody” user. You can greatly reduce the risk of this issue by restricting access to the management web interface to only trusted internal IP addresses according to our recommended best practices deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 . This issue does not affect Cloud NGFW or Prisma Access software."
+    },
+    {
+      "id" : "CVE-2025-0113",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        424
+      ],
+      "description" : "A problem with the network isolation mechanism of the Palo Alto Networks Cortex XDR Broker VM allows attackers unauthorized access to Docker containers from the host network used by Broker VM. This may allow access to read files sent for analysis and logs transmitted by the Cortex XDR Agent to the Cortex XDR server."
+    },
+    {
+      "id" : "CVE-2025-1226",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        266,
+        285
+      ],
+      "description" : "A vulnerability was found in ywoa up to 2024.07.03. It has been declared as critical. This vulnerability affects unknown code of the file /oa/setup/setup.jsp. The manipulation leads to improper authorization. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. Upgrading to version 2024.07.04 is able to address this issue. It is recommended to upgrade the affected component."
+    },
+    {
+      "id" : "CVE-2025-1227",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability was found in ywoa up to 2024.07.03. It has been rated as critical. This issue affects the function selectList of the file com/cloudweb/oa/mapper/xml/AddressDao.xml. The manipulation leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. Upgrading to version 2024.07.04 is able to address this issue. It is recommended to upgrade the affected component."
+    },
+    {
+      "id" : "CVE-2022-31631",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "cwes" : [
+        74
+      ],
+      "description" : "In PHP versions 8.0.* before 8.0.27, 8.1.* before 8.1.15, 8.2.* before 8.2.2 when using PDO::quote() function to quote user-supplied data for SQLite, supplying an overly long string may cause the driver to incorrectly quote the data, which may further lead to SQL injection vulnerabilities."
+    },
+    {
+      "id" : "CVE-2023-29164",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:H/A:N"
+        }
+      ],
+      "cwes" : [
+        284
+      ],
+      "description" : "Improper access control in BMC Firmware for the Intel(R) Server Board S2600WF, Intel(R) Server Board S2600ST, Intel(R) Server Board S2600BP, before version 02.01.0017 and Intel(R) Server Board M50CYP and Intel(R) Server Board D50TNP before version R01.01.0009 may allow an authenticated user to enable escalation of privilege via local access."
+    },
+    {
+      "id" : "CVE-2023-31276",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.2,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        122
+      ],
+      "description" : "Heap-based buffer overflow in BMC Firmware for the Intel(R) Server Board S2600WF, Intel(R) Server Board S2600ST, Intel(R) Server Board S2600BP, before version 02.01.0017 and Intel(R) Server Board M50CYP and Intel(R) Server Board D50TNP before version R01.01.0009 may allow a privileged user to enable escalation of privilege via local access."
+    },
+    {
+      "id" : "CVE-2023-32277",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.1,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        822
+      ],
+      "description" : "Untrusted Pointer Dereference in I/O subsystem for some Intel(R) QAT software before version 2.0.5 may allow authenticated user to potentially enable information disclosure via local operating system access."
+    },
+    {
+      "id" : "CVE-2023-34440",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        20
+      ],
+      "description" : "Improper input validation in UEFI firmware for some Intel(R) Processors may allow a privileged user to potentially enable escalation of privilege via local access."
+    },
+    {
+      "id" : "CVE-2023-43758",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.2,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        20
+      ],
+      "description" : "Improper input validation in UEFI firmware for some Intel(R) processors may allow a privileged user to potentially enable escalation of privilege via local access."
+    },
+    {
+      "id" : "CVE-2023-48267",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.9,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:N"
+        }
+      ],
+      "cwes" : [
+        119
+      ],
+      "description" : "Improper buffer restrictions in some Intel(R) System Security Report and System Resources Defense firmware may allow a privileged user to potentially enable escalation of privilege via local access."
+    },
+    {
+      "id" : "CVE-2023-48366",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.3,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        362
+      ],
+      "description" : "Race condition in some Intel(R) System Security Report and System Resources Defense firmware may allow a privileged user to potentially enable information disclosure via local access."
+    },
+    {
+      "id" : "CVE-2023-49603",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        362
+      ],
+      "description" : "Race condition in some Intel(R) System Security Report and System Resources Defense firmware may allow a privileged user to potentially enable escalation of privilege via local access."
+    },
+    {
+      "id" : "CVE-2023-49615",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        20
+      ],
+      "description" : "Improper input validation in some Intel(R) System Security Report and System Resources Defense firmware may allow a privileged user to potentially enable escalation of privilege via local access."
+    },
+    {
+      "id" : "CVE-2023-49618",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        119
+      ],
+      "description" : "Improper buffer restrictions in some Intel(R) System Security Report and System Resources Defense firmware may allow a privileged user to potentially enable escalation of privilege via local access."
+    },
+    {
+      "id" : "CVE-2024-21830",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.7,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        427
+      ],
+      "description" : "Uncontrolled search path in some Intel(R) VPL software before version 2023.4.0 may allow an authenticated user to potentially enable escalation of privilege via local access."
+    },
+    {
+      "id" : "CVE-2024-21859",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.3,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        119
+      ],
+      "description" : "Improper buffer restrictions in the UEFI firmware for some Intel(R) Processors may allow a privileged user to potentially enable information disclosure via local access."
+    },
+    {
+      "id" : "CVE-2024-24582",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        20
+      ],
+      "description" : "Improper input validation in XmlCli feature for UEFI firmware for some Intel(R) processors may allow privileged user to potentially enable escalation of privilege via local access."
+    },
+    {
+      "id" : "CVE-2024-24852",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.7,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        427
+      ],
+      "description" : "Uncontrolled search path in some Intel(R) Ethernet Adapter Complete Driver Pack install before versions 29.1 may allow an authenticated user to potentially enable escalation of privilege via local access."
+    },
+    {
+      "id" : "CVE-2024-25571",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 2.3,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        20
+      ],
+      "description" : "Improper input validation in some Intel(R) SPS firmware before SPS_E5_06.01.04.059.0 may allow a privileged user to potentially enable denial of service via local access."
+    },
+    {
+      "id" : "CVE-2024-26021",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 2.3,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        665
+      ],
+      "description" : "Improper initialization in the firmware for some Intel(R) AMT and Intel(R) Standard Manageability may allow a privileged user to potentially enable information disclosure via local access."
+    },
+    {
+      "id" : "CVE-2024-28047",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.3,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        20
+      ],
+      "description" : "Improper input validation in UEFI firmware for some Intel(R) Processors may allow a privileged user to potentially enable information disclosure via local access."
+    },
+    {
+      "id" : "CVE-2024-28127",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        20
+      ],
+      "description" : "Improper input validation in UEFI firmware for some Intel(R) Processors may allow a privileged user to potentially enable escalation of privilege via local access."
+    },
+    {
+      "id" : "CVE-2024-29214",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        20
+      ],
+      "description" : "Improper input validation in UEFI firmware CseVariableStorageSmm for some Intel(R) Processors may allow a privileged user to potentially enable escalation of privilege via local access."
+    },
+    {
+      "id" : "CVE-2024-29223",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.7,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        427
+      ],
+      "description" : "Uncontrolled search path for some Intel(R) QuickAssist Technology software before version 2.2.0 may allow an authenticated user to potentially enable escalation of privilege via local access."
+    },
+    {
+      "id" : "CVE-2024-30211",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.0,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "cwes" : [
+        284
+      ],
+      "description" : "Improper access control in some Intel(R) ME driver pack installer engines before version 2422.6.2.0 may allow an authenticated user to potentially enable escalation of privilege via local access."
+    },
+    {
+      "id" : "CVE-2024-31068",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.3,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:N/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        1245
+      ],
+      "description" : "Improper Finite State Machines (FSMs) in Hardware Logic for some Intel(R) Processors may allow privileged user to potentially enable denial of service via local access."
+    },
+    {
+      "id" : "CVE-2024-31153",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.0,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        20
+      ],
+      "description" : "Improper input validation for some Intel(R) QuickAssist Technology software before version 2.2.0 may allow an authenticated user to potentially enable denial of service via local access."
+    },
+    {
+      "id" : "CVE-2024-31155",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        119
+      ],
+      "description" : "Improper buffer restrictions in the UEFI firmware for some Intel(R) Processors may allow a privileged user to potentially enable escalation of privilege via local access."
+    },
+    {
+      "id" : "CVE-2024-31157",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.3,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        665
+      ],
+      "description" : "Improper initialization in UEFI firmware OutOfBandXML module in some Intel(R) Processors may allow a privileged user to potentially enable information disclosure via local access."
+    },
+    {
+      "id" : "CVE-2024-31858",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "Out-of-bounds write for some Intel(R) QuickAssist Technology software before version 2.2.0 may allow an authenticated user to potentially enable escalation of privilege via local access."
+    },
+    {
+      "id" : "CVE-2024-32938",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.7,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        427
+      ],
+      "description" : "Uncontrolled search path for some Intel(R) MPI Library for Windows software before version 2021.13 may allow an authenticated user to potentially enable escalation of privilege via local access."
+    },
+    {
+      "id" : "CVE-2024-32941",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.9,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:H"
+        }
+      ],
+      "cwes" : [
+        476
+      ],
+      "description" : "NULL pointer dereference for some Intel(R) MLC software before version v3.11b may allow an authenticated user to potentially enable denial of service via local access."
+    },
+    {
+      "id" : "CVE-2024-32942",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.7,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        276
+      ],
+      "description" : "Incorrect default permissions for some Intel(R) DSA installer for Windows before version 24.2.19.5 may allow an authenticated user to potentially enable escalation of privilege via local access."
+    },
+    {
+      "id" : "CVE-2024-36262",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.2,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:N"
+        }
+      ],
+      "cwes" : [
+        362
+      ],
+      "description" : "Race condition in some Intel(R) System Security Report and System Resources Defense firmware may allow a privileged user to potentially enable escalation of privilege via local access."
+    },
+    {
+      "id" : "CVE-2024-36274",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "Out-of-bounds write in the Intel(R) 800 Series Ethernet Driver for Intel(R) Ethernet Adapter Complete Driver Pack before versions 29.1 may allow an unauthenticated user to potentially enable denial of service via adjacent access."
+    },
+    {
+      "id" : "CVE-2024-36280",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.7,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        427
+      ],
+      "description" : "Uncontrolled search path for some Intel(R) High Level Synthesis Compiler software before version 24.2 may allow an authenticated user to potentially enable escalation of privilege via local access."
+    },
+    {
+      "id" : "CVE-2024-36283",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.7,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        427
+      ],
+      "description" : "Uncontrolled search path for the Intel(R) Thread Director Visualizer software before version 1.0.1 may allow an authenticated user to potentially enable escalation of privilege via local access."
+    },
+    {
+      "id" : "CVE-2024-36285",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.6,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:N/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        362
+      ],
+      "description" : "Race condition in some Intel(R) PROSet/Wireless WiFi and Killerâ„¢ WiFi software for Windows before version 23.80 may allow an authenticated user to potentially enable denial of service via local access."
+    },
+    {
+      "id" : "CVE-2024-36291",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.7,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        427
+      ],
+      "description" : "Uncontrolled search path for some Intel(R) Chipset Software Installation Utility before version 10.1.19867.8574 may allow an authenticated user to potentially enable escalation of privilege via local access."
+    },
+    {
+      "id" : "CVE-2024-36293",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        284
+      ],
+      "description" : "Improper access control in the EDECCSSA user leaf function for some Intel(R) Processors with Intel(R) SGX may allow an authenticated user to potentially enable denial of service via local access."
+    },
+    {
+      "id" : "CVE-2024-37020",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        1281
+      ],
+      "description" : "Sequence of processor instructions leads to unexpected behavior in the Intel(R) DSA V1.0 for some Intel(R) Xeon(R) Processors may allow an authenticated user to potentially enable denial of service via local access."
+    },
+    {
+      "id" : "CVE-2024-37355",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        284
+      ],
+      "description" : "Improper access control in some Intel(R) Graphics software may allow an authenticated user to potentially enable escalation of privilege via local access."
+    },
+    {
+      "id" : "CVE-2024-38307",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.7,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        20
+      ],
+      "description" : "Improper input validation in the firmware for some Intel(R) AMT and Intel(R) Standard Manageability may allow an authenticated user to potentially enable denial of service via network access."
+    },
+    {
+      "id" : "CVE-2024-38310",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.2,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        284
+      ],
+      "description" : "Improper access control in some Intel(R) Graphics Driver software installers may allow an authenticated user to potentially enable escalation of privilege via local access."
+    },
+    {
+      "id" : "CVE-2024-39271",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 2.6,
+          "vector" : "CVSS:3.1/AV:A/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        923
+      ],
+      "description" : "Improper restriction of communication channel to intended endpoints in some Intel(R) PROSet/Wireless WiFi and Killerâ„¢ WiFi software before version 23.80 may allow an unauthenticated user to potentially enable information disclosure via adjacent access."
+    },
+    {
+      "id" : "CVE-2024-39279",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        1220
+      ],
+      "description" : "Insufficient granularity of access control in UEFI firmware in some Intel(R) processors may allow a authenticated user to potentially enable denial of service via local access."
+    },
+    {
+      "id" : "CVE-2024-39284",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.7,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        427
+      ],
+      "description" : "Uncontrolled search path for some Intel(R) Advisor software before version 2024.2 may allow an authenticated user to potentially enable escalation of privilege via local access."
+    },
+    {
+      "id" : "CVE-2024-39286",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.3,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        279
+      ],
+      "description" : "Incorrect execution-assigned permissions in the Linux kernel mode driver for the Intel(R) 800 Series Ethernet Driver before version 1.15.4 may allow an authenticated user to potentially enable information disclosure via local access."
+    },
+    {
+      "id" : "CVE-2024-39355",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        1384
+      ],
+      "description" : "Improper handling of physical or environmental conditions in some Intel(R) Processors may allow an authenticated user to enable denial of service via local access."
+    },
+    {
+      "id" : "CVE-2024-39356",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.4,
+          "vector" : "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        476
+      ],
+      "description" : "NULL pointer dereference in some Intel(R) PROSet/Wireless WiFi and Killerâ„¢ WiFi software for Windows before version 23.80 may allow an unauthenticated user to potentially enable denial of service via adjacent access."
+    },
+    {
+      "id" : "CVE-2024-39365",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.7,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        427
+      ],
+      "description" : "Uncontrolled search path for the FPGA Support Package for the Intel(R) oneAPI DPC++/C++ Compiler software for Windows before version 2024.2 may allow an authenticated user to potentially enable escalation of privilege via local access."
+    },
+    {
+      "id" : "CVE-2024-39372",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.7,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        427
+      ],
+      "description" : "Uncontrolled search path for the Intel(R) XTU software for Windows before version 7.14.2.14 may allow an authenticated user to potentially enable escalation of privilege via local access."
+    },
+    {
+      "id" : "CVE-2024-39606",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.1,
+          "vector" : "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:C/C:N/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        20
+      ],
+      "description" : "Improper input validation in some Intel(R) PROSet/Wireless WiFi and Killerâ„¢ WiFi software for Windows before version 23.80 may allow an unauthenticated user to potentially enable denial of service via adjacent access."
+    },
+    {
+      "id" : "CVE-2024-39779",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.7,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        121
+      ],
+      "description" : "Stack-based buffer overflow in some drivers for Intel(R) Ethernet Connection I219 Series before version 12.19.1.39 may allow an authenticated user to potentially enable denial of service via local access."
+    },
+    {
+      "id" : "CVE-2024-39797",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        284
+      ],
+      "description" : "Improper access control in some drivers for Intel(R) Ethernet Connection I219 Series before version 12.19.1.39 may allow an authenticated user to potentially enable denial of service via local access."
+    },
+    {
+      "id" : "CVE-2024-39805",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        345
+      ],
+      "description" : "Insufficient verification of data authenticity in some Intel(R) DSA software before version 23.4.39 may allow an authenticated user to potentially enable escalation of privilege via local access."
+    },
+    {
+      "id" : "CVE-2024-39813",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.7,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        427
+      ],
+      "description" : "Uncontrolled search path for some EPCT software before version 1.42.8.0 may allow an authenticated user to potentially enable escalation of privilege via local access."
+    },
+    {
+      "id" : "CVE-2024-40887",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.1,
+          "vector" : "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:C/C:N/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        362
+      ],
+      "description" : "Race condition in some Intel(R) PROSet/Wireless WiFi and Killerâ„¢ WiFi software for Windows before version 23.80 may allow an unauthenticated user to potentially enable denial of service via adjacent access."
+    },
+    {
+      "id" : "CVE-2024-41166",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.1,
+          "vector" : "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:C/C:N/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        121
+      ],
+      "description" : "Stack-based buffer overflow in some Intel(R) PROSet/Wireless WiFi and Killerâ„¢ WiFi software for Windows before version 23.80 may allow an unauthenticated user to potentially enable denial of service via adjacent access."
+    },
+    {
+      "id" : "CVE-2024-41168",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.4,
+          "vector" : "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        416
+      ],
+      "description" : "Use after free in some Intel(R) PROSet/Wireless WiFi and Killerâ„¢ WiFi software for Windows before version 23.80 may allow an unauthenticated user to potentially enable denial of service via adjacent access."
+    },
+    {
+      "id" : "CVE-2024-41917",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        367
+      ],
+      "description" : "Time-of-check time-of-use race condition for some Intel(R) Battery Life Diagnostic Tool software before version 2.4.1 may allow an authenticated user to potentially enable escalation of privilege via local access."
+    },
+    {
+      "id" : "CVE-2024-41934",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.9,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:N/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        284
+      ],
+      "description" : "Improper access control in some Intel(R) GPA software before version 2024.3 may allow an authenticated user to potentially enable denial of service via local access."
+    },
+    {
+      "id" : "CVE-2024-42405",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.7,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        427
+      ],
+      "description" : "Uncontrolled search path for some Intel(R) Quartus(R) Prime Software before version 23.1.1 Patch 1.01std may allow an authenticated user to potentially enable escalation of privilege via local access."
+    },
+    {
+      "id" : "CVE-2024-42410",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        20
+      ],
+      "description" : "Improper input validation in some Intel(R) Graphics Drivers may allow an authenticated user to potentially enable denial of service via local access."
+    },
+    {
+      "id" : "CVE-2024-42419",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.7,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        276
+      ],
+      "description" : "Incorrect default permissions for some Intel(R) GPA and Intel(R) GPA Framework software installers may allow an authenticated user to potentially enable escalation of privilege via local access."
+    },
+    {
+      "id" : "CVE-2024-42492",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.7,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        427
+      ],
+      "description" : "Uncontrolled search path element in some BIOS and System Firmware Update Package for Intel(R) Server M50FCP family before version R01.02.0002 may allow a privileged user to potentially enable escalation of privilege via local access."
+    },
+    {
+      "id" : "CVE-2024-46922",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "An issue was discovered in Samsung Mobile Processor Exynos 1480 and 2400. The absence of a null check leads to a Denial of Service at amdgpu_cs_parser_bos in the Xclipse Driver."
+    },
+    {
+      "id" : "CVE-2024-46923",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "An issue was discovered in Samsung Mobile Processor Exynos 2200, 1480, and 2400. The absence of a null check leads to a Denial of Service at amdgpu_cs_ib_fill in the Xclipse Driver."
+    },
+    {
+      "id" : "CVE-2024-47006",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.7,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        427
+      ],
+      "description" : "Uncontrolled search path for the Intel(R) RealSense D400 Series Universal Windows Platform (UWP) Driver for Windows(R) 10 all versions may allow an authenticated user to potentially enable escalation of privilege via local access."
+    },
+    {
+      "id" : "CVE-2024-51122",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "Cross Site Scripting vulnerability in Zertificon Z1 SecureMail Z1 CertServer v.3.16.4-2516-debian12 alllows a remote attacker to execute arbitrary code via the ST, L, O, OU, CN parameters."
+    },
+    {
+      "id" : "CVE-2024-51123",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "An issue in Zertificon Z1 SecureMail Z1 SecureMail Gateway 4.44.2-7240-debian12 allows a remote attacker to obtain sensitive information via the /compose-pdf.xhtml?convid=[id] component."
+    },
+    {
+      "id" : "CVE-2024-51440",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "An issue in Nothing Tech Nothing OS v.2.6 allows a local attacker to escalate privileges via the NtBpfService component."
+    },
+    {
+      "id" : "CVE-2024-56938",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "LearnDash v6.7.1 was discovered to contain a stored cross-site scripting (XSS) vulnerability in the materials-content class."
+    },
+    {
+      "id" : "CVE-2024-56939",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "LearnDash v6.7.1 was discovered to contain a stored cross-site scripting (XSS) vulnerability in the ld-comment-body class."
+    },
+    {
+      "id" : "CVE-2024-56940",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "An issue in the profile image upload function of LearnDash v6.7.1 allows attackers to cause a Denial of Service (DoS) via excessive file uploads."
+    },
+    {
+      "id" : "CVE-2024-57601",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "Cross Site Scripting vulnerability in Alex Tselegidis EasyAppointments v.1.5.0 allows a remote attacker to execute arbitrary code via the legal_settings parameter."
+    },
+    {
+      "id" : "CVE-2024-57602",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "An issue in Alex Tselegidis EasyAppointments v.1.5.0 allows a remote attacker to escalate privileges via the index.php file."
+    },
+    {
+      "id" : "CVE-2024-57604",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "An issue in MaysWind ezBookkeeping 0.7.0 allows a remote attacker to escalate privileges via the token component."
+    },
+    {
+      "id" : "CVE-2024-57605",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "Cross Site Scripting vulnerability in Daylight Studio Fuel CMS v.1.5.2 allows an attacker to escalate privileges via the /fuel/blocks/ and /fuel/pages components."
+    },
+    {
+      "id" : "CVE-2025-1228",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        22
+      ],
+      "description" : "A vulnerability classified as problematic has been found in olajowon Loggrove up to e428fac38cc480f011afcb1d8ce6c2bad378ddd6. Affected is an unknown function of the file /read/?page=1&logfile=LOG_Monitor of the component Logfile Update Handler. The manipulation of the argument path leads to path traversal. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. Continious delivery with rolling releases is used by this product. Therefore, no version details of affected nor updated releases are available."
+    },
+    {
+      "id" : "CVE-2025-1229",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        77,
+        78
+      ],
+      "description" : "A vulnerability classified as critical was found in olajowon Loggrove up to e428fac38cc480f011afcb1d8ce6c2bad378ddd6. Affected by this vulnerability is an unknown functionality of the file /read/?page=1&logfile=eee&match=. The manipulation of the argument path leads to os command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. This product does not use versioning. This is why information about affected and unaffected releases are unavailable."
+    },
+    {
+      "id" : "CVE-2025-20097",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        248
+      ],
+      "description" : "Uncaught exception in OpenBMC Firmware for the Intel(R) Server M50FCP Family and Intel(R) Server D50DNP Family before version R01.02.0002 may allow an authenticated user to potentially enable denial of service via network access."
+    },
+    {
+      "id" : "CVE-2024-34521",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "A directory traversal vulnerability exists in the Mavenir SCE Application Provisioning Portal, version PORTAL-LBS-R_1_0_24_0, which allows an administrative user to access system files with the file permissions of the privileged system user running the application."
+    }
+  ]
+}

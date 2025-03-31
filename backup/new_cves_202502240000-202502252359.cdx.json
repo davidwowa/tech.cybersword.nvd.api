@@ -1,0 +1,3801 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.4",
+  "version" : 1,
+  "vulnerabilities" : [
+    {
+      "id" : "CVE-2024-55898",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.5,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        427
+      ],
+      "description" : "IBM i 7.2, 7.3, 7.4, and 7.5 could allow a user with the capability to compile or restore a program to gain elevated privileges due to an unqualified library call. A malicious actor could cause user-controlled code to run with administrator privilege."
+    },
+    {
+      "id" : "CVE-2025-1613",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 2.4,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79,
+        94
+      ],
+      "description" : "A vulnerability was found in FiberHome AN5506-01A ONU GPON RP2511. It has been rated as problematic. This issue affects some unknown processing of the file /goform/URL_filterCfg of the component URL Filtering Submenu. The manipulation of the argument url_IP leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way."
+    },
+    {
+      "id" : "CVE-2025-1614",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 2.4,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79,
+        94
+      ],
+      "description" : "A vulnerability classified as problematic has been found in FiberHome AN5506-01A ONU GPON RP2511. Affected is an unknown function of the file /goform/portForwardingCfg of the component Port Forwarding Submenu. The manipulation of the argument pf_Description leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way."
+    },
+    {
+      "id" : "CVE-2025-1615",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 2.4,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79,
+        94
+      ],
+      "description" : "A vulnerability classified as problematic was found in FiberHome AN5506-01A ONU GPON RP2511. Affected by this vulnerability is an unknown functionality of the component NAT Submenu. The manipulation of the argument Description leads to cross site scripting. The attack can be launched remotely. The vendor was contacted early about this disclosure but did not respond in any way."
+    },
+    {
+      "id" : "CVE-2025-1616",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.7,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        77,
+        78
+      ],
+      "description" : "A vulnerability, which was classified as critical, has been found in FiberHome AN5506-01A ONU GPON RP2511. Affected by this issue is some unknown functionality of the component Diagnosis. The manipulation of the argument Destination Address leads to os command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way."
+    },
+    {
+      "id" : "CVE-2024-12308",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.4,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "The Logo Slider WordPress plugin before 4.6.0 does not validate and escape some of its shortcode attributes before outputting them back in a page/post where the shortcode is embed, which could allow users with the contributor role and above to perform Stored Cross-Site Scripting attacks."
+    },
+    {
+      "id" : "CVE-2024-13605",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "The Form Maker by 10Web WordPress plugin before 1.15.33 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)."
+    },
+    {
+      "id" : "CVE-2024-13822",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "The Photo Contest | Competition | Video Contest WordPress plugin through 2.8.1 does not sanitise and escape a parameter before outputting it back in the page, leading to a Reflected Cross-Site Scripting which could be used against high privilege users such as admin."
+    },
+    {
+      "id" : "CVE-2025-0690",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.1,
+          "vector" : "CVSS:3.1/AV:P/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "The read command is used to read the keyboard input from the user, while reads it keeps the input length in a 32-bit integer value which is further used to reallocate the line buffer to accept the next character. During this process, with a line big enough it's possible to make this variable to overflow leading to a out-of-bounds write in the heap based buffer. This flaw may be leveraged to corrupt grub's internal critical data and secure boot bypass is not discarded as consequence."
+    },
+    {
+      "id" : "CVE-2025-1412",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.1,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        384
+      ],
+      "description" : "Mattermost versions 9.11.x <= 9.11.6, 10.4.x <= 10.4.1 fail to invalidate all active sessions when converting a user to a bot, with allows the converted user to escalate their privileges depending on the permissions granted to the bot."
+    },
+    {
+      "id" : "CVE-2025-20051",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.9,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        22
+      ],
+      "description" : "Mattermost versions 10.4.x <= 10.4.1, 9.11.x <= 9.11.7, 10.3.x <= 10.3.2, 10.2.x <= 10.2.2 fail to properly validate input when patching and duplicating a board, which allows a user to read any arbitrary file on the system via duplicating a specially crafted block in Boards."
+    },
+    {
+      "id" : "CVE-2025-24490",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.6,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N"
+        }
+      ],
+      "cwes" : [
+        89
+      ],
+      "description" : "Mattermost versions 10.4.x <= 10.4.1, 9.11.x <= 9.11.7, 10.3.x <= 10.3.2, 10.2.x <= 10.2.2 fail to use prepared statements in the SQL query of boards reordering which allows an attacker to retrieve data from the database, via a SQL injection when reordering specially crafted boards categories."
+    },
+    {
+      "id" : "CVE-2025-24526",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        863
+      ],
+      "description" : "Mattermost versions 10.1.x <= 10.1.3, 10.4.x <= 10.4.1, 9.11.x <= 9.11.7, 10.3.x <= 10.3.2, 10.2.x <= 10.2.2 fail to restrict channel export of archived channels when the \"Allow users to view archived channels\" is disabled which allows a user to export channel contents when they shouldn't have access to it"
+    },
+    {
+      "id" : "CVE-2025-25279",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.9,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        22
+      ],
+      "description" : "Mattermost versions 10.4.x <= 10.4.1, 9.11.x <= 9.11.7, 10.3.x <= 10.3.2, 10.2.x <= 10.2.2 fail to properly validate board blocks when importing boards which allows an attacker could read any arbitrary file on the system via importing and exporting a specially crafted import archive in Boards."
+    },
+    {
+      "id" : "CVE-2025-1488",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.7,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        601
+      ],
+      "description" : "The WPO365 | MICROSOFT 365 GRAPH MAILER plugin for WordPress is vulnerable to Open Redirect in all versions up to, and including, 3.2. This is due to insufficient validation on the redirect url supplied via the 'redirect_to' parameter. This makes it possible for unauthenticated attackers to redirect users to potentially malicious sites if 1. they can successfully trick them into performing an action and 2. the plugin is activated but not configured."
+    },
+    {
+      "id" : "CVE-2025-0545",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.7,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Tekrom Technology T-Soft E-Commerce allows Cross-Site Scripting (XSS).This issue affects T-Soft E-Commerce: before v5."
+    },
+    {
+      "id" : "CVE-2024-12916",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        89
+      ],
+      "description" : "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Agito Computer Life4All allows SQL Injection.This issue affects Life4All: before 10.01.2025."
+    },
+    {
+      "id" : "CVE-2024-12917",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L"
+        }
+      ],
+      "cwes" : [
+        552
+      ],
+      "description" : "Files or Directories Accessible to External Parties vulnerability in Agito Computer Health4All allows Exploiting Incorrectly Configured Access Control Security Levels, Authentication Abuse.This issue affects Health4All: before 10.01.2025."
+    },
+    {
+      "id" : "CVE-2024-12918",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        89
+      ],
+      "description" : "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Agito Computer Health4All allows SQL Injection.This issue affects Health4All: before 10.01.2025."
+    },
+    {
+      "id" : "CVE-2025-23017",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.0,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        305
+      ],
+      "description" : "WorkOS Hosted AuthKit before 2025-01-07 allows a password authentication MFA bypass (by enrolling a new authentication factor) when the attacker knows the user's password. No exploitation occurred."
+    },
+    {
+      "id" : "CVE-2025-26883",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        862
+      ],
+      "description" : "Missing Authorization vulnerability in bPlugins Animated Text Block allows Exploiting Incorrectly Configured Access Control Security Levels. This issue affects Animated Text Block: from n/a through 1.0.7."
+    },
+    {
+      "id" : "CVE-2025-27265",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Aaron D. Campbell Google Maps for WordPress allows DOM-Based XSS. This issue affects Google Maps for WordPress: from n/a through 1.0.3."
+    },
+    {
+      "id" : "CVE-2025-27266",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Ignacio Perez Hover Image Button allows DOM-Based XSS. This issue affects Hover Image Button: from n/a through 1.1.2."
+    },
+    {
+      "id" : "CVE-2025-27272",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        98
+      ],
+      "description" : "Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in vinagecko VG PostCarousel allows PHP Local File Inclusion. This issue affects VG PostCarousel: from n/a through 1.1."
+    },
+    {
+      "id" : "CVE-2025-27276",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        352
+      ],
+      "description" : "Cross-Site Request Forgery (CSRF) vulnerability in lizeipe Photo Gallery ( Responsive ) allows Privilege Escalation. This issue affects Photo Gallery ( Responsive ): from n/a through 4.0."
+    },
+    {
+      "id" : "CVE-2025-27277",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        352
+      ],
+      "description" : "Cross-Site Request Forgery (CSRF) vulnerability in tiefpunkt Add Linked Images To Gallery allows Cross Site Request Forgery. This issue affects Add Linked Images To Gallery: from n/a through 1.4."
+    },
+    {
+      "id" : "CVE-2025-27280",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Alobaidi Archive Page allows DOM-Based XSS. This issue affects Archive Page: from n/a through 1.0.1."
+    },
+    {
+      "id" : "CVE-2025-27290",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        352
+      ],
+      "description" : "Cross-Site Request Forgery (CSRF) vulnerability in seyyed-amir Erima Zarinpal Donate allows Cross Site Request Forgery. This issue affects Erima Zarinpal Donate: from n/a through 1.0."
+    },
+    {
+      "id" : "CVE-2025-27294",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.8,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        862
+      ],
+      "description" : "Missing Authorization vulnerability in platcom WP-Asambleas allows Exploiting Incorrectly Configured Access Control Security Levels. This issue affects WP-Asambleas: from n/a through 2.85.0."
+    },
+    {
+      "id" : "CVE-2025-27296",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.2,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        862
+      ],
+      "description" : "Missing Authorization vulnerability in revenueflex Auto Ad Inserter – Increase Google Adsense and Ad Manager Revenue allows Exploiting Incorrectly Configured Access Control Security Levels. This issue affects Auto Ad Inserter – Increase Google Adsense and Ad Manager Revenue: from n/a through 1.5."
+    },
+    {
+      "id" : "CVE-2025-27297",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.6,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        89
+      ],
+      "description" : "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in guelben Bravo Search & Replace allows Blind SQL Injection. This issue affects Bravo Search & Replace: from n/a through 1.0."
+    },
+    {
+      "id" : "CVE-2025-27298",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.3,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        352
+      ],
+      "description" : "Cross-Site Request Forgery (CSRF) vulnerability in cmstactics WP Video Posts allows OS Command Injection. This issue affects WP Video Posts: from n/a through 3.5.1."
+    },
+    {
+      "id" : "CVE-2025-27300",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.2,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        502
+      ],
+      "description" : "Deserialization of Untrusted Data vulnerability in giuliopanda ADFO allows Object Injection. This issue affects ADFO: from n/a through 1.9.1."
+    },
+    {
+      "id" : "CVE-2025-27301",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.2,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        502
+      ],
+      "description" : "Deserialization of Untrusted Data vulnerability in Nazmul Hasan Robin NHR Options Table Manager allows Object Injection. This issue affects NHR Options Table Manager: from n/a through 1.1.2."
+    },
+    {
+      "id" : "CVE-2025-27303",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.9,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in themelogger Contact Form 7 Star Rating allows Stored XSS. This issue affects Contact Form 7 Star Rating: from n/a through 1.10."
+    },
+    {
+      "id" : "CVE-2025-27304",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.9,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in themelogger Contact Form 7 Star Rating with font Awesome allows Stored XSS. This issue affects Contact Form 7 Star Rating with font Awesome: from n/a through 1.3."
+    },
+    {
+      "id" : "CVE-2025-27305",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Achal Jain Table of Contents Block allows Stored XSS. This issue affects Table of Contents Block: from n/a through 1.0.2."
+    },
+    {
+      "id" : "CVE-2025-27306",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in pathomation Pathomation allows Stored XSS. This issue affects Pathomation: from n/a through 2.5.1."
+    },
+    {
+      "id" : "CVE-2025-27307",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in oooorgle Quotes llama allows Reflected XSS. This issue affects Quotes llama: from n/a through 3.0.1."
+    },
+    {
+      "id" : "CVE-2025-27311",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        352
+      ],
+      "description" : "Cross-Site Request Forgery (CSRF) vulnerability in luk3thomas Bulk Content Creator allows Cross Site Request Forgery. This issue affects Bulk Content Creator: from n/a through 1.2.1."
+    },
+    {
+      "id" : "CVE-2025-27312",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        89
+      ],
+      "description" : "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Jenst WP Sitemap allows SQL Injection. This issue affects WP Sitemap: from n/a through 1.0."
+    },
+    {
+      "id" : "CVE-2025-27315",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        352
+      ],
+      "description" : "Cross-Site Request Forgery (CSRF) vulnerability in wptom All-In-One Cufon allows Cross Site Request Forgery. This issue affects All-In-One Cufon: from n/a through 1.3.0."
+    },
+    {
+      "id" : "CVE-2025-27316",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        352
+      ],
+      "description" : "Cross-Site Request Forgery (CSRF) vulnerability in hosting.io JPG, PNG Compression and Optimization allows Cross Site Request Forgery. This issue affects JPG, PNG Compression and Optimization: from n/a through 1.7.35."
+    },
+    {
+      "id" : "CVE-2025-27317",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        352
+      ],
+      "description" : "Cross-Site Request Forgery (CSRF) vulnerability in IT-RAYS RAYS Grid allows Cross Site Request Forgery. This issue affects RAYS Grid: from n/a through 1.3.1."
+    },
+    {
+      "id" : "CVE-2025-27318",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        352
+      ],
+      "description" : "Cross-Site Request Forgery (CSRF) vulnerability in ixiter Simple Google Sitemap allows Cross Site Request Forgery. This issue affects Simple Google Sitemap: from n/a through 1.6."
+    },
+    {
+      "id" : "CVE-2025-27320",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Pankaj Mondal Profile Widget Ninja allows DOM-Based XSS. This issue affects Profile Widget Ninja: from n/a through 4.3."
+    },
+    {
+      "id" : "CVE-2025-27321",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        352
+      ],
+      "description" : "Cross-Site Request Forgery (CSRF) vulnerability in Blighty Blightly Explorer allows Stored XSS. This issue affects Blightly Explorer: from n/a through 2.3.0."
+    },
+    {
+      "id" : "CVE-2025-27323",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Jon Bishop WP About Author allows DOM-Based XSS. This issue affects WP About Author: from n/a through 1.5."
+    },
+    {
+      "id" : "CVE-2025-27325",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Bruce Video.js HLS Player allows DOM-Based XSS. This issue affects Video.js HLS Player: from n/a through 1.0.2."
+    },
+    {
+      "id" : "CVE-2025-27327",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Winlin Live Streaming Video Player – by SRS Player allows DOM-Based XSS. This issue affects Live Streaming Video Player – by SRS Player: from n/a through 1.0.18."
+    },
+    {
+      "id" : "CVE-2025-27328",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        352
+      ],
+      "description" : "Cross-Site Request Forgery (CSRF) vulnerability in queeez WP-PostRatings Cheater allows Cross Site Request Forgery. This issue affects WP-PostRatings Cheater: from n/a through 1.5."
+    },
+    {
+      "id" : "CVE-2025-27329",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in inlinkz EZ InLinkz linkup allows DOM-Based XSS. This issue affects EZ InLinkz linkup: from n/a through 0.18."
+    },
+    {
+      "id" : "CVE-2025-27330",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in PlayerJS PlayerJS allows DOM-Based XSS. This issue affects PlayerJS: from n/a through 2.23."
+    },
+    {
+      "id" : "CVE-2025-27331",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Sébastien Dumont WooCommerce Display Products by Tags allows DOM-Based XSS. This issue affects WooCommerce Display Products by Tags: from n/a through 1.0.0."
+    },
+    {
+      "id" : "CVE-2025-27332",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        352
+      ],
+      "description" : "Cross-Site Request Forgery (CSRF) vulnerability in gmnazmul Smart Maintenance & Countdown allows Stored XSS. This issue affects Smart Maintenance & Countdown: from n/a through 1.2."
+    },
+    {
+      "id" : "CVE-2025-27335",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        352
+      ],
+      "description" : "Cross-Site Request Forgery (CSRF) vulnerability in Free plug in by SEO Roma Auto Tag Links allows Cross Site Request Forgery. This issue affects Auto Tag Links: from n/a through 1.0.13."
+    },
+    {
+      "id" : "CVE-2025-27336",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        352
+      ],
+      "description" : "Cross-Site Request Forgery (CSRF) vulnerability in Alex Prokopenko / JustCoded Just Variables allows Cross Site Request Forgery. This issue affects Just Variables: from n/a through 1.2.3."
+    },
+    {
+      "id" : "CVE-2025-27339",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        352
+      ],
+      "description" : "Cross-Site Request Forgery (CSRF) vulnerability in Will Anderson Minimum Password Strength allows Cross Site Request Forgery. This issue affects Minimum Password Strength: from n/a through 1.2.0."
+    },
+    {
+      "id" : "CVE-2025-27340",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.4,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        352
+      ],
+      "description" : "Cross-Site Request Forgery (CSRF) vulnerability in Marc F12-Profiler allows Cross Site Request Forgery. This issue affects F12-Profiler: from n/a through 1.3.9."
+    },
+    {
+      "id" : "CVE-2025-27341",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in afzal_du Reactive Mortgage Calculator allows Stored XSS. This issue affects Reactive Mortgage Calculator: from n/a through 1.1."
+    },
+    {
+      "id" : "CVE-2025-27342",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        352
+      ],
+      "description" : "Cross-Site Request Forgery (CSRF) vulnerability in josesan WooCommerce Recargo de Equivalencia allows Cross Site Request Forgery. This issue affects WooCommerce Recargo de Equivalencia: from n/a through 1.6.24."
+    },
+    {
+      "id" : "CVE-2025-27344",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        352
+      ],
+      "description" : "Cross-Site Request Forgery (CSRF) vulnerability in filipstepanov Phee's LinkPreview allows Cross Site Request Forgery. This issue affects Phee's LinkPreview: from n/a through 1.6.7."
+    },
+    {
+      "id" : "CVE-2025-27347",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in techmix Direct Checkout Button for WooCommerce allows Stored XSS. This issue affects Direct Checkout Button for WooCommerce: from n/a through 1.0."
+    },
+    {
+      "id" : "CVE-2025-27348",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Daniel WP Social SEO Booster – Knowledge Graph Social Signals SEO allows Stored XSS. This issue affects WP Social SEO Booster – Knowledge Graph Social Signals SEO: from n/a through 1.2.0."
+    },
+    {
+      "id" : "CVE-2025-27349",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in nurelm Get Posts allows Stored XSS. This issue affects Get Posts: from n/a through 0.6."
+    },
+    {
+      "id" : "CVE-2025-27351",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in ExpertBusinessSearch Local Search SEO Contact Page allows Stored XSS. This issue affects Local Search SEO Contact Page: from n/a through 4.0.1."
+    },
+    {
+      "id" : "CVE-2025-27352",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in wumii team 无觅相关文章插件 allows Stored XSS. This issue affects 无觅相关文章插件: from n/a through 1.0.5.7."
+    },
+    {
+      "id" : "CVE-2025-27353",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        352
+      ],
+      "description" : "Cross-Site Request Forgery (CSRF) vulnerability in Bob Namaste! LMS allows Cross Site Request Forgery. This issue affects Namaste! LMS: from n/a through 2.6.5."
+    },
+    {
+      "id" : "CVE-2025-27355",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        352
+      ],
+      "description" : "Cross-Site Request Forgery (CSRF) vulnerability in Nicolas GRILLET Woocommerce – Loi Hamon allows Stored XSS. This issue affects Woocommerce – Loi Hamon: from n/a through 1.1.0."
+    },
+    {
+      "id" : "CVE-2025-27356",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.4,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        862
+      ],
+      "description" : "Missing Authorization vulnerability in Hardik Sticky Header On Scroll allows Exploiting Incorrectly Configured Access Control Security Levels. This issue affects Sticky Header On Scroll: from n/a through 1.0."
+    },
+    {
+      "id" : "CVE-2025-27357",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        352
+      ],
+      "description" : "Cross-Site Request Forgery (CSRF) vulnerability in Musa AVCI Önceki Yazı Link allows Cross Site Request Forgery. This issue affects Önceki Yazı Link: from n/a through 1.3."
+    },
+    {
+      "id" : "CVE-2024-56897",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "Improper access control in the HTTP server in YI Car Dashcam v3.88 allows unrestricted file downloads, uploads, and API commands. API commands can also be made to make unauthorized modifications to the device settings, such as disabling recording, disabling sounds, factory reset."
+    },
+    {
+      "id" : "CVE-2025-25460",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "A stored Cross-Site Scripting (XSS) vulnerability was identified in FlatPress 1.3.1 within the \"Add Entry\" feature. This vulnerability allows authenticated attackers to inject malicious JavaScript payloads into blog posts, which are executed when other users view the posts. The issue arises due to improper input sanitization of the \"TextArea\" field in the blog entry submission form."
+    },
+    {
+      "id" : "CVE-2025-26803",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        908
+      ],
+      "description" : "The http parser in Phusion Passenger 6.0.21 through 6.0.25 before 6.0.26 allows a denial of service during parsing of a request with an invalid HTTP method."
+    },
+    {
+      "id" : "CVE-2025-22495",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.4,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        20
+      ],
+      "description" : "An improper input validation vulnerability was discovered in the NTP server configuration field of the Network-M2 card. This could result in an authenticated high privileged user having the ability to execute arbitrary commands. The vulnerability has been resolved in the version 3.0.4. Note - Network-M2 has been declared end-of-life in early 2024 and Network-M3 has been released as a fit-and-functional replacement."
+    },
+    {
+      "id" : "CVE-2025-26200",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.2,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        89
+      ],
+      "description" : "SQL injection in SLIMS v.9.6.1 allows a remote attacker to escalate privileges via the month parameter in the visitor_report_day.php component."
+    },
+    {
+      "id" : "CVE-2025-26201",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "cwes" : [
+        294
+      ],
+      "description" : "Credential disclosure vulnerability via the /staff route in GreaterWMS <= 2.1.49 allows a remote unauthenticated attackers to bypass authentication and escalate privileges."
+    },
+    {
+      "id" : "CVE-2024-54820",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        89
+      ],
+      "description" : "XOne Web Monitor v02.10.2024.530 framework 1.0.4.9 was discovered to contain a SQL injection vulnerability in the login page. This vulnerability allows attackers to extract all usernames and passwords via a crafted input."
+    },
+    {
+      "id" : "CVE-2024-57026",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "TawkTo Widget Version <= 1.3.7 is vulnerable to Cross Site Scripting (XSS) due to processing user input in a way that allows JavaScript execution."
+    },
+    {
+      "id" : "CVE-2025-27133",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        89
+      ],
+      "description" : "WeGIA is a Web manager for charitable institutions. A SQL Injection vulnerability was discovered in the WeGIA application prior to version 3.2.15 at the `adicionar_tipo_exame.php` endpoint. This vulnerability allows an authorized attacker to execute arbitrary SQL queries, allowing access to sensitive information. Version 3.2.15 contains a patch for the issue."
+    },
+    {
+      "id" : "CVE-2025-27364",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 10.0,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        78
+      ],
+      "description" : "In MITRE Caldera through 4.2.0 and 5.0.0 before 35bc06e, a Remote Code Execution (RCE) vulnerability was found in the dynamic agent (implant) compilation functionality of the server. This allows remote attackers to execute arbitrary code on the server that Caldera is running on via a crafted web request to the Caldera server API used for compiling and downloading of Caldera's Sandcat or Manx agent (implants). This web request can use the gcc -extldflags linker flag with sub-commands.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-26525",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.6,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        552
+      ],
+      "description" : "Insufficient sanitizing in the TeX notation filter resulted in an arbitrary file read risk on sites where pdfTeX is available (such as those with TeX Live installed)."
+    },
+    {
+      "id" : "CVE-2025-26526",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        863
+      ],
+      "description" : "Separate Groups mode restrictions were not factored into permission checks before allowing viewing or deletion of responses in Feedback activities."
+    },
+    {
+      "id" : "CVE-2025-26527",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        1230
+      ],
+      "description" : "Tags not expected to be visible to a user could still be discovered by them via the tag search page or in the tags block."
+    },
+    {
+      "id" : "CVE-2025-26528",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.4,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "The drag-and-drop onto image (ddimageortext) question type required additional sanitizing to prevent a stored XSS risk."
+    },
+    {
+      "id" : "CVE-2025-26529",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.3,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Description information displayed in the site administration live log required additional sanitizing to prevent a stored XSS risk."
+    },
+    {
+      "id" : "CVE-2025-26530",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.3,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "The question bank filter required additional sanitizing to prevent a reflected XSS risk."
+    },
+    {
+      "id" : "CVE-2025-26531",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.1,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        863
+      ],
+      "description" : "Insufficient capability checks made it possible to disable badges a user does not have permission to access."
+    },
+    {
+      "id" : "CVE-2025-26532",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.1,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        863
+      ],
+      "description" : "Additional checks were required to ensure trusttext is applied (when enabled) to glossary entries being restored."
+    },
+    {
+      "id" : "CVE-2025-26533",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.1,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        89
+      ],
+      "description" : "An SQL injection risk was identified in the module list filter within course search."
+    },
+    {
+      "id" : "CVE-2025-27137",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.4,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        73
+      ],
+      "description" : "Dependency-Track is a component analysis platform that allows organizations to identify and reduce risk in the software supply chain. Dependency-Track allows users with the `SYSTEM_CONFIGURATION` permission to customize notification templates. Templates are evaluated using the Pebble template engine. Pebble supports an `include` tag, which allows template authors to include the content of arbitrary files upon evaluation. Prior to version 4.12.6, users of Dependency-Track with the `SYSTEM_CONFIGURATION` permission can abuse the `include` tag by crafting notification templates that `include` sensitive local files, such as `/etc/passwd` or `/proc/1/environ`. By configuring such a template for a notification rule (aka \"Alert\"), and having it send notifications to a destination controlled by the actor, sensitive information may be leaked. The issue has been fixed in Dependency-Track 4.12.6. In fixed versions, the `include` tag can no longer be used. Usage of the tag will cause template evaluation to fail. As a workaround, avoid assigning the `SYSTEM_CONFIGURATION` permission to untrusted users. The `SYSTEM_CONFIGURATION` permission per default is only granted to members of the `Administrators` team. Assigning this permission to non-administrative users or teams is a security risk in itself, and highly discouraged."
+    },
+    {
+      "id" : "CVE-2025-25513",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "Seacms <=13.3 is vulnerable to SQL Injection in admin_members.php."
+    },
+    {
+      "id" : "CVE-2025-27140",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        78,
+        284
+      ],
+      "description" : "WeGIA is a Web manager for charitable institutions. An OS Command Injection vulnerability was discovered in versions prior to 3.2.15 of the WeGIA application, `importar_dump.php` endpoint. This vulnerability could allow an attacker to execute arbitrary code remotely. The command is basically a command to move a temporary file, so a webshell upload is also possible. Version 3.2.15 contains a patch for the issue."
+    },
+    {
+      "id" : "CVE-2024-53544",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        89
+      ],
+      "description" : "NovaCHRON Zeitsysteme GmbH & Co. KG Smart Time Plus v8.x to v8.6 was discovered to contain a SQL injection vulnerability via the getCookieNames method in the smarttimeplus/MySQLConnection endpoint."
+    },
+    {
+      "id" : "CVE-2024-56525",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        276
+      ],
+      "description" : "In Public Knowledge Project (PKP) OJS, OMP, and OPS before 3.3.0.21 and 3.4.x before 3.4.0.8, an XXE attack by the Journal Editor Role can create a new role as super admin in the journal context, and insert a backdoor plugin, by uploading a crafted XML document as a User XML Plugin."
+    },
+    {
+      "id" : "CVE-2025-22974",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        89
+      ],
+      "description" : "SQL Injection vulnerability in SeaCMS v.13.2 and before allows a remote attacker to execute arbitrary code via the DoTranExecSql parameter in the phome.php component."
+    },
+    {
+      "id" : "CVE-2025-1640",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability was found in Benner ModernaNet up to 1.1.0 and classified as critical. Affected by this issue is some unknown functionality of the file /Home/JS_CarregaCombo?formName=DADOS_PESSOAIS_PLANO&additionalCondition=&insideParameters=&elementToReturn=DADOS_PESSOAIS_PLANO&ordenarPelaDescricao=true&direcaoOrdenacao=asc&_=1739290047295. The manipulation leads to sql injection. The attack may be launched remotely. Upgrading to version 1.1.1 is able to address this issue. It is recommended to upgrade the affected component."
+    },
+    {
+      "id" : "CVE-2025-1641",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability was found in Benner ModernaNet up to 1.1.0. It has been classified as critical. This affects an unknown part of the file /AGE0000700/GetHorariosDoDia?idespec=0&idproced=1103&data=2025-02-25+19%3A25&agserv=0&convenio=1&localatend=1&idplano=5&pesfis=01&idprofissional=0&target=.horarios--dia--d0&_=1739371223797. The manipulation leads to sql injection. It is possible to initiate the attack remotely. Upgrading to version 1.1.1 is able to address this issue. It is recommended to upgrade the affected component."
+    },
+    {
+      "id" : "CVE-2025-1642",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        99
+      ],
+      "description" : "A vulnerability was found in Benner ModernaNet up to 1.1.0. It has been declared as critical. This vulnerability affects unknown code of the file /AGE0000700/GetImageMedico?fooId=1. The manipulation of the argument fooId leads to improper control of resource identifiers. The attack can be initiated remotely. Upgrading to version 1.1.1 is able to address this issue. It is recommended to upgrade the affected component."
+    },
+    {
+      "id" : "CVE-2025-1643",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        352,
+        862
+      ],
+      "description" : "A vulnerability was found in Benner ModernaNet up to 1.1.0. It has been rated as problematic. This issue affects some unknown processing of the file /DadosPessoais/SG_AlterarSenha. The manipulation leads to cross-site request forgery. The attack may be initiated remotely. Upgrading to version 1.1.1 is able to address this issue. It is recommended to upgrade the affected component."
+    },
+    {
+      "id" : "CVE-2025-1644",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        352,
+        862
+      ],
+      "description" : "A vulnerability classified as problematic has been found in Benner ModernaNet up to 1.2.0. Affected is an unknown function of the file /DadosPessoais/SG_Gravar. The manipulation of the argument idItAg leads to cross-site request forgery. It is possible to launch the attack remotely. Upgrading to version 1.2.1 is able to address this issue. It is recommended to upgrade the affected component."
+    },
+    {
+      "id" : "CVE-2025-27145",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.6,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79,
+        83
+      ],
+      "description" : "copyparty, a portable file server, has a DOM-based cross-site scripting vulnerability in versions prior to 1.16.15. The vulnerability is considered low-risk. By handing someone a maliciously-named file, and then tricking them into dragging the file into copyparty's Web-UI, an attacker could execute arbitrary javascript with the same privileges as that user. For example, this could give unintended read-access to files owned by that user. The bug is triggered by the drag-drop action itself; it is not necessary to actually initiate the upload. The file must be empty (zero bytes). Note that, as a general-purpose webserver, it is intentionally possible to upload HTML-files with arbitrary javascript in `<script>` tags, which will execute when the file is opened. The difference is that this vulnerability would trigger execution of javascript during the act of uploading, and not when the uploaded file was opened. Version 1.16.15 contains a fix."
+    },
+    {
+      "id" : "CVE-2024-10545",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:L/I:L/A:N"
+        }
+      ],
+      "description" : "The Photo Gallery, Sliders, Proofing and WordPress plugin before 3.59.9 does not sanitise and escape some of its Image settings, which could allow high privilege users such as Admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)"
+    },
+    {
+      "id" : "CVE-2025-1063",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        200
+      ],
+      "description" : "The Classified Listing – Classified ads & Business Directory Plugin plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 4.0.4 via the rtcl_taxonomy_settings_export function. This makes it possible for unauthenticated attackers to extract sensitive data including API keys and tokens."
+    },
+    {
+      "id" : "CVE-2025-1128",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        434
+      ],
+      "description" : "The Everest Forms – Contact Forms, Quiz, Survey, Newsletter & Payment Form Builder for WordPress plugin for WordPress is vulnerable to arbitrary file upload, read, and deletion due to missing file type and path validation in the 'format' method of the EVF_Form_Fields_Upload class in all versions up to, and including, 3.0.9.4. This makes it possible for unauthenticated attackers to upload, read, and delete arbitrary files on the affected site's server which may make remote code execution, sensitive information disclosure, or a site takeover possible.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-1648",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        89
+      ],
+      "description" : "The Yawave plugin for WordPress is vulnerable to SQL Injection via the 'lbid' parameter in all versions up to, and including, 2.9.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database."
+    },
+    {
+      "id" : "CVE-2025-1673",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.2,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "A malicious or malformed DNS packet without a payload can cause an out-of-bounds read, resulting in a crash (denial of service) or an incorrect computation."
+    },
+    {
+      "id" : "CVE-2024-13494",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        352
+      ],
+      "description" : "The WordPress File Upload plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 4.25.2. This is due to missing or incorrect nonce validation on the 'wfu_file_details' function. This makes it possible for unauthenticated attackers to modify user data details associated with uploaded files via a forged request granted they can trick a site administrator into performing an action such as clicking on a link."
+    },
+    {
+      "id" : "CVE-2025-1674",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.2,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "A lack of input validation allows for out of bounds reads caused by malicious or malformed packets."
+    },
+    {
+      "id" : "CVE-2025-1675",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.2,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "The function dns_copy_qname in dns_pack.c performs performs a memcpy operation with an untrusted field and does not check if the source buffer is large enough to contain the copied data."
+    },
+    {
+      "id" : "CVE-2024-13693",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        284
+      ],
+      "description" : "The Enfold theme for WordPress is vulnerable to unauthorized access of data due to a missing capability check in avia-export-class.php in all versions up to, and including, 6.0.9. This makes it possible for unauthenticated attackers to export all avia settings which may included sensitive information such as the Mailchimp API Key, reCAPTCHA Secret Key, or Envato private token if they are set."
+    },
+    {
+      "id" : "CVE-2024-13695",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.4,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        918
+      ],
+      "description" : "The Enfold theme for WordPress is vulnerable to Server-Side Request Forgery in all versions up to, and including, 6.0.9 via the 'attachment_id' parameter. This makes it possible for authenticated attackers, with Subscriber-level access and above, to make web requests to arbitrary locations originating from the web application and can be used to query and modify information from internal services."
+    },
+    {
+      "id" : "CVE-2025-1262",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        804
+      ],
+      "description" : "The Advanced Google reCaptcha plugin for WordPress is vulnerable to CAPTCHA Bypass in versions up to, and including, 1.27 . This makes it possible for unauthenticated attackers to bypass the Built-in Math Captcha Verification."
+    },
+    {
+      "id" : "CVE-2024-51539",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 2.3,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        89
+      ],
+      "description" : "The Dell Secure Connect Gateway (SCG) Application and Appliance, versions prior to 5.28, contains a SQL injection vulnerability due to improper neutralization of special elements used in an SQL command. This vulnerability can only be exploited locally on the affected system. A high-privilege attacker with access to the system could potentially exploit this vulnerability, leading to the disclosure of non-sensitive information that does not include any customer data."
+    },
+    {
+      "id" : "CVE-2023-25574",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 10.0,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        347
+      ],
+      "description" : "`jupyterhub-ltiauthenticator` is a JupyterHub authenticator for learning tools interoperability (LTI). LTI13Authenticator that was introduced in `jupyterhub-ltiauthenticator` 1.3.0 wasn't validating JWT signatures. This is believed to allow the LTI13Authenticator to authorize a forged request. Only users that has configured a JupyterHub installation to use the authenticator class `LTI13Authenticator` are affected. `jupyterhub-ltiauthenticator` version 1.4.0 removes LTI13Authenticator to address the issue. No known workarounds are available."
+    },
+    {
+      "id" : "CVE-2024-34034",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.7,
+          "vector" : "CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H"
+        }
+      ],
+      "cwes" : [
+        617
+      ],
+      "description" : "An issue was discovered in FlexRIC 2.0.0. It crashes during a Subscription Request denial-of-service (DoS) attack, triggered by an assertion error. An attacker must send a high number of E42 Subscription Requests to the Near-RT RIC component."
+    },
+    {
+      "id" : "CVE-2024-34035",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.7,
+          "vector" : "CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H"
+        }
+      ],
+      "cwes" : [
+        400,
+        617
+      ],
+      "description" : "An issue was discovered in O-RAN Near Realtime RIC H-Release. To trigger the crashing of the e2mgr, an adversary must flood the system with a significant quantity of E2 Subscription Requests originating from an xApp."
+    },
+    {
+      "id" : "CVE-2024-34036",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        400,
+        617
+      ],
+      "description" : "An issue was discovered in O-RAN Near Realtime RIC I-Release. To exploit this vulnerability, an attacker can disrupt the initial connection between a gNB and the Near RT-RIC by inundating the system with a high volume of subscription requests via an xApp."
+    },
+    {
+      "id" : "CVE-2024-54444",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Elementor Elementor Website Builder allows Stored XSS. This issue affects Elementor Website Builder: from n/a through 3.25.10."
+    },
+    {
+      "id" : "CVE-2025-26751",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Fahad Mahmood Alphabetic Pagination allows Reflected XSS. This issue affects Alphabetic Pagination: from n/a through 3.2.1."
+    },
+    {
+      "id" : "CVE-2025-26752",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.6,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        22
+      ],
+      "description" : "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in videowhisper VideoWhisper Live Streaming Integration allows Path Traversal. This issue affects VideoWhisper Live Streaming Integration: from n/a through 6.2."
+    },
+    {
+      "id" : "CVE-2025-26753",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        22
+      ],
+      "description" : "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in videowhisper VideoWhisper Live Streaming Integration allows Path Traversal. This issue affects VideoWhisper Live Streaming Integration: from n/a through 6.2."
+    },
+    {
+      "id" : "CVE-2025-26868",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in fastflow Fast Flow allows Reflected XSS. This issue affects Fast Flow: from n/a through 1.2.16."
+    },
+    {
+      "id" : "CVE-2025-26871",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        862
+      ],
+      "description" : "Missing Authorization vulnerability in WPDeveloper Essential Blocks for Gutenberg allows Exploiting Incorrectly Configured Access Control Security Levels. This issue affects Essential Blocks for Gutenberg: from n/a through 4.8.3."
+    },
+    {
+      "id" : "CVE-2025-26876",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        35
+      ],
+      "description" : "Path Traversal vulnerability in CodeManas Search with Typesense allows Path Traversal. This issue affects Search with Typesense: from n/a through 2.0.8."
+    },
+    {
+      "id" : "CVE-2025-26877",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Rustaurius Front End Users allows Stored XSS. This issue affects Front End Users: from n/a through 3.2.30."
+    },
+    {
+      "id" : "CVE-2025-26878",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in patternsinthecloud Autoship Cloud for WooCommerce Subscription Products allows DOM-Based XSS. This issue affects Autoship Cloud for WooCommerce Subscription Products: from n/a through 2.8.0.1."
+    },
+    {
+      "id" : "CVE-2025-26881",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in bPlugins Sticky Content allows Stored XSS. This issue affects Sticky Content: from n/a through 1.0.1."
+    },
+    {
+      "id" : "CVE-2025-26882",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in GhozyLab Popup Builder allows Stored XSS. This issue affects Popup Builder: from n/a through 1.1.33."
+    },
+    {
+      "id" : "CVE-2025-26884",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in wpsoul Greenshift allows Stored XSS. This issue affects Greenshift: from n/a through 10.8."
+    },
+    {
+      "id" : "CVE-2025-26887",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Eli EZ SQL Reports Shortcode Widget and DB Backup allows Stored XSS. This issue affects EZ SQL Reports Shortcode Widget and DB Backup: from n/a through 5.21.35."
+    },
+    {
+      "id" : "CVE-2025-26891",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in VW THEMES Ibtana allows Stored XSS. This issue affects Ibtana: from n/a through 1.2.4.9."
+    },
+    {
+      "id" : "CVE-2025-26893",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Kiran Potphode Easy Charts allows DOM-Based XSS. This issue affects Easy Charts: from n/a through 1.2.3."
+    },
+    {
+      "id" : "CVE-2025-26896",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in vpiwigo PiwigoPress allows Stored XSS. This issue affects PiwigoPress: from n/a through 2.33."
+    },
+    {
+      "id" : "CVE-2025-26897",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Baden List Related Attachments allows DOM-Based XSS. This issue affects List Related Attachments: from n/a through 2.1.6."
+    },
+    {
+      "id" : "CVE-2025-26900",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        502
+      ],
+      "description" : "Deserialization of Untrusted Data vulnerability in flexmls Flexmls® IDX allows Object Injection. This issue affects Flexmls® IDX: from n/a through 3.14.27."
+    },
+    {
+      "id" : "CVE-2025-26904",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in gal_op WP Responsive Auto Fit Text allows DOM-Based XSS. This issue affects WP Responsive Auto Fit Text: from n/a through 0.2."
+    },
+    {
+      "id" : "CVE-2025-26905",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        22
+      ],
+      "description" : "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in Estatik Estatik allows PHP Local File Inclusion. This issue affects Estatik: from n/a through 4.1.9."
+    },
+    {
+      "id" : "CVE-2025-26907",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Estatik Mortgage Calculator Estatik allows Stored XSS. This issue affects Mortgage Calculator Estatik: from n/a through 2.0.12."
+    },
+    {
+      "id" : "CVE-2025-26911",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        497
+      ],
+      "description" : "Exposure of Sensitive System Information to an Unauthorized Control Sphere vulnerability in Bowo System Dashboard allows Exploiting Incorrectly Configured Access Control Security Levels. This issue affects System Dashboard: from n/a through 2.8.18."
+    },
+    {
+      "id" : "CVE-2025-26912",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in HashThemes Easy Elementor Addons allows Stored XSS. This issue affects Easy Elementor Addons: from n/a through 2.1.6."
+    },
+    {
+      "id" : "CVE-2025-26913",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in webandprint AR For WordPress allows DOM-Based XSS. This issue affects AR For WordPress: from n/a through 7.7."
+    },
+    {
+      "id" : "CVE-2025-26915",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        89
+      ],
+      "description" : "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in PickPlugins Wishlist allows SQL Injection. This issue affects Wishlist: from n/a through 1.0.41."
+    },
+    {
+      "id" : "CVE-2025-26926",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        352
+      ],
+      "description" : "Cross-Site Request Forgery (CSRF) vulnerability in NotFound Booknetic. This issue affects Booknetic: from n/a through 4.0.9."
+    },
+    {
+      "id" : "CVE-2025-26928",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        862
+      ],
+      "description" : "Missing Authorization vulnerability in xfinitysoft Order Limit for WooCommerce allows Exploiting Incorrectly Configured Access Control Security Levels. This issue affects Order Limit for WooCommerce: from n/a through 3.0.2."
+    },
+    {
+      "id" : "CVE-2025-26931",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        352
+      ],
+      "description" : "Cross-Site Request Forgery (CSRF) vulnerability in Tribulant Software Tribulant Gallery Voting allows Stored XSS. This issue affects Tribulant Gallery Voting: from n/a through 1.2.1."
+    },
+    {
+      "id" : "CVE-2025-26932",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        98
+      ],
+      "description" : "Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in QuantumCloud ChatBot allows PHP Local File Inclusion. This issue affects ChatBot: from n/a through 6.3.5."
+    },
+    {
+      "id" : "CVE-2025-26935",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        35
+      ],
+      "description" : "Path Traversal vulnerability in wpjobportal WP Job Portal allows PHP Local File Inclusion. This issue affects WP Job Portal: from n/a through 2.2.8."
+    },
+    {
+      "id" : "CVE-2025-26937",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in bPlugins Icon List Block allows Stored XSS. This issue affects Icon List Block: from n/a through 1.1.3."
+    },
+    {
+      "id" : "CVE-2025-26938",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in bPlugins Countdown Timer allows Stored XSS. This issue affects Countdown Timer: from n/a through 1.2.6."
+    },
+    {
+      "id" : "CVE-2025-26939",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in bPlugins Counters Block allows Stored XSS. This issue affects Counters Block: from n/a through 1.1.2."
+    },
+    {
+      "id" : "CVE-2025-26943",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        89
+      ],
+      "description" : "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Jürgen Müller Easy Quotes allows Blind SQL Injection. This issue affects Easy Quotes: from n/a through 1.2.2."
+    },
+    {
+      "id" : "CVE-2025-26945",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in bPlugins Info Cards – Gutenberg block for creating Beautiful Cards allows Stored XSS. This issue affects Info Cards – Gutenberg block for creating Beautiful Cards: from n/a through 1.0.5."
+    },
+    {
+      "id" : "CVE-2025-26946",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.6,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        89
+      ],
+      "description" : "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in jgwhite33 WP Yelp Review Slider allows Blind SQL Injection. This issue affects WP Yelp Review Slider: from n/a through 8.1."
+    },
+    {
+      "id" : "CVE-2025-26947",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in bPlugins Services Section block allows Stored XSS. This issue affects Services Section block: from n/a through 1.3.4."
+    },
+    {
+      "id" : "CVE-2025-26948",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        862
+      ],
+      "description" : "Missing Authorization vulnerability in NotFound Pie Register Premium. This issue affects Pie Register Premium: from n/a through 3.8.3.2."
+    },
+    {
+      "id" : "CVE-2025-26949",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in bPlugins Team Section Block allows Stored XSS. This issue affects Team Section Block: from n/a through 1.0.9."
+    },
+    {
+      "id" : "CVE-2025-26952",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in bPlugins Business Card Block allows Stored XSS. This issue affects Business Card Block: from n/a through 1.0.5."
+    },
+    {
+      "id" : "CVE-2025-26957",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        98
+      ],
+      "description" : "Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in Deetronix Affiliate Coupons allows PHP Local File Inclusion. This issue affects Affiliate Coupons: from n/a through 1.7.3."
+    },
+    {
+      "id" : "CVE-2025-26960",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        862
+      ],
+      "description" : "Missing Authorization vulnerability in enituretechnology Small Package Quotes – Unishippers Edition allows Exploiting Incorrectly Configured Access Control Security Levels. This issue affects Small Package Quotes – Unishippers Edition: from n/a through 2.4.9."
+    },
+    {
+      "id" : "CVE-2025-26962",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in GhozyLab Easy Contact Form Lite allows Stored XSS. This issue affects Easy Contact Form Lite : from n/a through 1.1.25."
+    },
+    {
+      "id" : "CVE-2025-26963",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.4,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        352
+      ],
+      "description" : "Cross-Site Request Forgery (CSRF) vulnerability in flowdee ClickWhale allows Cross Site Request Forgery. This issue affects ClickWhale: from n/a through 2.4.3."
+    },
+    {
+      "id" : "CVE-2025-26964",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        98
+      ],
+      "description" : "Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in Themewinter Eventin allows PHP Local File Inclusion. This issue affects Eventin: from n/a through 4.0.20."
+    },
+    {
+      "id" : "CVE-2025-26965",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        639
+      ],
+      "description" : "Authorization Bypass Through User-Controlled Key vulnerability in ameliabooking Amelia allows Exploiting Incorrectly Configured Access Control Security Levels. This issue affects Amelia: from n/a through 1.2.16."
+    },
+    {
+      "id" : "CVE-2025-26966",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        288
+      ],
+      "description" : "Authentication Bypass Using an Alternate Path or Channel vulnerability in Aldo Latino PrivateContent. This issue affects PrivateContent: from n/a through 8.11.5."
+    },
+    {
+      "id" : "CVE-2025-26971",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.6,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        89
+      ],
+      "description" : "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in ays-pro Poll Maker allows Blind SQL Injection. This issue affects Poll Maker: from n/a through 5.6.5."
+    },
+    {
+      "id" : "CVE-2025-26974",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        89
+      ],
+      "description" : "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in WPExperts.io WP Multi Store Locator allows Blind SQL Injection. This issue affects WP Multi Store Locator: from n/a through 2.5.1."
+    },
+    {
+      "id" : "CVE-2025-26975",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        862
+      ],
+      "description" : "Missing Authorization vulnerability in WP Chill Strong Testimonials allows Accessing Functionality Not Properly Constrained by ACLs. This issue affects Strong Testimonials: from n/a through 3.2.3."
+    },
+    {
+      "id" : "CVE-2025-26977",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        639
+      ],
+      "description" : "Authorization Bypass Through User-Controlled Key vulnerability in Ninja Team Filebird allows Exploiting Incorrectly Configured Access Control Security Levels. This issue affects Filebird: from n/a through 6.4.2.1."
+    },
+    {
+      "id" : "CVE-2025-26979",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        98
+      ],
+      "description" : "Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in FunnelKit Funnel Builder by FunnelKit allows PHP Local File Inclusion. This issue affects Funnel Builder by FunnelKit: from n/a through 3.9.0."
+    },
+    {
+      "id" : "CVE-2025-26980",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Wired Impact Wired Impact Volunteer Management allows Stored XSS. This issue affects Wired Impact Volunteer Management: from n/a through 2.5."
+    },
+    {
+      "id" : "CVE-2025-26981",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in accessiBe Web Accessibility By accessiBe allows Reflected XSS. This issue affects Web Accessibility By accessiBe: from n/a through 2.5."
+    },
+    {
+      "id" : "CVE-2025-26983",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        862
+      ],
+      "description" : "Missing Authorization vulnerability in WPZOOM Recipe Card Blocks for Gutenberg & Elementor allows Exploiting Incorrectly Configured Access Control Security Levels. This issue affects Recipe Card Blocks for Gutenberg & Elementor: from n/a through 3.4.3."
+    },
+    {
+      "id" : "CVE-2025-26985",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.1,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        98
+      ],
+      "description" : "Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in Majestic Support Majestic Support allows PHP Local File Inclusion. This issue affects Majestic Support: from n/a through 1.0.6."
+    },
+    {
+      "id" : "CVE-2025-26987",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Shabti Kaplan Frontend Admin by DynamiApps allows Reflected XSS. This issue affects Frontend Admin by DynamiApps: from n/a through 3.25.17."
+    },
+    {
+      "id" : "CVE-2025-26991",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in ollybach WPPizza allows Reflected XSS. This issue affects WPPizza: from n/a through 3.19.4."
+    },
+    {
+      "id" : "CVE-2025-26993",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Vito Peleg Atarim allows Reflected XSS. This issue affects Atarim: from n/a through 4.1.0."
+    },
+    {
+      "id" : "CVE-2025-26995",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.4,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        862
+      ],
+      "description" : "Missing Authorization vulnerability in Anton Vanyukov Market Exporter allows Exploiting Incorrectly Configured Access Control Security Levels. This issue affects Market Exporter: from n/a through 2.0.21."
+    },
+    {
+      "id" : "CVE-2025-27000",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.4,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        862
+      ],
+      "description" : "Missing Authorization vulnerability in George Pattichis Simple Photo Feed allows Exploiting Incorrectly Configured Access Control Security Levels. This issue affects Simple Photo Feed: from n/a through 1.4.0."
+    },
+    {
+      "id" : "CVE-2025-21626",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        200
+      ],
+      "description" : "GLPI is a free asset and IT management software package. Starting in version 0.71 and prior to version 10.0.18, an anonymous user can fetch sensitive information from the `status.php` endpoint. Version 10.0.18 contains a fix for the issue. Some workarounds are available. One may delete the `status.php` file, restrict its access, or remove any sensitive values from the `name` field of the active LDAP directories, mail servers authentication providers and mail receivers."
+    },
+    {
+      "id" : "CVE-2025-21627",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "GLPI is a free asset and IT management software package. In versions prior to 10.0.18, a malicious link can be crafted to perform a reflected XSS attack on the search page. If the anonymous ticket creation is enabled, this attack can be performed by an unauthenticated user. Version 10.0.18 contains a fix for the issue."
+    },
+    {
+      "id" : "CVE-2025-26594",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        416
+      ],
+      "description" : "A use-after-free flaw was found in X.Org and Xwayland. The root cursor is referenced in the X server as a global variable. If a client frees the root cursor, the internal reference points to freed memory and causes a use-after-free."
+    },
+    {
+      "id" : "CVE-2025-26595",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        121
+      ],
+      "description" : "A buffer overflow flaw was found in X.Org and Xwayland. The code in XkbVModMaskText() allocates a fixed-sized buffer on the stack and copies the names of the virtual modifiers to that buffer. The code fails to check the bounds of the buffer and would copy the data regardless of the size."
+    },
+    {
+      "id" : "CVE-2025-26596",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        122
+      ],
+      "description" : "A heap overflow flaw was found in X.Org and Xwayland. The computation of the length in XkbSizeKeySyms() differs from what is written in XkbWriteKeySyms(), which may lead to a heap-based buffer overflow."
+    },
+    {
+      "id" : "CVE-2025-26597",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        122
+      ],
+      "description" : "A buffer overflow flaw was found in X.Org and Xwayland. If XkbChangeTypesOfKey() is called with a 0 group, it will resize the key symbols table to 0 but leave the key actions unchanged. If the same function is later called with a non-zero value of groups, this will cause a buffer overflow because the key actions are of the wrong size."
+    },
+    {
+      "id" : "CVE-2025-26598",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "An out-of-bounds write flaw was found in X.Org and Xwayland. The function GetBarrierDevice() searches for the pointer device based on its device ID and returns the matching value, or supposedly NULL, if no match was found. However, the code will return the last element of the list if no matching device ID is found, which can lead to out-of-bounds memory access."
+    },
+    {
+      "id" : "CVE-2025-26599",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        824
+      ],
+      "description" : "An access to an uninitialized pointer flaw was found in X.Org and Xwayland. The function compCheckRedirect() may fail if it cannot allocate the backing pixmap. In that case, compRedirectWindow() will return a BadAlloc error without validating the window tree marked just before, which leaves the validated data partly initialized and the use of an uninitialized pointer later."
+    },
+    {
+      "id" : "CVE-2025-26600",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        416
+      ],
+      "description" : "A use-after-free flaw was found in X.Org and Xwayland. When a device is removed while still frozen, the events queued for that device remain while the device is freed. Replaying the events will cause a use-after-free."
+    },
+    {
+      "id" : "CVE-2025-26601",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        416
+      ],
+      "description" : "A use-after-free flaw was found in X.Org and Xwayland. When changing an alarm, the values of the change mask are evaluated one after the other, changing the trigger values as requested, and eventually, SyncInitTrigger() is called. If one of the changes triggers an error, the function will return early, not adding the new sync object, possibly causing a use-after-free when the alarm eventually triggers."
+    },
+    {
+      "id" : "CVE-2024-12368",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "cwes" : [
+        284
+      ],
+      "description" : "Improper access control in the auth_oauth module of Odoo Community 15.0 and Odoo Enterprise 15.0 allows an internal user to export the OAuth tokens of other users."
+    },
+    {
+      "id" : "CVE-2025-25192",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        200
+      ],
+      "description" : "GLPI is a free asset and IT management software package. Prior to version 10.0.18, a low privileged user can enable debug mode and access sensitive information. Version 10.0.18 contains a patch. As a workaround, one may delete the `install/update.php` file."
+    },
+    {
+      "id" : "CVE-2024-36259",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        284
+      ],
+      "description" : "Improper access control in mail module of Odoo Community 17.0 and Odoo Enterprise 17.0 allows remote authenticated attackers to extract sensitive information via an oracle-based (yes/no response) crafted attack."
+    },
+    {
+      "id" : "CVE-2024-45417",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.0,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "cwes" : [
+        708
+      ],
+      "description" : "Uncontrolled resource consumption in the installer for some Zoom apps for macOS before version 6.1.5 may allow a privileged user to conduct a disclosure of information via local access."
+    },
+    {
+      "id" : "CVE-2024-45418",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.4,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        61
+      ],
+      "description" : "Symlink following in the installer for some Zoom apps for macOS before version 6.1.5 may allow an authenticated user to conduct an escalation of privilege via network access."
+    },
+    {
+      "id" : "CVE-2024-45421",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.5,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        122
+      ],
+      "description" : "Buffer overflow in some Zoom Apps may allow an authenticated user to conduct an escalation of privilege via network access."
+    },
+    {
+      "id" : "CVE-2024-45424",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        840
+      ],
+      "description" : "Business logic error in some Zoom Workplace Apps may allow an unauthenticated user to conduct a disclosure of information via network access."
+    },
+    {
+      "id" : "CVE-2024-45425",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.9,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        286
+      ],
+      "description" : "Incorrect user management in some Zoom Workplace Apps may allow a privileged user to conduct an information disclosure via network access."
+    },
+    {
+      "id" : "CVE-2024-45426",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.9,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        708
+      ],
+      "description" : "Incorrect ownership assignment in some Zoom Workplace Apps may allow a privileged user to conduct an information disclosure via network access."
+    },
+    {
+      "id" : "CVE-2025-27139",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Combodo iTop is a web based IT service management tool. Versions prior to 2.7.12, 3.1.2, and 3.2.0 are vulnerable to cross-site scripting when the preferences page is opened. Versions 2.7.12, 3.1.2, and 3.2.0 fix the issue."
+    },
+    {
+      "id" : "CVE-2025-27146",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 2.7,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        77,
+        88
+      ],
+      "description" : "matrix-appservice-irc is a Node.js IRC bridge for Matrix. The matrix-appservice-irc bridge up to version 3.0.3 contains a vulnerability which can lead to arbitrary IRC command execution as the puppeted user. The attacker can only inject commands executed as their own IRC user. The vulnerability has been patched in matrix-appservice-irc version 3.0.4."
+    },
+    {
+      "id" : "CVE-2024-0148",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.6,
+          "vector" : "CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        447
+      ],
+      "description" : "NVIDIA Jetson Linux and IGX OS image contains a vulnerability in the UEFI firmware RCM boot mode, where an unprivileged attacker with physical access to the device could load untrusted code. A successful exploit might lead to code execution, escalation of privileges, data tampering, denial of service, and information disclosure. The scope of the impacts can extend to other components.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-27239",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        369
+      ],
+      "description" : "Use after free in some Zoom Workplace Apps and SDKs may allow an authenticated user to conduct a denial of service via network access."
+    },
+    {
+      "id" : "CVE-2024-27245",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        122
+      ],
+      "description" : "Buffer overflow in some Zoom Workplace Apps and SDKs may allow an authenticated user to conduct a denial of service via network access."
+    },
+    {
+      "id" : "CVE-2024-27246",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        416
+      ],
+      "description" : "Use after free in some Zoom Workplace Apps and SDKs may allow an authenticated user to conduct a denial of service via network access."
+    },
+    {
+      "id" : "CVE-2024-53870",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.3,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "NVIDIA CUDA toolkit for all platforms contains a vulnerability in the cuobjdump binary, where a user could cause an out-of-bounds read by passing a malformed ELF file to cuobjdump. A successful exploit of this vulnerability might lead to a partial denial of service."
+    },
+    {
+      "id" : "CVE-2024-53871",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.3,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "NVIDIA CUDA toolkit for all platforms contains a vulnerability in the nvdisasm binary, where a user could cause an out-of-bounds read by passing a malformed ELF file to nvdisasm. A successful exploit of this vulnerability might lead to a partial denial of service."
+    },
+    {
+      "id" : "CVE-2024-53872",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.3,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "NVIDIA CUDA toolkit for all platforms contains a vulnerability in the cuobjdump binary, where a user could cause an out-of-bounds read by passing a malformed ELF file to cuobjdump. A successful exploit of this vulnerability might lead to a partial denial of service."
+    },
+    {
+      "id" : "CVE-2024-53873",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.3,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "NVIDIA CUDA toolkit for Windows contains a vulnerability in the cuobjdump binary, where a user could cause an out-of-bounds read by passing a malformed ELF file to cuobjdump. A successful exploit of this vulnerability might lead to a partial denial of service."
+    },
+    {
+      "id" : "CVE-2024-53874",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.3,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "NVIDIA CUDA toolkit for all platforms contains a vulnerability in the cuobjdump binary, where a user could cause an out-of-bounds read by passing a malformed ELF file to cuobjdump. A successful exploit of this vulnerability might lead to a partial denial of service."
+    },
+    {
+      "id" : "CVE-2024-53875",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.3,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "NVIDIA CUDA toolkit for all platforms contains a vulnerability in the cuobjdump binary, where a user could cause an out-of-bounds read by passing a malformed ELF file to cuobjdump. A successful exploit of this vulnerability might lead to a partial denial of service."
+    },
+    {
+      "id" : "CVE-2024-53876",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.3,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "NVIDIA CUDA toolkit for all platforms contains a vulnerability in the nvdisasm binary, where a user could cause an out-of-bounds read by passing a malformed ELF file to nvdisasm. A successful exploit of this vulnerability might lead to a partial denial of service."
+    },
+    {
+      "id" : "CVE-2024-53877",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.3,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        476
+      ],
+      "description" : "NVIDIA CUDA toolkit for all platforms contains a vulnerability in the nvdisasm binary, where a user could cause a NULL pointer exception by passing a malformed ELF file to nvdisasm. A successful exploit of this vulnerability might lead to a partial denial of service."
+    },
+    {
+      "id" : "CVE-2024-53878",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 2.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        1284
+      ],
+      "description" : "NVIDIA CUDA toolkit for Linux and Windows contains a vulnerability in the cuobjdump binary, where a user could cause a crash by passing a malformed ELF file to cuobjdump. A successful exploit of this vulnerability might lead to a partial denial of service."
+    },
+    {
+      "id" : "CVE-2024-53879",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 2.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        1284
+      ],
+      "description" : "NVIDIA CUDA toolkit for Linux and Windows contains a vulnerability in the cuobjdump binary, where a user could cause a crash by passing a malformed ELF file to cuobjdump. A successful exploit of this vulnerability might lead to a partial denial of service."
+    },
+    {
+      "id" : "CVE-2025-27148",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        378,
+        379
+      ],
+      "description" : "Gradle is a build automation tool, and its native-platform tool provides Java bindings for native APIs. On Unix-like systems, the system temporary directory can be created with open permissions that allow multiple users to create and delete files within it. This library initialization could be vulnerable to a local privilege escalation from an attacker quickly deleting and recreating files in the system temporary directory. Gradle builds that rely on versions of net.rubygrapefruit:native-platform prior to 0.22-milestone-28 could be vulnerable to a local privilege escalation from an attacker quickly deleting and recreating files in the system temporary directory. In net.rubygrapefruit:native-platform prior to version 0.22-milestone-28, if the `Native.get(Class<>)` method was called, without calling `Native.init(File)` first, with a non-`null` argument used as working file path, then the library would initialize itself using the system temporary directory and NativeLibraryLocator.java lines 68 through 78. Version 0.22-milestone-28 has been released with changes that fix the problem. Initialization is now mandatory and no longer uses the system temporary directory, unless such a path is passed for initialization. The only workaround for affected versions is to make sure to do a proper initialization, using a location that is safe. Gradle 8.12, only that exact version, had codepaths where the initialization of the underlying native integration library took a default path, relying on copying the binaries to the system temporary directory. Any execution of Gradle exposed this exploit. Users of Windows or modern versions of macOS are not vulnerable, nor are users of a Unix-like operating system with the \"sticky\" bit set or `noexec` on their system temporary directory vulnerable. This problem was fixed in Gradle 8.12.1. Gradle 8.13 release also upgrades to a version of the native library that no longer has that bug. Some workarounds are available. On Unix-like operating systems, ensure that the \"sticky\" bit is set. This only allows the original user (or root) to delete a file. Mounting `/tmp` as `noexec` will prevent Gradle 8.12 from starting. Those who are are unable to change the permissions of the system temporary directory can move the Java temporary directory by setting the System Property java.io.tmpdir. The new path needs to limit permissions to the build user only."
+    },
+    {
+      "id" : "CVE-2025-0514",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        20
+      ],
+      "description" : "Improper Input Validation vulnerability in The Document Foundation LibreOffice allows Windows Executable hyperlink targets to be executed unconditionally on activation.This issue affects LibreOffice: from 24.8 before < 24.8.5."
+    },
+    {
+      "id" : "CVE-2025-22211",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        89
+      ],
+      "description" : "A SQL injection vulnerability in the JoomShopping component versions 1.0.0-1.4.3 for Joomla allows authenticated attackers (administrator) to execute arbitrary SQL commands in the country management area in backend."
+    },
+    {
+      "id" : "CVE-2025-25514",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "Seacms <=13.3 is vulnerable to SQL Injection in admin_collect_news.php."
+    },
+    {
+      "id" : "CVE-2025-25515",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        89
+      ],
+      "description" : "Seacms <=13.3 is vulnerable to SQL Injection in admin_collect.php that allows an authenticated attacker to exploit the database."
+    },
+    {
+      "id" : "CVE-2025-25516",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        89
+      ],
+      "description" : "Seacms <=13.3 is vulnerable to SQL Injection in admin_paylog.php."
+    },
+    {
+      "id" : "CVE-2025-25517",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        89
+      ],
+      "description" : "Seacms <=13.3 is vulnerable to SQL Injection in admin_reslib.php."
+    },
+    {
+      "id" : "CVE-2025-25519",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        89
+      ],
+      "description" : "Seacms <=13.3 is vulnerable to SQL Injection in admin_zyk.php."
+    },
+    {
+      "id" : "CVE-2025-25520",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        89
+      ],
+      "description" : "Seacms <13.3 is vulnerable to SQL Injection in admin_pay.php."
+    },
+    {
+      "id" : "CVE-2025-25521",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        89
+      ],
+      "description" : "Seacms <=13.3 is vulnerable to SQL Injection in admin_type_news.php."
+    },
+    {
+      "id" : "CVE-2024-30150",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        269
+      ],
+      "description" : "HCL MyCloud is affected by Improper Access Control - an unauthenticated privilege escalation vulnerability which may lead to information disclosure and potential for Server-Side Request Forgery (SSRF) and Denial of Service(DOS) attacks from unauthenticated users."
+    }
+  ]
+}

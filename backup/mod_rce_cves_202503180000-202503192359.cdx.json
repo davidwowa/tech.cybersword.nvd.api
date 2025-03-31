@@ -1,0 +1,1301 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.4",
+  "version" : 1,
+  "vulnerabilities" : [
+    {
+      "id" : "CVE-2018-15133",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.1,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        502
+      ],
+      "description" : "In Laravel Framework through 5.5.40 and 5.6.x through 5.6.29, remote code execution might occur as a result of an unserialize call on a potentially untrusted X-XSRF-TOKEN value. This involves the decrypt method in Illuminate/Encryption/Encrypter.php and PendingBroadcast in gadgetchains/Laravel/RCE/3/chain.php in phpggc. The attacker must know the application key, which normally would never occur, but could happen if the attacker previously had privileged access or successfully accomplished a previous attack.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:laravel:laravel:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:laravel:laravel:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2021-42258",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        89
+      ],
+      "description" : "BQE BillQuick Web Suite 2018 through 2021 before 22.0.9.1 allows SQL injection for unauthenticated remote code execution, as exploited in the wild in October 2021 for ransomware installation. SQL injection can, for example, use the txtID (aka username) parameter. Successful exploitation can include the ability to execute arbitrary code as MSSQLSERVER$ via xp_cmdshell.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:bqe:billquick_web_suite:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2022-26352",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        -1
+      ],
+      "description" : "An issue was discovered in the ContentResource API in dotCMS 3.0 through 22.02. Attackers can craft a multipart form request to post a file whose filename is not initially sanitized. This allows directory traversal, in which the file is saved outside of the intended storage location. If anonymous content creation is enabled, this allows an unauthenticated attacker to upload an executable file, such as a .jsp file, that can lead to remote code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:dotcms:dotcms:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-22855",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        94
+      ],
+      "description" : "Kardex Mlog MCC 5.7.12+0-a203c2a213-master allows remote code execution. It spawns a web interface listening on port 8088. A user-controllable path is handed to a path-concatenation method (Path.Combine from .NET) without proper sanitisation. This yields the possibility of including local files, as well as remote files on SMB shares. If one provides a file with the extension .t4, it is rendered with the .NET templating engine mono/t4, which can execute code.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:kardex:kardex_control_center:5.7.12\\+0-a203c2a213-master:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-24078",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        94
+      ],
+      "description" : "Real Time Logic FuguHub v8.1 and earlier was discovered to contain a remote code execution (RCE) vulnerability via the component /FuguHub/cmsdocs/.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:realtimelogic:fuguhub:*:*:*:*:*:windows:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2022-45701",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        -1
+      ],
+      "description" : "Arris TG2482A firmware through 9.1.103GEM9 allow Remote Code Execution (RCE) via the ping utility feature.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:commscope:arris_tg2482a_firmware:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:commscope:arris_tg2482a:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-23452",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        306
+      ],
+      "description" : "Missing Authentication for Critical Function in SICK FX0-GPNT v3 Firmware Version V3.04 and V3.05 allows an unprivileged remote attacker to achieve arbitrary remote code execution via maliciously crafted RK512 commands to the listener on TCP port 9000.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:sick:fx0-gpnt00000_firmware:3.04:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:sick:fx0-gpnt00000_firmware:3.05:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:sick:fx0-gpnt00000:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-23453",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        306
+      ],
+      "description" : "Missing Authentication for Critical Function in SICK FX0-GENT v3 Firmware Version V3.04 and V3.05 allows an unprivileged remote attacker to achieve arbitrary remote code execution via maliciously crafted RK512 commands to the listener on TCP port 9000.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:sick:fx0-gent00010_firmware:3.04:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:sick:fx0-gent00010_firmware:3.05:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:sick:fx0-gent00010:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-26314",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        -1
+      ],
+      "description" : "The mono package before 6.8.0.105+dfsg-3.3 for Debian allows arbitrary code execution because the application/x-ms-dos-executable MIME type is associated with an un-sandboxed Mono CLR interpreter.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:mono-project:mono:5.18.0.240\\+dfsg-3:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:mono-project:mono:6.8.0.105\\+dfsg-3:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-24114",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        -1
+      ],
+      "description" : "typecho 1.1/17.10.30 was discovered to contain a remote code execution (RCE) vulnerability via install.php.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:typecho:typecho:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-25266",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        -1
+      ],
+      "description" : "An issue was discovered in Docmosis Tornado prior to version 2.9.5. An authenticated attacker can change the Office directory setting pointing to an arbitrary remote network path. This triggers the execution of the soffice binary under the attackers control leading to arbitrary remote code execution (RCE).",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:docmosis:tornado:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2022-27677",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        269
+      ],
+      "description" : "Failure to validate privileges during installation of AMD Ryzen™ Master may allow an attacker with low privileges to modify files potentially leading to privilege escalation and code execution by the lower privileged user.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:amd:ryzen_master:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-6123",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization vulnerability affects OpenText ALM Octane version 16.2.100 and above. The vulnerability could result in a remote code execution attack.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:opentext:alm_octane:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-31807",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        94
+      ],
+      "description" : "TOTOLINK EX200 V4.0.3c.7646_B20201211 was discovered to contain a remote code execution (RCE) vulnerability via the hostTime parameter in the NTPSyncWithHost function.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:totolink:ex200_firmware:4.0.3c.7646_b20201211:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:totolink:ex200:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-31808",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        233
+      ],
+      "description" : "TOTOLINK EX200 V4.0.3c.7646_B20201211 was discovered to contain a remote code execution (RCE) vulnerability via the webWlanIdx parameter in the setWebWlanIdx function.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:totolink:ex200_firmware:4.0.3c.7646_b20201211:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:totolink:ex200:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-31809",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        75
+      ],
+      "description" : "TOTOLINK EX200 V4.0.3c.7646_B20201211 was discovered to contain a remote code execution (RCE) vulnerability via the FileName parameter in the setUpgradeFW function.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:totolink:ex200_firmware:4.0.3c.7646_b20201211:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:totolink:ex200:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-31811",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.0,
+          "vector" : "CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        77
+      ],
+      "description" : "TOTOLINK EX200 V4.0.3c.7646_B20201211 was discovered to contain a remote code execution (RCE) vulnerability via the langType parameter in the setLanguageCfg function.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:totolink:ex200_firmware:4.0.3c.7646_b20201211:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:totolink:ex200:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-36401",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        95
+      ],
+      "description" : "GeoServer is an open source server that allows users to share and edit geospatial data. Prior to versions 2.22.6, 2.23.6, 2.24.4, and 2.25.2, multiple OGC request parameters allow Remote Code Execution (RCE) by unauthenticated users through specially crafted input against a default GeoServer installation due to unsafely evaluating property names as XPath expressions. The GeoTools library API that GeoServer calls evaluates property/attribute names for feature types in a way that unsafely passes them to the commons-jxpath library which can execute arbitrary code when evaluating XPath expressions. This XPath evaluation is intended to be used only by complex feature types (i.e., Application Schema data stores) but is incorrectly being applied to simple feature types as well which makes this vulnerability apply to **ALL** GeoServer instances. No public PoC is provided but this vulnerability has been confirmed to be exploitable through WFS GetFeature, WFS GetPropertyValue, WMS GetMap, WMS GetFeatureInfo, WMS GetLegendGraphic and WPS Execute requests. This vulnerability can lead to executing arbitrary code. Versions 2.22.6, 2.23.6, 2.24.4, and 2.25.2 contain a patch for the issue. A workaround exists by removing the `gt-complex-x.y.jar` file from the GeoServer where `x.y` is the GeoTools version (e.g., `gt-complex-31.1.jar` if running GeoServer 2.25.1). This will remove the vulnerable code from GeoServer but may break some GeoServer functionality or prevent GeoServer from deploying if the gt-complex module is needed.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:geoserver:geoserver:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:geoserver:geoserver:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:geoserver:geoserver:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:geotools:geotools:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:geotools:geotools:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:geotools:geotools:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-39864",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        94,
+        665
+      ],
+      "description" : "The CloudStack integration API service allows running its unauthenticated API server (usually on port 8096 when configured and enabled via integration.api.port global setting) for internal portal integrations and for testing purposes. By default, the integration API service port is disabled and is considered disabled when integration.api.port is set to 0 or negative. Due to an improper initialisation logic, the integration API service would listen on a random port when its port value is set to 0 (default value). An attacker that can access the CloudStack management network could scan and find the randomised integration API service port and exploit it to perform unauthorised administrative actions and perform remote code execution on CloudStack managed hosts and result in complete compromise of the confidentiality, integrity, and availability of CloudStack managed infrastructure. Users are recommended to restrict the network access on the CloudStack management server hosts to only essential ports. Users are recommended to upgrade to version 4.18.2.1, 4.19.0.2 or later, which addresses this issue.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:apache:cloudstack:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:cloudstack:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2021-26344",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.2,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "An out of bounds memory write when processing the AMD PSP1 Configuration Block (APCB) could allow an attacker with access the ability to modify the BIOS image, and the ability to sign the resulting image, to potentially modify the APCB block resulting in arbitrary code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:amd:epyc_7203_firmware:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:amd:epyc_7203:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2022-23815",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "Improper bounds checking in APCB firmware may allow an attacker to perform an out of bounds write, corrupting the APCB entry, potentially leading to arbitrary code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:amd:athlon_silver_3050u_firmware:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:amd:athlon_silver_3050u:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-20578",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        367
+      ],
+      "description" : "A TOCTOU (Time-Of-Check-Time-Of-Use) in SMM may allow an attacker with ring0 privileges and access to the BIOS menu or UEFI shell to modify the communications buffer potentially resulting in arbitrary code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:amd:epyc_8024pn_firmware:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:amd:epyc_8024pn:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-50780",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        285
+      ],
+      "description" : "Apache ActiveMQ Artemis allows access to diagnostic information and controls through MBeans, which are also exposed through the authenticated Jolokia endpoint. Before version 2.29.0, this also included the Log4J2 MBean. This MBean is not meant for exposure to non-administrative users. This could eventually allow an authenticated attacker to write arbitrary files to the filesystem and indirectly achieve RCE. Users are recommended to upgrade to version 2.29.0 or later, which fixes the issue.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:apache:activemq_artemis:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-44142",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        -1
+      ],
+      "description" : "The issue was addressed with improved bounds checks. This issue is fixed in GarageBand 10.4.12. Processing a maliciously crafted image may lead to arbitrary code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:apple:garageband:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-20633",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "In wlan AP driver, there is a possible out of bounds write due to an incorrect bounds check. This could lead to remote (proximal/adjacent) code execution with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: WCNCR00400889; Issue ID: MSV-2491.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:mediatek:software_development_kit:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt7603:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt7615:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt7622:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt7915:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-20634",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01289384; Issue ID: MSV-2436.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:mediatek:nr16:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:mediatek:nr17:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:mediatek:nr17r:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt2737:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6813:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6835:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6835t:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6878:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6878m:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6879:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6886:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6895:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6895tt:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6896:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6897:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6899:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6980:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6980d:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6983:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6983t:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6985:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6985t:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6989:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6989t:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6990:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6991:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8673:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8676:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8678:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8795t:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8798:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8863:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-1945",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        345
+      ],
+      "description" : "picklescan before 0.0.23 fails to detect malicious pickle files inside PyTorch model archives when certain ZIP file flag bits are modified. By flipping specific bits in the ZIP file headers, an attacker can embed malicious pickle files that remain undetected by PickleScan while still being successfully loaded by PyTorch's torch.load(). This can lead to arbitrary code execution when loading a compromised model.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:mmaitre314:picklescan:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-24813",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        44,
+        502
+      ],
+      "description" : "Path Equivalence: 'file.Name' (Internal Dot) leading to Remote Code Execution and/or Information disclosure and/or malicious content added to uploaded files via write enabled Default Servlet in Apache Tomcat. This issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.2, from 10.1.0-M1 through 10.1.34, from 9.0.0.M1 through 9.0.98. If all of the following were true, a malicious user was able to view security sensitive files and/or inject content into those files: - writes enabled for the default servlet (disabled by default) - support for partial PUT (enabled by default) - a target URL for security sensitive uploads that was a sub-directory of a target URL for public uploads - attacker knowledge of the names of security sensitive files being uploaded - the security sensitive files also being uploaded via partial PUT If all of the following were true, a malicious user was able to perform remote code execution: - writes enabled for the default servlet (disabled by default) - support for partial PUT (enabled by default) - application was using Tomcat's file based session persistence with the default storage location - application included a library that may be leveraged in a deserialization attack Users are recommended to upgrade to version 11.0.3, 10.1.35 or 9.0.99, which fixes the issue.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone10:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone11:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone12:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone13:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone14:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone15:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone16:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone17:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone18:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone19:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone20:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone21:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone22:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone23:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone24:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone25:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone26:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone27:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone5:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone6:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone7:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone8:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:9.0.0:milestone9:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone10:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone11:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone12:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone13:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone14:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone15:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone16:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone17:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone18:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone19:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone20:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone5:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone6:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone7:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone8:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:10.1.0:milestone9:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone10:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone11:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone12:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone13:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone14:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone15:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone16:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone17:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone18:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone19:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone20:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone21:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone22:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone23:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone24:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone25:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone5:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone6:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone7:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone8:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:tomcat:11.0.0:milestone9:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-1661",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        22
+      ],
+      "description" : "The HUSKY – Products Filter Professional for WooCommerce plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.3.6.5 via the 'template' parameter of the woof_text_search AJAX action. This makes it possible for unauthenticated attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other “safe” file types can be uploaded and included.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:pluginus:husky_-_products_filter_professional_for_woocommerce:*:*:*:*:*:wordpress:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-29384",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "In Tenda AC9 v1.0 V15.03.05.14_multi, the wanMTU parameter of /goform/AdvSetMacMtuWan has a stack overflow vulnerability, which can lead to remote arbitrary code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:tenda:ac9_firmware:15.03.05.14:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:tenda:ac9:1.0:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-29385",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "In Tenda AC9 v1.0 V15.03.05.14_multi, the cloneType parameter of /goform/AdvSetMacMtuWan has a stack overflow vulnerability, which can lead to remote arbitrary code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:tenda:ac9_firmware:15.03.05.14:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:tenda:ac9:1.0:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-29386",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "In Tenda AC9 v1.0 V15.03.05.14_multi, the mac parameter of /goform/AdvSetMacMtuWan has a stack overflow vulnerability, which can lead to remote arbitrary code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:tenda:ac9_firmware:15.03.05.14:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:tenda:ac9:1.0:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    }
+  ]
+}

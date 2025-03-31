@@ -1,0 +1,1117 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.4",
+  "version" : 1,
+  "vulnerabilities" : [
+    {
+      "id" : "CVE-2016-5198",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        125,
+        787
+      ],
+      "description" : "V8 in Google Chrome prior to 54.0.2840.90 for Linux, and 54.0.2840.85 for Android, and 54.0.2840.87 for Windows and Mac included incorrect optimisation assumptions, which allowed a remote attacker to perform arbitrary read/write operations, leading to code execution, via a crafted HTML page.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:google:chrome:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:linux:linux_kernel:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2021-44967",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        434
+      ],
+      "description" : "A Remote Code Execution (RCE) vulnerabilty exists in LimeSurvey 5.2.4 via the upload and install plugins function, which could let a remote malicious user upload an arbitrary PHP code file. NOTE: the Supplier's position is that plugins intentionally can contain arbitrary PHP code, and can only be installed by a superadmin, and therefore the security model is not violated by this finding.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:limesurvey:limesurvey:5.2.4:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-21054",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.2,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "In EUTRAN_LCS_ConvertLCS_MOLRReq of LPP_CommonUtil.c, there is a possible out of bounds write due to a logic error in the code. This could lead to remote code execution with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-244556535References: N/A",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:google:android:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-21057",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "In ProfSixDecomTcpSACKoption of RohcPacketCommon, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-244450646References: N/A",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:google:android:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-25828",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.2,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        434
+      ],
+      "description" : "Pluck CMS is vulnerable to an authenticated remote code execution (RCE) vulnerability through its “albums” module. Albums are used to create collections of images that can be inserted into web pages across the site. Albums allow the upload of various filetypes, which undergo a normalization process before being available on the site. Due to lack of file extension validation, it is possible to upload a crafted JPEG payload containing an embedded PHP web-shell. An attacker may navigate to it directly to achieve RCE on the underlying web server. Administrator credentials for the Pluck CMS web interface are required to access the albums module feature, and are thus required to exploit this vulnerability. CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H/E:P/RL:O/RC:C (8.2 High)",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:pluck-cms:pluck:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:pluck-cms:pluck:4.7.16:dev1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:pluck-cms:pluck:4.7.16:dev2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:pluck-cms:pluck:4.7.16:dev3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:pluck-cms:pluck:4.7.16:dev4:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-28597",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.3,
+          "vector" : "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        501
+      ],
+      "description" : "Zoom clients prior to 5.13.5 contain an improper trust boundary implementation vulnerability. If a victim saves a local recording to an SMB location and later opens it using a link from Zoom’s web portal, an attacker positioned on an adjacent network to the victim client could set up a malicious SMB server to respond to client requests, causing the client to execute attacker controlled executables. This could result in an attacker gaining access to a user's device and data, and remote code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:zoom:rooms:*:*:*:*:*:android:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:zoom:rooms:*:*:*:*:*:iphone_os:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:zoom:rooms:*:*:*:*:*:linux_kernel:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:zoom:rooms:*:*:*:*:*:macos:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:zoom:rooms:*:*:*:*:*:windows:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:zoom:zoom:*:*:*:*:*:android:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:zoom:zoom:*:*:*:*:*:iphone_os:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:zoom:zoom:*:*:*:*:*:linux_kernel:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:zoom:zoom:*:*:*:*:*:macos:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:zoom:zoom:*:*:*:*:*:windows:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-28179",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.0,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        306
+      ],
+      "description" : "Jupyter Server Proxy allows users to run arbitrary external processes alongside their Jupyter notebook servers and provides authenticated web access. Prior to versions 3.2.3 and 4.1.1, Jupyter Server Proxy did not check user authentication appropriately when proxying websockets, allowing unauthenticated access to anyone who had network access to the Jupyter server endpoint. This vulnerability can allow unauthenticated remote access to any websocket endpoint set up to be accessible via Jupyter Server Proxy. In many cases, this leads to remote unauthenticated arbitrary code execution, due to how affected instances use websockets. The websocket endpoints exposed by `jupyter_server` itself is not affected. Projects that do not rely on websockets are also not affected. Versions 3.2.3 and 4.1.1 contain a fix for this issue.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:jupyter:jupyter_server_proxy:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:jupyter:jupyter_server_proxy:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-3564",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        552
+      ],
+      "description" : "The Content Blocks (Custom Post Widget) plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 3.3.0 via the plugin's 'content_block' shortcode. This makes it possible for authenticated attackers, with contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other “safe” file types can be uploaded and included.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:vanderwijk:content_blocks:*:*:*:*:*:wordpress:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-39864",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        94,
+        665
+      ],
+      "description" : "The CloudStack integration API service allows running its unauthenticated API server (usually on port 8096 when configured and enabled via integration.api.port global setting) for internal portal integrations and for testing purposes. By default, the integration API service port is disabled and is considered disabled when integration.api.port is set to 0 or negative. Due to an improper initialisation logic, the integration API service would listen on a random port when its port value is set to 0 (default value). An attacker that can access the CloudStack management network could scan and find the randomised integration API service port and exploit it to perform unauthorised administrative actions and perform remote code execution on CloudStack managed hosts and result in complete compromise of the confidentiality, integrity, and availability of CloudStack managed infrastructure. Users are recommended to restrict the network access on the CloudStack management server hosts to only essential ports. Users are recommended to upgrade to version 4.18.2.1, 4.19.0.2 or later, which addresses this issue.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:apache:cloudstack:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:cloudstack:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-21689",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.0,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        -1
+      ],
+      "description" : "This High severity RCE (Remote Code Execution) vulnerability CVE-2024-21689  was introduced in versions 9.1.0, 9.2.0, 9.3.0, 9.4.0, 9.5.0, and 9.6.0 of Bamboo Data Center and Server. This RCE (Remote Code Execution) vulnerability, with a CVSS Score of 7.6, allows an authenticated attacker to execute arbitrary code which has high impact to confidentiality, high impact to integrity, high impact to availability, and requires user interaction. Atlassian recommends that Bamboo Data Center and Server customers upgrade to latest version, if you are unable to do so, upgrade your instance to one of the specified supported fixed versions: Bamboo Data Center and Server 9.2: Upgrade to a release greater than or equal to 9.2.17 Bamboo Data Center and Server 9.6: Upgrade to a release greater than or equal to 9.6.5 See the release notes ([https://confluence.atlassian.com/bambooreleases/bamboo-release-notes-1189793869.html]). You can download the latest version of Bamboo Data Center and Server from the download center ([https://www.atlassian.com/software/bamboo/download-archives]). This vulnerability was reported via our Bug Bounty program.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:atlassian:bamboo:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:atlassian:bamboo:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0282",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.0,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        121
+      ],
+      "description" : "A stack-based buffer overflow in Ivanti Connect Secure before version 22.7R2.5, Ivanti Policy Secure before version 22.7R1.2, and Ivanti Neurons for ZTA gateways before version 22.7R2.3 allows a remote unauthenticated attacker to achieve remote code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r2.1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r2.2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r2.3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r2.4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:neurons_for_zero-trust_access:22.7:r2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:neurons_for_zero-trust_access:22.7:r2.2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:neurons_for_zero-trust_access:22.7:r2.3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:policy_secure:22.7:r1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:policy_secure:22.7:r1.1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:policy_secure:22.7:r1.2:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-23209",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.0,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        94
+      ],
+      "description" : "Craft is a flexible, user-friendly CMS for creating custom digital experiences on the web and beyond. This is an remote code execution (RCE) vulnerability that affects Craft 4 and 5 installs where your security key has already been compromised. Anyone running an unpatched version of Craft with a compromised security key is affected. This vulnerability has been patched in Craft 5.5.8 and 4.13.8. Users who cannot update to a patched version, should rotate their security keys and ensure their privacy to help migitgate the issue.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:craftcms:craft_cms:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:craftcms:craft_cms:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:craftcms:craft_cms:4.0.0:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:craftcms:craft_cms:4.0.0:rc1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:craftcms:craft_cms:4.0.0:rc2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:craftcms:craft_cms:4.0.0:rc3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:craftcms:craft_cms:5.0.0:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:craftcms:craft_cms:5.0.0:rc1:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-47908",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        78
+      ],
+      "description" : "OS command injection in the admin web console of Ivanti CSA before version 5.0.5 allows a remote authenticated attacker with admin privileges to achieve remote code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:ivanti:cloud_services_appliance:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-22467",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.9,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        121
+      ],
+      "description" : "A stack-based buffer overflow in Ivanti Connect Secure before version 22.7R2.6 allows a remote authenticated attacker to achieve remote code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r1.1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r1.2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r1.3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r1.4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r1.5:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r2.1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r2.2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r2.3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r2.4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r2.5:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-10960",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.9,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        434
+      ],
+      "description" : "The Brizy – Page Builder plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'storeUploads' function in all versions up to, and including, 2.6.4. This makes it possible for authenticated attackers, with Contributor-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:brizy:brizy:*:*:*:*:*:wordpress:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0108",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "cwes" : [
+        306
+      ],
+      "description" : "An authentication bypass in the Palo Alto Networks PAN-OS software enables an unauthenticated attacker with network access to the management web interface to bypass the authentication otherwise required by the PAN-OS management web interface and invoke certain PHP scripts. While invoking these PHP scripts does not enable remote code execution, it can negatively impact integrity and confidentiality of PAN-OS. You can greatly reduce the risk of this issue by restricting access to the management web interface to only trusted internal IP addresses according to our recommended best practices deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 . This issue does not affect Cloud NGFW or Prisma Access software.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.1.14:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.1.14:h2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.1.14:h4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.1.14:h6:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.1.14:h8:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.2.7:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.2.7:h1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.2.7:h12:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.2.7:h16:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.2.7:h18:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.2.7:h19:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.2.7:h21:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.2.7:h3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.2.7:h6:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.2.7:h8:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.2.8:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.2.8:h10:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.2.8:h13:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.2.8:h15:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.2.8:h18:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.2.8:h19:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.2.8:h3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.2.8:h4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.2.9:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.2.9:h1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.2.9:h11:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.2.9:h14:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.2.9:h16:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.2.9:h18:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.2.9:h19:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.2.9:h9:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.2.12:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.2.12:h1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.2.12:h2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.2.12:h3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.2.12:h4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.2.13:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.2.13:h1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:10.2.13:h2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:11.1.6:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:11.2.4:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:11.2.4:h1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:paloaltonetworks:pan-os:11.2.4:h2:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-13725",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        22
+      ],
+      "description" : "The Keap Official Opt-in Forms plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 2.0.1 via the service parameter. This makes it possible for unauthenticated attackers to include PHP files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where PHP files can be uploaded and included. If register_argc_argv is enabled on the server and pearcmd.php is installed, this issue might lead to Remote Code Execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:keap:keap_official_opt_in_forms:*:*:*:*:*:wordpress:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-13797",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        94
+      ],
+      "description" : "The PressMart - Modern Elementor WooCommerce WordPress Theme theme for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 1.2.16. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:presslayouts:pressmart:*:*:*:*:*:wordpress:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-13592",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        98
+      ],
+      "description" : "The Team Builder For WPBakery Page Builder(Formerly Visual Composer) plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.0 via the 'team-builder-vc' shortcode. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other “safe” file types can be uploaded and included.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0624",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.6,
+          "vector" : "CVSS:3.1/AV:A/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "A flaw was found in grub2. During the network boot process, when trying to search for the configuration file, grub copies data from a user controlled environment variable into an internal buffer using the grub_strcpy() function. During this step, it fails to consider the environment variable length when allocating the internal buffer, resulting in an out-of-bounds write. If correctly exploited, this issue may result in remote code execution through the same network segment grub is searching for the boot information, which can be used to by-pass secure boot protections.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0677",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.4,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "A flaw was found in grub2. When performing a symlink lookup, the grub's UFS module checks the inode's data size to allocate the internal buffer to read the file content, however, it fails to check if the symlink data size has overflown. When this occurs, grub_malloc() may be called with a smaller value than needed. When further reading the data from the disk into the buffer, the grub_ufs_lookup_symlink() function will write past the end of the allocated size. An attack can leverage this by crafting a malicious filesystem, and as a result, it will corrupt data stored in the heap, allowing for arbitrary code execution used to by-pass secure boot mechanisms.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-5706",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        99
+      ],
+      "description" : "The product receives input from an upstream component, but it does not restrict or incorrectly restricts the input before it is used as an identifier for a resource that may be outside the intended sphere of control. (CWE-99)  Hitachi Vantara Pentaho Data Integration & Analytics versions before 10.2.0.0 and 9.3.0.9, including 8.3.x, do not restrict JNDI identifiers during the creation of Community Dashboards, allowing control of system-level data sources.  An attacker could gain access to or modify sensitive data or system resources. This could allow access to protected files or directories including configuration files and files containing sensitive information, which can lead to remote code execution by unauthorized users.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-27218",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        94
+      ],
+      "description" : "Sitecore Experience Manager (XM) and Experience Platform (XP) 10.4 before KB1002844 allow remote code execution through insecure deserialization.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-13792",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        94
+      ],
+      "description" : "The WooCommerce Food - Restaurant Menu & Food ordering plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 3.3.2. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0868",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        77
+      ],
+      "description" : "A vulnerability, that could result in Remote Code Execution (RCE), has been found in DocsGPT. Due to improper parsing of JSON data using eval() an unauthorized attacker could send arbitrary Python code to be executed via /api/remote endpoint. This issue affects DocsGPT: from 0.8.1 through 0.12.0.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-1265",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.9,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        78
+      ],
+      "description" : "An OS command injection vulnerability exists in Vinci Protocol Analyzer that could allow an attacker to escalate privileges and perform code execution on affected system.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-24893",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        95
+      ],
+      "description" : "XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. Any guest can perform arbitrary remote code execution through a request to `SolrSearch`. This impacts the confidentiality, integrity and availability of the whole XWiki installation. To reproduce on an instance, without being logged in, go to `<host>/xwiki/bin/get/Main/SolrSearch?media=rss&text=%7D%7D%7D%7B%7Basync%20async%3Dfalse%7D%7D%7B%7Bgroovy%7D%7Dprintln%28\"Hello%20from\"%20%2B%20\"%20search%20text%3A\"%20%2B%20%2823%20%2B%2019%29%29%7B%7B%2Fgroovy%7D%7D%7B%7B%2Fasync%7D%7D%20`. If there is an output, and the title of the RSS feed contains `Hello from search text:42`, then the instance is vulnerable. This vulnerability has been patched in XWiki 15.10.11, 16.4.1 and 16.5.0RC1. Users are advised to upgrade. Users unable to upgrade may edit `Main.SolrSearchMacros` in `SolrSearchMacros.xml` on line 955 to match the `rawResponse` macro in `macros.vm#L2824` with a content type of `application/xml`, instead of simply outputting the content of the feed.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-25299",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        79,
+        80
+      ],
+      "description" : "CKEditor 5 is a modern JavaScript rich-text editor with an MVC architecture. During a recent internal audit, a Cross-Site Scripting (XSS) vulnerability was discovered in the CKEditor 5 real-time collaboration package. This vulnerability affects user markers, which represent users' positions within the document. It can lead to unauthorized JavaScript code execution, which might happen with a very specific editor and token endpoint configuration. This vulnerability affects only installations with Real-time collaborative editing enabled. The problem has been recognized and patched. The fix is available in version 44.2.1 (and above). Users are advised to upgrade. There are no known workarounds for this vulnerability.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-13353",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        98
+      ],
+      "description" : "The Responsive Addons for Elementor – Free Elementor Addons Plugin and Elementor Templates plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.6.4 via several widgets. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other “safe” file types can be uploaded and included.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-25507",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        94
+      ],
+      "description" : "There is a RCE vulnerability in Tenda AC6 15.03.05.16_multi. In the formexeCommand function, the parameter cmdinput will cause remote command execution.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-26014",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "A Remote Code Execution (RCE) vulnerability in Loggrove v.1.0 allows a remote attacker to execute arbitrary code via the path parameter.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-1509",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        94
+      ],
+      "description" : "The The Show Me The Cookies plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 1.0. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-1510",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        94
+      ],
+      "description" : "The The Custom Post Type Date Archives plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 2.7.1. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    }
+  ]
+}

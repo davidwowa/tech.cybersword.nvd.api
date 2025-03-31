@@ -1,0 +1,79 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.4",
+  "version" : 1,
+  "vulnerabilities" : [
+    {
+      "id" : "CVE-2025-1879",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 2.4,
+          "vector" : "CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        259,
+        798
+      ],
+      "description" : "A vulnerability was found in i-Drive i11 and i12 up to 20250227 and classified as problematic. This issue affects some unknown processing of the component APK. The manipulation leads to hard-coded credentials. It is possible to launch the attack on the physical device. It was not possible to identify the current maintainer of the product. It must be assumed that the product is end-of-life."
+    },
+    {
+      "id" : "CVE-2025-1880",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 2.0,
+          "vector" : "CVSS:3.1/AV:P/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        287,
+        305
+      ],
+      "description" : "A vulnerability was found in i-Drive i11 and i12 up to 20250227. It has been classified as problematic. Affected is an unknown function of the component Device Pairing. The manipulation leads to authentication bypass by primary weakness. It is possible to launch the attack on the physical device. The complexity of an attack is rather high. The exploitability is told to be difficult. It was not possible to identify the current maintainer of the product. It must be assumed that the product is end-of-life."
+    },
+    {
+      "id" : "CVE-2025-1881",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        266,
+        284
+      ],
+      "description" : "A vulnerability was found in i-Drive i11 and i12 up to 20250227. It has been declared as problematic. Affected by this vulnerability is an unknown functionality of the component Video Footage/Live Video Stream. The manipulation leads to improper access controls. The attack can be launched remotely. It was not possible to identify the current maintainer of the product. It must be assumed that the product is end-of-life."
+    },
+    {
+      "id" : "CVE-2025-1882",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.0,
+          "vector" : "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        284,
+        1262
+      ],
+      "description" : "A vulnerability was found in i-Drive i11 and i12 up to 20250227. It has been rated as critical. Affected by this issue is some unknown functionality of the component Device Setting Handler. The manipulation leads to improper access control for register interface. The attack needs to be done within the local network. The complexity of an attack is rather high. The exploitation is known to be difficult. It was not possible to identify the current maintainer of the product. It must be assumed that the product is end-of-life."
+    }
+  ]
+}

@@ -1,0 +1,3358 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.4",
+  "version" : 1,
+  "vulnerabilities" : [
+    {
+      "id" : "CVE-2025-1853",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        119,
+        121
+      ],
+      "description" : "A vulnerability was found in Tenda AC8 16.03.34.06 and classified as critical. This issue affects the function sub_49E098 of the file /goform/SetIpMacBind of the component Parameter Handler. The manipulation of the argument list leads to stack-based buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-1889",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        646
+      ],
+      "description" : "picklescan before 0.0.22 only considers standard pickle file extensions in the scope for its vulnerability scan. An attacker could craft a malicious model that uses Pickle and include a malicious pickle file with a non-standard file extension. Because the malicious pickle file inclusion is not considered as part of the scope of picklescan, the file would pass security checks and appear to be safe, when it could instead prove to be problematic."
+    },
+    {
+      "id" : "CVE-2025-27500",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.2,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "OpenZiti is a free and open source project focused on bringing zero trust to any application. An endpoint(/api/upload) on the admin panel can be accessed without any form of authentication. This endpoint accepts an HTTP POST to upload a file which is then stored on the node and is available via URL. This can lead to a stored cross site scripting attack if the file uploaded contains malicious code and is then accessed and executed within the context of the user's browser. This function is no longer necessary as the ziti-console moves from a node server application to a single page application, and has been disabled. The vulnerability is fixed in 3.7.1."
+    },
+    {
+      "id" : "CVE-2025-27501",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.6,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        918
+      ],
+      "description" : "OpenZiti is a free and open source project focused on bringing zero trust to any application. An endpoint on the admin panel can be accessed without any form of authentication. This endpoint accepts a user-supplied URL parameter to connect to an OpenZiti Controller and performs a server-side request, resulting in a potential Server-Side Request Forgery (SSRF) vulnerability. The fixed version has moved the request to the external controller from the server side to the client side, thereby eliminating the identity of the node from being used to gain any additional permissions. This vulnerability is fixed in 3.7.1."
+    },
+    {
+      "id" : "CVE-2025-1879",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 2.4,
+          "vector" : "CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        259,
+        798
+      ],
+      "description" : "A vulnerability was found in i-Drive i11 and i12 up to 20250227 and classified as problematic. This issue affects some unknown processing of the component APK. The manipulation leads to hard-coded credentials. It is possible to launch the attack on the physical device. It was not possible to identify the current maintainer of the product. It must be assumed that the product is end-of-life.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:i-drive:i11_firmware:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:i-drive:i11:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-1880",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 2.0,
+          "vector" : "CVSS:3.1/AV:P/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        287,
+        305
+      ],
+      "description" : "A vulnerability was found in i-Drive i11 and i12 up to 20250227. It has been classified as problematic. Affected is an unknown function of the component Device Pairing. The manipulation leads to authentication bypass by primary weakness. It is possible to launch the attack on the physical device. The complexity of an attack is rather high. The exploitability is told to be difficult. It was not possible to identify the current maintainer of the product. It must be assumed that the product is end-of-life.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:i-drive:i11_firmware:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:i-drive:i11:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-1881",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        266,
+        284
+      ],
+      "description" : "A vulnerability was found in i-Drive i11 and i12 up to 20250227. It has been declared as problematic. Affected by this vulnerability is an unknown functionality of the component Video Footage/Live Video Stream. The manipulation leads to improper access controls. The attack can be launched remotely. It was not possible to identify the current maintainer of the product. It must be assumed that the product is end-of-life.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:i-drive:i11_firmware:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:i-drive:i11:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-1882",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.0,
+          "vector" : "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        284,
+        1262
+      ],
+      "description" : "A vulnerability was found in i-Drive i11 and i12 up to 20250227. It has been rated as critical. Affected by this issue is some unknown functionality of the component Device Setting Handler. The manipulation leads to improper access control for register interface. The attack needs to be done within the local network. The complexity of an attack is rather high. The exploitation is known to be difficult. It was not possible to identify the current maintainer of the product. It must be assumed that the product is end-of-life.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:i-drive:i11_firmware:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:i-drive:i11:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-55064",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.4,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Multiple cross-site scripting (XSS) vulnerabilities in EasyVirt DC NetScope <= 8.6.4 allow remote attackers to inject arbitrary JavaScript or HTML code via the (1) smtp_server, (2) smtp_account, (3) smtp_password, or (4) email_recipients parameter to /smtp/update; the (5) ntp or (6) dns parameter to /proxy/ntp/change; the (7) newVcenterAddress parameter to /process_new_vcenter.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:easyvirt:dc_netscope:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-1890",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        284,
+        434
+      ],
+      "description" : "A vulnerability has been found in shishuocms 1.1 and classified as critical. This vulnerability affects the function handleRequest of the file src/main/java/com/shishuo/cms/action/manage/ManageUpLoadAction.java. The manipulation of the argument file leads to unrestricted upload. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:shishuocms_project:shishuocms:1.1:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-1891",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        352,
+        862
+      ],
+      "description" : "A vulnerability was found in shishuocms 1.1 and classified as problematic. This issue affects some unknown processing. The manipulation leads to cross-site request forgery. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-27219",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        770
+      ],
+      "description" : "In the CGI gem before 0.4.2 for Ruby, the CGI::Cookie.parse method in the CGI library contains a potential Denial of Service (DoS) vulnerability. The method does not impose any limit on the length of the raw cookie value it processes. This oversight can lead to excessive resource consumption when parsing extremely large cookies.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:ruby-lang:cgi:*:*:*:*:*:ruby:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ruby-lang:cgi:*:*:*:*:*:ruby:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ruby-lang:cgi:0.3.6:*:*:*:*:ruby:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-27220",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.0,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        1333
+      ],
+      "description" : "In the CGI gem before 0.4.2 for Ruby, a Regular Expression Denial of Service (ReDoS) vulnerability exists in the Util#escapeElement method.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:ruby-lang:cgi:*:*:*:*:*:ruby:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ruby-lang:cgi:*:*:*:*:*:ruby:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ruby-lang:cgi:0.3.6:*:*:*:*:ruby:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ruby-lang:ruby:3.1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ruby-lang:ruby:3.2.0:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-27221",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.2,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        212
+      ],
+      "description" : "In the URI gem before 1.0.3 for Ruby, the URI handling methods (URI.join, URI#merge, URI#+) have an inadvertent leakage of authentication credentials because userinfo is retained even after changing the host.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:tal:url:*:*:*:*:*:ruby:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:tal:url:*:*:*:*:*:ruby:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:tal:url:*:*:*:*:*:ruby:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:tal:url:*:*:*:*:*:ruby:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-1695",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        835
+      ],
+      "description" : "In NGINX Unit before version 1.34.2 with the Java Language Module in use, undisclosed requests can lead to an infinite loop and cause an increase in CPU resource utilization. This vulnerability allows a remote attacker to cause a degradation that can lead to a limited denial-of-service (DoS).  There is no control plane exposure; this is a data plane issue only.  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:f5:nginx:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-1892",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 2.4,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79,
+        94
+      ],
+      "description" : "A vulnerability was found in shishuocms 1.1. It has been classified as problematic. Affected is an unknown function of the file /manage/folder/add.json of the component Directory Deletion Page. The manipulation of the argument folderName leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-1893",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        404
+      ],
+      "description" : "A vulnerability was found in Open5GS up to 2.7.2. It has been declared as problematic. Affected by this vulnerability is the function gmm_state_authentication of the file src/amf/gmm-sm.c of the component AMF. The manipulation leads to denial of service. The attack can be launched remotely. This vulnerability allows a single UE to crash the AMF, resulting in the complete loss of mobility and session management services and causing a network-wide outage. All registered UEs will lose connectivity, and new registrations will be blocked until the AMF is restarted, leading to a high availability impact. The exploit has been disclosed to the public and may be used. The patch is named e31e9965f00d9c744a7f728497cb4f3e97744ee8. It is recommended to apply a patch to fix this issue."
+    },
+    {
+      "id" : "CVE-2025-1894",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability was found in PHPGurukul Restaurant Table Booking System 1.0. It has been rated as critical. Affected by this issue is some unknown functionality of the file /search-result.php. The manipulation of the argument searchdata leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:phpgurukul:restaurant_table_booking_system:1.0:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-1895",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        119,
+        120
+      ],
+      "description" : "A vulnerability classified as critical has been found in Tenda TX3 16.03.13.11_multi. This affects an unknown part of the file /goform/setMacFilterCfg. The manipulation of the argument deviceList leads to buffer overflow. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:tenda:tx3_firmware:16.03.13.11:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:tenda:tx3:-:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-1896",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        119,
+        120
+      ],
+      "description" : "A vulnerability classified as critical was found in Tenda TX3 16.03.13.11_multi. This vulnerability affects unknown code of the file /goform/SetStaticRouteCfg. The manipulation of the argument list leads to buffer overflow. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:tenda:tx3_firmware:16.03.13.11:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:tenda:tx3:-:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-1897",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        119,
+        120
+      ],
+      "description" : "A vulnerability, which was classified as critical, has been found in Tenda TX3 16.03.13.11_multi. This issue affects some unknown processing of the file /goform/SetNetControlList. The manipulation of the argument list leads to buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:tenda:tx3_firmware:16.03.13.11:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:tenda:tx3:-:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-1898",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        119,
+        120
+      ],
+      "description" : "A vulnerability, which was classified as critical, was found in Tenda TX3 16.03.13.11_multi. Affected is an unknown function of the file /goform/openSchedWifi. The manipulation of the argument schedStartTime/schedEndTime leads to buffer overflow. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:tenda:tx3_firmware:16.03.13.11:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:tenda:tx3:-:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-1899",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        119,
+        120
+      ],
+      "description" : "A vulnerability has been found in Tenda TX3 16.03.13.11_multi and classified as critical. Affected by this vulnerability is an unknown functionality of the file /goform/setPptpUserList. The manipulation of the argument list leads to buffer overflow. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:tenda:tx3_firmware:16.03.13.11:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:tenda:tx3:-:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-13686",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        862
+      ],
+      "description" : "The VW Storefront theme for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the vw_storefront_reset_all_settings() function in all versions up to, and including, 0.9.9. This makes it possible for authenticated attackers, with Subscriber-level access and above, to reset the themes settings.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:vwthemes:vw_storefront:*:*:*:*:*:*wordpress:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0587",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        190
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker arbitrary code execution in pre-installed apps through integer overflow. This vulnerability can be exploited only in restricted scenarios.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:openatom:openharmony:4.1:-:*:*:-:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:openatom:openharmony:5.0.2:-:*:*:-:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0912",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        502
+      ],
+      "description" : "The Donations Widget plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 3.19.4 via deserialization of untrusted input from the Donation Form through the 'card_address' parameter. This makes it possible for unauthenticated attackers to inject a PHP Object. The additional presence of a POP chain allows attackers to achieve remote code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:givewp:givewp:*:*:*:*:*:wordpress:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-1321",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        89
+      ],
+      "description" : "The teachPress plugin for WordPress is vulnerable to SQL Injection via the 'order' parameter of the 'tpsearch' shortcode in all versions up to, and including, 9.0.7 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for authenticated attackers, with Contributor-level access and above, to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:mtrv:teachpress:*:*:*:*:*:wordpress:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-1639",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        862
+      ],
+      "description" : "The Animation Addons for Elementor Pro plugin for WordPress is vulnerable to unauthorized arbitrary plugin installation due to a missing capability check on the install_elementor_plugin_handler() function in all versions up to, and including, 1.6. This makes it possible for authenticated attackers, with Subscriber-level access and above, to install and activate arbitrary plugins which can be leveraged to further infect a victim when Elementor is not activated on a vulnerable site.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:crowdytheme:arolax:*:*:*:*:*:wordpress:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-1900",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability was found in PHPGurukul Restaurant Table Booking System 1.0 and classified as critical. Affected by this issue is some unknown functionality of the file /add-table.php. The manipulation of the argument tableno leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-1901",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability was found in PHPGurukul Restaurant Table Booking System 1.0. It has been classified as critical. This affects an unknown part of the file /admin/check_availability.php. The manipulation of the argument username leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-1902",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability was found in PHPGurukul Student Record System 3.2. It has been declared as critical. This vulnerability affects unknown code of the file /password-recovery.php. The manipulation of the argument emailid leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-1903",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability was found in Codezips Online Shopping Website 1.0. It has been rated as critical. This issue affects some unknown processing of the file /cart_add.php. The manipulation of the argument id leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-20011",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.3,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        401
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker case DOS through missing release of memory.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:openatom:openharmony:*:*:*:*:-:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-20021",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.3,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker cause DOS through out-of-bounds read.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:openatom:openharmony:*:*:*:*:-:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-20024",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        190
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker arbitrary code execution in pre-installed apps through integer overflow. This vulnerability can be exploited only in restricted scenarios.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:openatom:openharmony:*:*:*:*:-:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-20042",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.5,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker cause information leak through out-of-bounds read.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:openatom:openharmony:*:*:*:*:-:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-20081",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        416
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker arbitrary code execution in pre-installed apps through use after free. This vulnerability can be exploited only in restricted scenarios.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:openatom:openharmony:*:*:*:*:-:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-20091",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        416
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker arbitrary code execution in pre-installed apps through use after free. This vulnerability can be exploited only in restricted scenarios.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-20626",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        416
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker arbitrary code execution in pre-installed apps through use after free. This vulnerability can be exploited only in restricted scenarios.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:openatom:openharmony:*:*:*:*:-:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-21084",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        476
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker arbitrary code execution in pre-installed apps through through NULL pointer dereference.. This vulnerability can be exploited only in restricted scenarios.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:openatom:openharmony:*:*:*:*:-:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-21089",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.3,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker cause DOS through out-of-bounds read."
+    },
+    {
+      "id" : "CVE-2025-21097",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.3,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        476
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker cause DOS through NULL pointer dereference."
+    },
+    {
+      "id" : "CVE-2025-21098",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.5,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        922
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker cause information leak through out-of-bounds read bypass permission check."
+    },
+    {
+      "id" : "CVE-2025-22443",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.3,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker cause DOS through out-of-bounds read."
+    },
+    {
+      "id" : "CVE-2025-22835",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker arbitrary code execution in pre-installed apps through out-of-bounds write. This vulnerability can be exploited only in restricted scenarios.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-22837",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.3,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        476
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker cause DOS through NULL pointer dereference.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:openatom:openharmony:*:*:*:*:-:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-22841",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.3,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker cause DOS through out-of-bounds read.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:openatom:openharmony:*:*:*:*:-:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-22847",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.3,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker cause DOS through out-of-bounds read.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:openatom:openharmony:*:*:*:*:-:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-22897",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.3,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        120
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker cause DOS through buffer overflow.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:openatom:openharmony:*:*:*:*:-:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-23234",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.3,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        120
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker cause DOS through buffer overflow.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:openatom:openharmony:*:*:*:*:-:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-23240",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker arbitrary code execution in pre-installed apps through out-of-bounds write. This vulnerability can be exploited only in restricted scenarios.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:openatom:openharmony:*:*:*:*:-:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-23409",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        416
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker arbitrary code execution in pre-installed apps through use after free. This vulnerability can be exploited only in restricted scenarios.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:openatom:openharmony:*:*:*:*:-:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-23414",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        416
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker arbitrary code execution in pre-installed apps through use after free. This vulnerability can be exploited only in restricted scenarios.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:openatom:openharmony:*:*:*:*:-:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-23418",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.3,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker cause DOS through out-of-bounds read.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:openatom:openharmony:*:*:*:*:-:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-23420",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker arbitrary code execution in pre-installed apps through out-of-bounds write. This vulnerability can be exploited only in restricted scenarios.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:openatom:openharmony:*:*:*:*:-:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-24301",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        416
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker arbitrary code execution in pre-installed apps through use after free. This vulnerability can be exploited only in restricted scenarios.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:openatom:openharmony:*:*:*:*:-:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-24309",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker arbitrary code execution in pre-installed apps through out-of-bounds write. This vulnerability can be exploited only in restricted scenarios.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:openatom:openharmony:*:*:*:*:-:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-1306",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        352
+      ],
+      "description" : "The Newscrunch theme for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 1.8.4. This is due to missing or incorrect nonce validation on the newscrunch_install_and_activate_plugin() function. This makes it possible for unauthenticated attackers to upload arbitrary files via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:spicethemes:newscrunch:*:*:*:*:*:wordpress:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-1307",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        862
+      ],
+      "description" : "The Newscrunch theme for WordPress is vulnerable to arbitrary file uploads due to a missing capability check in the newscrunch_install_and_activate_plugin() function in all versions up to, and including, 1.8.4.1. This makes it possible for authenticated attackers, with Subscriber-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:spicethemes:newscrunch:*:*:*:*:*:wordpress:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-1904",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79,
+        94
+      ],
+      "description" : "A vulnerability, which was classified as problematic, has been found in code-projects Blood Bank System 1.0. Affected by this issue is some unknown functionality of the file /Blood/A+.php. The manipulation of the argument Availibility leads to cross site scripting. The attack may be launched remotely."
+    },
+    {
+      "id" : "CVE-2025-1905",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79,
+        94
+      ],
+      "description" : "A vulnerability, which was classified as problematic, was found in SourceCodester Employee Management System 1.0. This affects an unknown part of the file employee.php. The manipulation of the argument Full Name leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. Other parameters might be affected as well."
+    },
+    {
+      "id" : "CVE-2025-1906",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.7,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability has been found in PHPGurukul Restaurant Table Booking System 1.0 and classified as critical. This vulnerability affects unknown code of the file /admin/profile.php. The manipulation of the argument mobilenumber leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. Other parameters might be affected as well."
+    },
+    {
+      "id" : "CVE-2024-58043",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:L"
+        }
+      ],
+      "cwes" : [
+        840
+      ],
+      "description" : "Permission bypass vulnerability in the window module Impact: Successful exploitation of this vulnerability may affect service confidentiality.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:huawei:emui:12.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:huawei:emui:13.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:huawei:emui:14.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:huawei:harmonyos:2.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:huawei:harmonyos:2.1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:huawei:harmonyos:3.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:huawei:harmonyos:3.1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:huawei:harmonyos:4.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:huawei:harmonyos:4.2.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:huawei:harmonyos:4.3.0:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-58044",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.4,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        20
+      ],
+      "description" : "Permission verification bypass vulnerability in the notification module Impact: Successful exploitation of this vulnerability may affect availability.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:huawei:emui:12.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:huawei:emui:13.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:huawei:emui:14.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:huawei:harmonyos:2.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:huawei:harmonyos:2.1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:huawei:harmonyos:3.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:huawei:harmonyos:3.1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:huawei:harmonyos:4.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:huawei:harmonyos:4.2.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:huawei:harmonyos:4.3.0:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-58045",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.6,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        362
+      ],
+      "description" : "Multi-concurrency vulnerability in the media digital copyright protection module Impact: Successful exploitation of this vulnerability may affect availability.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:huawei:harmonyos:5.0.0:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-58046",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.2,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        200
+      ],
+      "description" : "Permission management vulnerability in the lock screen module Impact: Successful exploitation of this vulnerability may affect service confidentiality.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:huawei:harmonyos:5.0.0:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-58047",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.0,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        200
+      ],
+      "description" : "Permission verification vulnerability in the media library module Impact: Successful exploitation of this vulnerability may affect service confidentiality.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:huawei:harmonyos:5.0.0:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-58048",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.7,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        362
+      ],
+      "description" : "Multi-thread problem vulnerability in the package management module Impact: Successful exploitation of this vulnerability may affect availability.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:huawei:harmonyos:5.0.0:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-58049",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.0,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        200
+      ],
+      "description" : "Permission verification vulnerability in the media library module Impact: Successful exploitation of this vulnerability may affect service confidentiality.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:huawei:harmonyos:5.0.0:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-58050",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.2,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        200
+      ],
+      "description" : "Vulnerability of improper access permission in the HDC module Impact: Successful exploitation of this vulnerability may affect service confidentiality.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:huawei:harmonyos:5.0.0:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-27521",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        264
+      ],
+      "description" : "Vulnerability of improper access permission in the process management module Impact: Successful exploitation of this vulnerability may affect service confidentiality.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:huawei:harmonyos:5.0.0:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-13682",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        352
+      ],
+      "description" : "The Wallet System for WooCommerce – Wallet, Wallet Cashback, Refunds, Partial Payment, Wallet Restriction plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 2.6.2. This is due to missing or incorrect nonce validation in class-wallet-user-table.php. This makes it possible for unauthenticated attackers to modify wallet balances via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:wpswings:wallet_system_for_woocommerce:*:*:*:*:*:wordpress:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-13724",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        285
+      ],
+      "description" : "The Wallet System for WooCommerce – Wallet, Wallet Cashback, Refunds, Partial Payment, Wallet Restriction plugin for WordPress is vulnerable to unauthorized access to functionality in all versions up to, and including, 2.6.2. This makes it possible for unauthenticated attackers to increase their own wallet balance, transfer balances between arbitrary users and initiate transfer requests from other users' wallets.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:wpswings:wallet_system_for_woocommerce:*:*:*:*:*:wordpress:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-9618",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.4,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "The Master Addons – Elementor Addons with White Label, Free Widgets, Hover Effects, Conditions, & Animations plugin for WordPress is vulnerable to Stored Cross-Site Scripting via multiple widgets in all versions up to, and including, 2.0.7.2 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:master-addons:master_addons:*:*:*:*:*:wordpress:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0433",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.4,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "The Master Addons – Elementor Addons with White Label, Free Widgets, Hover Effects, Conditions, & Animations plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the ‘id’ parameter in all versions up to, and including, 2.0.7.1 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:master-addons:master_addons:*:*:*:*:*:wordpress:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0512",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.4,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "The Structured Content (JSON-LD) #wpsc plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's sc_fs_local_business shortcode in all versions up to, and including, 6.4.5 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:wpsc-plugin:structured_content:*:*:*:*:*:wordpress:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0370",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.4,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "The WP Shortcodes Plugin — Shortcodes Ultimate plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the ‘src’ parameter in all versions up to, and including, 7.3.3 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:vanokhin:shortcodes_ultimate:*:*:*:*:*:wordpress:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0958",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.4,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        20
+      ],
+      "description" : "The Ultimate WordPress Auction Plugin plugin for WordPress is vulnerable to unauthorized access to functionality in all versions up to, and including, 4.2.9. This makes it possible for authenticated attackers, with Contributor-level access and above, to delete arbitrary auctions, posts as well as pages and allows them to execute other actions related to auction handling.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:auctionplugin:ultimate_auction:*:*:*:*:*:wordpress:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-22224",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.3,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        367
+      ],
+      "description" : "VMware ESXi, and Workstation contain a TOCTOU (Time-of-Check Time-of-Use) vulnerability that leads to an out-of-bounds write. A malicious actor with local administrative privileges on a virtual machine may exploit this issue to execute code as the virtual machine's VMX process running on the host.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:beta:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_1a:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_1b:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_1c:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_1d:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_1e:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_2a:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_2c:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_2d:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_2e:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3c:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3d:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3e:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3f:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3g:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3i:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3j:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3k:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3l:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3m:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3n:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3o:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3p:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3q:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3r:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:a:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:b:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:c:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:update_1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:update_1a:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:update_1c:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:update_1d:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:update_2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:update_2b:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:update_2c:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:update_3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:update_3b:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:update_3c:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-22225",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.2,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "VMware ESXi contains an arbitrary write vulnerability. A malicious actor with privileges within the VMX process may trigger an arbitrary kernel write leading to an escape of the sandbox.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:beta:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_1a:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_1b:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_1c:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_1d:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_1e:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_2a:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_2c:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_2d:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_2e:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3c:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3d:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3e:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3f:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3g:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3i:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3j:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3k:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3l:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3m:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3n:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3o:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3p:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3q:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3r:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:a:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:b:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:c:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:update_1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:update_1a:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:update_1c:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:update_1d:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:update_2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:update_2b:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:update_2c:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:update_3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:update_3b:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:update_3c:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-22226",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.1,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "VMware ESXi, Workstation, and Fusion contain an information disclosure vulnerability due to an out-of-bounds read in HGFS. A malicious actor with administrative privileges to a virtual machine may be able to exploit this issue to leak memory from the vmx process.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:beta:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_1a:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_1b:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_1c:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_1d:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_1e:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_2a:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_2c:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_2d:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_2e:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3c:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3d:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3e:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3f:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3g:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3i:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3j:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3k:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3l:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3m:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3n:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3o:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3p:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3q:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:7.0:update_3r:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:a:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:b:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:c:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:update_1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:update_1a:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:update_1c:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:update_1d:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:update_2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:update_2b:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:update_2c:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:update_3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:update_3b:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:vmware:esxi:8.0:update_3c:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-1925",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        404
+      ],
+      "description" : "A vulnerability classified as problematic was found in Open5GS up to 2.7.2. Affected by this vulnerability is the function amf_nsmf_pdusession_handle_update_sm_context of the file src/amf/nsmf-handler.c of the component AMF. The manipulation leads to denial of service. The attack can be launched remotely. This vulnerability allows a single UE to crash the AMF, resulting in the complete loss of mobility and session management services and causing a network-wide outage. All registered UEs will lose connectivity, and new registrations will be blocked until the AMF is restarted, leading to a high availability impact. The exploit has been disclosed to the public and may be used. It is recommended to apply a patch to fix this issue."
+    },
+    {
+      "id" : "CVE-2025-1930",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        416
+      ],
+      "description" : "On Windows, a compromised content process could use bad StreamData sent over AudioIPC to trigger a use-after-free in the Browser process. This could have led to a sandbox escape. This vulnerability affects Firefox < 136, Firefox ESR < 115.21, Firefox ESR < 128.8, Thunderbird < 136, and Thunderbird < 128.8."
+    },
+    {
+      "id" : "CVE-2025-1931",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "It was possible to cause a use-after-free in the content process side of a WebTransport connection, leading to a potentially exploitable crash. This vulnerability affects Firefox < 136, Firefox ESR < 115.21, Firefox ESR < 128.8, Thunderbird < 136, and Thunderbird < 128.8."
+    },
+    {
+      "id" : "CVE-2025-1932",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "An inconsistent comparator in xslt/txNodeSorter could have resulted in potentially exploitable out-of-bounds access. Only affected version 122 and later. This vulnerability affects Firefox < 136, Firefox ESR < 128.8, Thunderbird < 136, and Thunderbird < 128.8."
+    },
+    {
+      "id" : "CVE-2025-1933",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        252
+      ],
+      "description" : "On 64-bit CPUs, when the JIT compiles WASM i32 return values they can pick up bits from left over memory. This can potentially cause them to be treated as a different type. This vulnerability affects Firefox < 136, Firefox ESR < 115.21, Firefox ESR < 128.8, Thunderbird < 136, and Thunderbird < 128.8."
+    },
+    {
+      "id" : "CVE-2025-1934",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        185
+      ],
+      "description" : "It was possible to interrupt the processing of a RegExp bailout and run additional JavaScript, potentially triggering garbage collection when the engine was not expecting it. This vulnerability affects Firefox < 136, Firefox ESR < 128.8, Thunderbird < 136, and Thunderbird < 128.8."
+    },
+    {
+      "id" : "CVE-2025-1935",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        451
+      ],
+      "description" : "A web page could trick a user into setting that site as the default handler for a custom URL protocol. This vulnerability affects Firefox < 136, Firefox ESR < 128.8, Thunderbird < 136, and Thunderbird < 128.8."
+    },
+    {
+      "id" : "CVE-2025-1936",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "jar: URLs retrieve local file content packaged in a ZIP archive. The null and everything after it was ignored when retrieving the content from the archive, but the fake extension after the null was used to determine the type of content. This could have been used to hide code in a web extension disguised as something else like an image. This vulnerability affects Firefox < 136, Firefox ESR < 128.8, Thunderbird < 136, and Thunderbird < 128.8."
+    },
+    {
+      "id" : "CVE-2025-1937",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "Memory safety bugs present in Firefox 135, Thunderbird 135, Firefox ESR 115.20, Firefox ESR 128.7, and Thunderbird 128.7. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 136, Firefox ESR < 115.21, Firefox ESR < 128.8, Thunderbird < 136, and Thunderbird < 128.8."
+    },
+    {
+      "id" : "CVE-2025-1938",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "Memory safety bugs present in Firefox 135, Thunderbird 135, Firefox ESR 128.7, and Thunderbird 128.7. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 136, Firefox ESR < 128.8, Thunderbird < 136, and Thunderbird < 128.8."
+    },
+    {
+      "id" : "CVE-2025-1939",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.9,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        359
+      ],
+      "description" : "Android apps can load web pages using the Custom Tabs feature. This feature supports a transition animation that could have been used to trick a user into granting sensitive permissions by hiding what the user was actually clicking. This vulnerability affects Firefox < 136."
+    },
+    {
+      "id" : "CVE-2025-1940",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        1021
+      ],
+      "description" : "A select option could partially obscure the confirmation prompt shown before launching external apps. This could be used to trick a user in to launching an external app unexpectedly. *This issue only affects Android versions of Firefox.* This vulnerability affects Firefox < 136."
+    },
+    {
+      "id" : "CVE-2025-1941",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "cwes" : [
+        284
+      ],
+      "description" : "Under certain circumstances, a user opt-in setting that Focus should require authentication before use could have been be bypassed (distinct from CVE-2025-0245). This vulnerability affects Firefox < 136."
+    },
+    {
+      "id" : "CVE-2025-1942",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        908
+      ],
+      "description" : "When String.toUpperCase() caused a string to get longer it was possible for uninitialized memory to be incorporated into the result string This vulnerability affects Firefox < 136 and Thunderbird < 136."
+    },
+    {
+      "id" : "CVE-2025-1943",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.2,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H"
+        }
+      ],
+      "cwes" : [
+        122
+      ],
+      "description" : "Memory safety bugs present in Firefox 135 and Thunderbird 135. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 136 and Thunderbird < 136."
+    },
+    {
+      "id" : "CVE-2025-27424",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        601
+      ],
+      "description" : "Websites redirecting to a non-HTTP scheme URL could allow a website address to be spoofed for a malicious page This vulnerability affects Firefox for iOS < 136."
+    },
+    {
+      "id" : "CVE-2025-27425",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        287
+      ],
+      "description" : "Scanning certain QR codes that included text with a website URL could allow the URL to be opened without presenting the user with a confirmation alert first This vulnerability affects Firefox for iOS < 136."
+    },
+    {
+      "id" : "CVE-2025-27426",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.4,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        601
+      ],
+      "description" : "Malicious websites utilizing a server-side redirect to an internal error page could result in a spoofed website URL This vulnerability affects Firefox for iOS < 136."
+    },
+    {
+      "id" : "CVE-2024-50705",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.1,
+          "vector" : "CVSS:3.1/AV:A/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        352
+      ],
+      "description" : "Unauthenticated reflected cross-site scripting (XSS) vulnerability in Uniguest Tripleplay before 24.2.1 allows remote attackers to execute arbitrary scripts via the page parameter."
+    },
+    {
+      "id" : "CVE-2024-50706",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        89
+      ],
+      "description" : "Unauthenticated SQL injection vulnerability in Uniguest Tripleplay before 24.2.1 allows remote attackers to execute arbitrary SQL queries on the backend database."
+    },
+    {
+      "id" : "CVE-2024-9149",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.6,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        89
+      ],
+      "description" : "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Wind Media E-Commerce Website Template allows SQL Injection.This issue affects E-Commerce Website Template: before v1.5."
+    },
+    {
+      "id" : "CVE-2024-11957",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        347
+      ],
+      "description" : "Improper verification of the digital signature in ksojscore.dll in Kingsoft WPS Office in versions equal or less than 12.1.0.18276 on Windows allows an attacker to load an arbitrary Windows library. The patch released in version 12.2.0.16909 to mitigate CVE-2024-7262 was not restrictive enough."
+    },
+    {
+      "id" : "CVE-2024-50704",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 10.0,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        94
+      ],
+      "description" : "Unauthenticated remote code execution vulnerability in Uniguest Tripleplay before 24.2.1 allows remote attackers to execute arbitrary code via a specially crafted HTTP POST request.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-50707",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 10.0,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        94
+      ],
+      "description" : "Unauthenticated remote code execution vulnerability in Uniguest Tripleplay before 24.2.1 allows remote attackers to execute arbitrary code via the X-Forwarded-For header in an HTTP GET request.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-1424",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        269
+      ],
+      "description" : "A privilege escalation vulnerability in PocketBook InkPad Color 3 allows attackers to escalate to root privileges if they gain physical access to the device. This issue affects InkPad Color 3 in version U743k3.6.8.3671."
+    },
+    {
+      "id" : "CVE-2025-1425",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        269
+      ],
+      "description" : "A Sudo privilege misconfiguration vulnerability in PocketBook InkPad Color 3 on Linux, ARM allows attackers to read file contents on the device.This issue affects InkPad Color 3: U743k3.6.8.3671."
+    },
+    {
+      "id" : "CVE-2025-23368",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.1,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        307
+      ],
+      "description" : "A flaw was found in Wildfly Elytron integration. The component does not implement sufficient measures to prevent multiple failed authentication attempts within a short time frame, making it more susceptible to brute force attacks via CLI."
+    },
+    {
+      "id" : "CVE-2025-26320",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        78
+      ],
+      "description" : "t0mer BroadlinkManager v5.9.1 was discovered to contain an OS command injection vulnerability via the IP Address parameter at /device/ping."
+    },
+    {
+      "id" : "CVE-2025-27111",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        93,
+        117
+      ],
+      "description" : "Rack is a modular Ruby web server interface. The Rack::Sendfile middleware logs unsanitised header values from the X-Sendfile-Type header. An attacker can exploit this by injecting escape sequences (such as newline characters) into the header, resulting in log injection. This vulnerability is fixed in 2.2.12, 3.0.13, and 3.1.11."
+    },
+    {
+      "id" : "CVE-2025-26091",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "A Cross Site Scripting (XSS) vulnerability exists in TeamPasswordManager v12.162.284 and before that could allow a remote attacker to execute arbitrary JavaScript in the web browser of a user, by including a malicious payload into the 'name' parameter when creating a new password in the \"My Passwords\" page."
+    },
+    {
+      "id" : "CVE-2025-26182",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        94
+      ],
+      "description" : "An issue in xxyopen novel plus v.4.4.0 and before allows a remote attacker to execute arbitrary code via the PageController.java file"
+    },
+    {
+      "id" : "CVE-2025-27150",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.3,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        538
+      ],
+      "description" : "Tuleap is an Open Source Suite to improve management of software developments and collaboration. The password to connect the Redis instance is not purged from the archive generated with tuleap collect-system-data. These archives are likely to be used by support teams that should not have access to this password. The vulnerability is fixed in Tuleap Community Edition 16.4.99.1740492866 and Tuleap Enterprise Edition 16.4-6 and 16.3-11."
+    },
+    {
+      "id" : "CVE-2025-27155",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79,
+        80
+      ],
+      "description" : "Pinecone is an experimental overlay routing protocol suite which is the foundation of the current P2P Matrix demos. The Pinecone Simulator (pineconesim) included in Pinecone up to commit ea4c337 is vulnerable to stored cross-site scripting. The payload storage is not permanent and will be wiped when restarting pineconesim."
+    },
+    {
+      "id" : "CVE-2025-27156",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Tuleap is an Open Source Suite to improve management of software developments and collaboration. The mass emailing features do not sanitize the content of the HTML emails. A malicious user could use this issue to facilitate a phishing attempt or to indirectly exploit issues in the recipients mail clients. This vulnerability is fixed in Tuleap Community Edition 16.4.99.1740567344 and Tuleap Enterprise Edition 16.4-6 and 16.3-11."
+    },
+    {
+      "id" : "CVE-2025-27401",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.6,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        440
+      ],
+      "description" : "Tuleap is an Open Source Suite to improve management of software developments and collaboration. In a standard usages of Tuleap, the issue has a limited impact, it will mostly leave dangling data. However, a malicious user could create and delete reports multiple times to cycle through all the filters of all reports of the instance and delete them. The malicious user only needs to have access to one tracker. This would result in the loss of all criteria filters forcing users and tracker admins to re-create them. This vulnerability is fixed in Tuleap Community Edition 16.4.99.1740498975 and Tuleap Enterprise Edition 16.4-6 and 16.3-11."
+    },
+    {
+      "id" : "CVE-2025-27402",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.6,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        352
+      ],
+      "description" : "Tuleap is an Open Source Suite to improve management of software developments and collaboration. Tuleap is missing CSRF protections on tracker fields administrative operations. An attacker could use this vulnerability to trick victims into removing or updating tracker fields. This vulnerability is fixed in Tuleap Community Edition 16.4.99.1740414959 and Tuleap Enterprise Edition 16.4-6 and 16.3-11."
+    },
+    {
+      "id" : "CVE-2025-27507",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.0,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:L"
+        }
+      ],
+      "cwes" : [
+        639
+      ],
+      "description" : "The open-source identity infrastructure software Zitadel allows administrators to disable the user self-registration. ZITADEL's Admin API contains Insecure Direct Object Reference (IDOR) vulnerabilities that allow authenticated users, without specific IAM roles, to modify sensitive settings. While several endpoints are affected, the most critical vulnerability lies in the ability to manipulate LDAP configurations. Customers who do not utilize LDAP for authentication are not at risk from the most severe aspects of this vulnerability. However, upgrading to the patched version to address all identified issues is strongly recommended. This vulnerability is fixed in 2.71.0, 2.70.1, ,2.69.4, 2.68.4, 2.67.8, 2.66.11, 2.65.6, 2.64.5, and 2.63.8."
+    },
+    {
+      "id" : "CVE-2024-10930",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        427
+      ],
+      "description" : "An Uncontrolled Search Path Element vulnerability exists which could allow a malicious actor to perform DLL hijacking and execute arbitrary code with escalated privileges."
+    },
+    {
+      "id" : "CVE-2024-41147",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.7,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        122
+      ],
+      "description" : "An out-of-bounds write vulnerability exists in the ma_dr_flac__decode_samples__lpc functionality of Miniaudio miniaudio v0.11.21. A specially crafted .flac file can lead to memory corruption. An attacker can provide a malicious file to trigger this vulnerability."
+    },
+    {
+      "id" : "CVE-2019-1815",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.3,
+          "vector" : "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        200
+      ],
+      "description" : "A security vulnerability was discovered in the local status page functionality of Cisco Meraki’s MX67 and MX68 security appliance models that may allow unauthenticated individuals to access and download logs containing sensitive, privileged device information. The vulnerability is due to improper access control to the files holding debugging and maintenance information, and is only exploitable when the local status page is enabled on the device. An attacker exploiting this vulnerability may obtain access to wireless pre-shared keys, Site-to-Site VPN key and other sensitive information. Under certain circumstances, this information may allow an attacker to obtain administrative-level access to the device."
+    },
+    {
+      "id" : "CVE-2020-3122",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.3,
+          "vector" : "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        284
+      ],
+      "description" : "A vulnerability in the web-based management interface of Cisco AsyncOS for Cisco Content Security Management Appliance (SMA) could allow an unauthenticated, remote attacker to obtain sensitive network information."
+    },
+    {
+      "id" : "CVE-2025-1946",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        77
+      ],
+      "description" : "A vulnerability was found in hzmanyun Education and Training System 2.1. It has been rated as critical. Affected by this issue is the function exportPDF of the file /user/exportPDF. The manipulation of the argument id leads to command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-1947",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        77
+      ],
+      "description" : "A vulnerability classified as critical has been found in hzmanyun Education and Training System 2.1.3. This affects the function scorm of the file UploadImageController.java. The manipulation of the argument param leads to command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-1949",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79,
+        94
+      ],
+      "description" : "A vulnerability, which was classified as problematic, has been found in ZZCMS 2025. This issue affects some unknown processing of the file /3/ucenter_api/code/register_nodb.php of the component URL Handler. The manipulation of the argument $_SERVER['PHP_SELF'] leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-1952",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability, which was classified as critical, was found in PHPGurukul Restaurant Table Booking System 1.0. Affected is an unknown function of the file /admin/password-recovery.php. The manipulation of the argument username/mobileno leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-1969",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        346
+      ],
+      "description" : "Improper request input validation in Temporary Elevated Access Management (TEAM) for AWS IAM Identity Center allows a user to modify a valid request and spoof an approval in TEAM. Upgrade TEAM to the latest release v.1.2.2. Follow instructions in updating TEAM documentation for updating process"
+    },
+    {
+      "id" : "CVE-2025-26202",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:A/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Cross-Site Scripting (XSS) vulnerability exists in the WPA/WAPI Passphrase field of the Wireless Security settings (2.4GHz & 5GHz bands) in DZS Router Web Interface. An authenticated attacker can inject malicious JavaScript into the passphrase field, which is stored and later executed when an administrator views the passphrase via the \"Click here to display\" option on the Status page"
+    },
+    {
+      "id" : "CVE-2025-1080",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        20
+      ],
+      "description" : "LibreOffice supports Office URI Schemes to enable browser integration of LibreOffice with MS SharePoint server. An additional scheme 'vnd.libreoffice.command' specific to LibreOffice was added. In the affected versions of LibreOffice a link in a browser using that scheme could be constructed with an embedded inner URL that when passed to LibreOffice could call internal macros with arbitrary arguments. This issue affects LibreOffice: from 24.8 before < 24.8.5, from 25.2 before < 25.2.1."
+    },
+    {
+      "id" : "CVE-2025-1259",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.7,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        284
+      ],
+      "description" : "On affected platforms running Arista EOS with OpenConfig configured, a gNOI request can be run when it should have been rejected. This issue can result in users retrieving data that should not have been available"
+    },
+    {
+      "id" : "CVE-2025-1260",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        284
+      ],
+      "description" : "On affected platforms running Arista EOS with OpenConfig configured, a gNOI request can be run when it should have been rejected. This issue can result in unexpected configuration/operations being applied to the switch."
+    },
+    {
+      "id" : "CVE-2025-1953",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 2.6,
+          "vector" : "CVSS:3.1/AV:A/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        310,
+        330
+      ],
+      "description" : "A vulnerability has been found in vLLM AIBrix 0.2.0 and classified as problematic. Affected by this vulnerability is an unknown functionality of the file pkg/plugins/gateway/prefixcacheindexer/hash.go of the component Prefix Caching. The manipulation leads to insufficiently random values. The complexity of an attack is rather high. The exploitation appears to be difficult. Upgrading to version 0.3.0 is able to address this issue. It is recommended to upgrade the affected component."
+    },
+    {
+      "id" : "CVE-2020-23438",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "Wondershare filmora 9.2.11 is affected by Trojan Dll hijacking leading to privilege escalation."
+    },
+    {
+      "id" : "CVE-2021-41719",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "Maharashtra State Electricity Distribution Company Limited Mahavitran IOS Application 16.1 application till version 16.1 communicates using the GET method to process requests that contain sensitive information such as user account name and password, which can expose that information through the browser's history, referrers, web logs, and other sources."
+    },
+    {
+      "id" : "CVE-2024-8000",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.3,
+          "vector" : "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N"
+        }
+      ],
+      "cwes" : [
+        1284
+      ],
+      "description" : "On affected platforms running Arista EOS with 802.1X configured, certain conditions may occur where a dynamic ACL is received from the AAA server resulting in only the first line of the ACL being installed after an Accelerated Software Upgrade (ASU) restart. Note: supplicants with pending captive-portal authentication during ASU would be impacted with this bug."
+    },
+    {
+      "id" : "CVE-2024-9135",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        401
+      ],
+      "description" : "On affected platforms running Arista EOS with BGP Link State configured, BGP peer flap can cause the BGP agent to leak memory. This may result in BGP routing processing being terminated and route flapping."
+    },
+    {
+      "id" : "CVE-2025-1954",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability was found in PHPGurukul Human Metapneumovirus Testing Management System 1.0. It has been declared as critical. Affected by this vulnerability is an unknown functionality of the file /login.php. The manipulation of the argument username leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-1955",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79,
+        94
+      ],
+      "description" : "A vulnerability was found in code-projects Online Class and Exam Scheduling System 1.0. It has been rated as problematic. Affected by this issue is some unknown functionality of the file /Scheduling/scheduling/pages/profile.php. The manipulation of the argument username leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-26136",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        89
+      ],
+      "description" : "A SQL injection vulnerability exists in mysiteforme versions prior to 2025.01.1."
+    },
+    {
+      "id" : "CVE-2025-26318",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.4,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L"
+        }
+      ],
+      "cwes" : [
+        281
+      ],
+      "description" : "Insecure permissions in TSplus Remote Access v17.30 allow attackers to retrieve a list of all domain accounts currently connected to the application."
+    },
+    {
+      "id" : "CVE-2025-1956",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability classified as critical has been found in code-projects Shopping Portal 1.0. This affects an unknown part of the file /Shopping/Admin/index.php of the component Login. The manipulation of the argument password leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-1957",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79,
+        94
+      ],
+      "description" : "A vulnerability classified as problematic was found in code-projects Blood Bank System 1.0. This vulnerability affects unknown code of the file /BBfile/Blood/o+.php. The manipulation of the argument Bloodname leads to cross site scripting. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-1958",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability, which was classified as critical, has been found in aaluoxiang oa_system 1.0. This issue affects some unknown processing of the file src/main/resources/mappers/address-mapper.xml. The manipulation of the argument outtype leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-25426",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.2,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        89
+      ],
+      "description" : "yshopmall <=v1.9.0 is vulnerable to SQL Injection in the image listing interface."
+    },
+    {
+      "id" : "CVE-2025-26319",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        434
+      ],
+      "description" : "FlowiseAI Flowise v2.2.6 was discovered to contain an arbitrary file upload vulnerability in /api/v1/attachments."
+    },
+    {
+      "id" : "CVE-2025-27510",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        829
+      ],
+      "description" : "conda-forge-metadata provides programatic access to conda-forge's metadata. conda-forge-metadata uses an optional dependency - \"conda-oci-mirror\" which was neither present on the PyPi repository nor registered by any entity. If conda-oci-mirror is taken over by a threat actor, it can result in remote code execution.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-1959",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability, which was classified as critical, was found in Codezips Gym Management System 1.0. Affected is an unknown function of the file /change_s_pwd.php. The manipulation of the argument login_id leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-1961",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability has been found in SourceCodester Best Church Management Software 1.1 and classified as critical. Affected by this vulnerability is an unknown functionality of the file /admin/app/web_crud.php. The manipulation of the argument encryption leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. Other parameters might be affected as well."
+    }
+  ]
+}

@@ -1,0 +1,931 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.4",
+  "version" : 1,
+  "vulnerabilities" : [
+    {
+      "id" : "CVE-2021-45423",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        120
+      ],
+      "description" : "A Buffer Overflow vulnerabilityexists in Pev 0.81 via the pe_exports function from exports.c.. The array offsets_to_Names is dynamically allocated on the stack using exp->NumberOfFunctions as its size. However, the loop uses exp->NumberOfNames to iterate over it and set its components value. Therefore, the loop code assumes that exp->NumberOfFunctions is greater than ordinal at each iteration. This can lead to arbitrary code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:pev_project:pev:0.81:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-6132",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        427
+      ],
+      "description" : "The vulnerability, if exploited, could allow a malicious entity with access to the file system to achieve arbitrary code execution and privilege escalation by tricking AVEVA Edge to load an unsafe DLL.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:aveva:platform_common_services:4.4.6:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:aveva:platform_common_services:4.5.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:aveva:platform_common_services:4.5.1:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:aveva:platform_common_services:4.5.2:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:aveva:batch_management:2020:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:aveva:enterprise_data_management:2021:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:aveva:manufacturing_execution_system:2020:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:aveva:mobile_operator:2020:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:aveva:system_platform:2020:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:aveva:system_platform:2020:r2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:aveva:system_platform:2020:r2_p01:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:aveva:work_tasks:2020:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:aveva:work_tasks:2020:update_1:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-10494",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        1285
+      ],
+      "description" : "An out of bounds read due to improper input validation in HeapObjMapImpl.cpp in NI LabVIEW may disclose information or result in arbitrary code execution. Successful exploitation requires an attacker to provide a user with a specially crafted VI. This vulnerability affects LabVIEW 2024 Q3 and prior versions.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:ni:labview:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2022:q1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2022:q3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2022:q3_patch1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2022:q3_patch2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2023:q1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2023:q3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2023:q3_patch1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2023:q3_patch2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2023:q3_patch3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2023:q3_patch4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2024:q1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2024:q1_patch1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2024:q3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2024:q3_patch1:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-10495",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        1285
+      ],
+      "description" : "An out of bounds read due to improper input validation when loading the font table in fontmgr.cpp in NI LabVIEW may disclose information or result in arbitrary code execution. Successful exploitation requires an attacker to provide a user with a specially crafted VI. This vulnerability affects LabVIEW 2024 Q3 and prior versions.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:ni:labview:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2022:q1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2022:q3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2022:q3_patch1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2022:q3_patch2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2023:q1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2023:q3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2023:q3_patch1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2023:q3_patch2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2023:q3_patch3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2023:q3_patch4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2024:q1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2024:q1_patch1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2024:q3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2024:q3_patch1:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-10496",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        1285
+      ],
+      "description" : "An out of bounds read due to improper input validation in BuildFontMap in fontmgr.cpp in NI LabVIEW may disclose information or result in arbitrary code execution. Successful exploitation requires an attacker to provide a user with a specially crafted VI. This vulnerability affects LabVIEW 2024 Q3 and prior versions.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:ni:labview:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2022:q1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2022:q3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2022:q3_patch1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2022:q3_patch2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2023:q1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2023:q3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2023:q3_patch1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2023:q3_patch2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2023:q3_patch3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2023:q3_patch4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2024:q1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2024:q1_patch1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2024:q3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ni:labview:2024:q3_patch1:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-27859",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        -1
+      ],
+      "description" : "The issue was addressed with improved memory handling. This issue is fixed in iOS 17.4 and iPadOS 17.4, tvOS 17.4, watchOS 10.4, visionOS 1.1, macOS Sonoma 14.4. Processing web content may lead to arbitrary code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:apple:ipados:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:iphone_os:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:macos:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:tvos:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:visionos:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:watchos:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-21121",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "InDesign Desktop versions ID20.0, ID19.5.1 and earlier are affected by an out-of-bounds write vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:adobe:indesign:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:indesign:20.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:macos:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-21123",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        122
+      ],
+      "description" : "InDesign Desktop versions ID20.0, ID19.5.1 and earlier are affected by a Heap-based Buffer Overflow vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:adobe:indesign:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:indesign:20.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:macos:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-21157",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "InDesign Desktop versions ID20.0, ID19.5.1 and earlier are affected by an out-of-bounds write vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:adobe:indesign:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:indesign:20.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:macos:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-21158",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        191
+      ],
+      "description" : "InDesign Desktop versions ID20.0, ID19.5.1 and earlier are affected by an Integer Underflow (Wrap or Wraparound) vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:adobe:indesign:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:indesign:20.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:macos:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0587",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        190
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker arbitrary code execution in pre-installed apps through integer overflow. This vulnerability can be exploited only in restricted scenarios.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:openatom:openharmony:4.1:-:*:*:-:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:openatom:openharmony:5.0.2:-:*:*:-:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-20024",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        190
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker arbitrary code execution in pre-installed apps through integer overflow. This vulnerability can be exploited only in restricted scenarios.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:openatom:openharmony:*:*:*:*:-:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-20081",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        416
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker arbitrary code execution in pre-installed apps through use after free. This vulnerability can be exploited only in restricted scenarios.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:openatom:openharmony:*:*:*:*:-:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-20091",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        416
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker arbitrary code execution in pre-installed apps through use after free. This vulnerability can be exploited only in restricted scenarios.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-20626",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        416
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker arbitrary code execution in pre-installed apps through use after free. This vulnerability can be exploited only in restricted scenarios.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:openatom:openharmony:*:*:*:*:-:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-21084",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        476
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker arbitrary code execution in pre-installed apps through through NULL pointer dereference.. This vulnerability can be exploited only in restricted scenarios.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:openatom:openharmony:*:*:*:*:-:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-22835",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker arbitrary code execution in pre-installed apps through out-of-bounds write. This vulnerability can be exploited only in restricted scenarios.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-23240",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker arbitrary code execution in pre-installed apps through out-of-bounds write. This vulnerability can be exploited only in restricted scenarios.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:openatom:openharmony:*:*:*:*:-:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-23409",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        416
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker arbitrary code execution in pre-installed apps through use after free. This vulnerability can be exploited only in restricted scenarios.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:openatom:openharmony:*:*:*:*:-:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-23414",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        416
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker arbitrary code execution in pre-installed apps through use after free. This vulnerability can be exploited only in restricted scenarios.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:openatom:openharmony:*:*:*:*:-:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-23420",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker arbitrary code execution in pre-installed apps through out-of-bounds write. This vulnerability can be exploited only in restricted scenarios.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:openatom:openharmony:*:*:*:*:-:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-24301",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        416
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker arbitrary code execution in pre-installed apps through use after free. This vulnerability can be exploited only in restricted scenarios.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:openatom:openharmony:*:*:*:*:-:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-24309",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "in OpenHarmony v5.0.2 and prior versions allow a local attacker arbitrary code execution in pre-installed apps through out-of-bounds write. This vulnerability can be exploited only in restricted scenarios.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:openatom:openharmony:*:*:*:*:-:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-1307",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        862
+      ],
+      "description" : "The Newscrunch theme for WordPress is vulnerable to arbitrary file uploads due to a missing capability check in the newscrunch_install_and_activate_plugin() function in all versions up to, and including, 1.8.4.1. This makes it possible for authenticated attackers, with Subscriber-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:spicethemes:newscrunch:*:*:*:*:*:wordpress:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-50704",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 10.0,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        94
+      ],
+      "description" : "Unauthenticated remote code execution vulnerability in Uniguest Tripleplay before 24.2.1 allows remote attackers to execute arbitrary code via a specially crafted HTTP POST request.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-50707",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 10.0,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        94
+      ],
+      "description" : "Unauthenticated remote code execution vulnerability in Uniguest Tripleplay before 24.2.1 allows remote attackers to execute arbitrary code via the X-Forwarded-For header in an HTTP GET request.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    }
+  ]
+}

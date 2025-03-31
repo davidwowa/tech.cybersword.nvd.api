@@ -27,7 +27,7 @@ public class App {
     private static final Logger logger = LogManager.getLogger(App.class);
 
     private static final String NVD_API_URL = "https://services.nvd.nist.gov/rest/json/cves/2.0";
-    private static String API_KEY = "catchmeifyoucan";
+    private static String API_KEY = "";
 
     private static int rceInDescCounter = 0;
 
@@ -44,8 +44,8 @@ public class App {
         // }
 
         // Beispiel: Start- und Enddatum (ISO 8601 Format)
-        String startDate = "2025-02-01T00:00:00.000Z";
-        String endDate = "2025-02-02T23:59:59.999Z";
+        String startDate = "2025-03-23T00:00:00.000Z";
+        String endDate = "2025-03-29T23:59:59.999Z";
 
         // LocalDateTime now = LocalDateTime.now();
         // String startDate =
@@ -158,6 +158,11 @@ public class App {
 
         if (cveData.has("vulnerabilities")) {
             for (JsonNode cveNode : cveData.get("vulnerabilities")) {
+
+                if (null == cveNode.get("cve").get("vulnStatus")) {
+                    logger.warn("No vulnStatus found for CVE: " + cveNode.get("cve").get("id").asText());
+                    continue;
+                }
 
                 String vulnStatus = cveNode.get("cve").get("vulnStatus").asText();
 

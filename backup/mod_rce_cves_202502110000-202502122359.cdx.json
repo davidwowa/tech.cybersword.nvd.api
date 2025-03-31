@@ -1,0 +1,2025 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.4",
+  "version" : 1,
+  "vulnerabilities" : [
+    {
+      "id" : "CVE-2017-0222",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "A remote code execution vulnerability exists when Internet Explorer improperly accesses objects in memory, aka \"Internet Explorer Memory Corruption Vulnerability.\" This CVE ID is unique from CVE-2017-0226.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:microsoft:internet_explorer:9:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_server_2008:-:sp2:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2017-0261",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        416
+      ],
+      "description" : "Microsoft Office 2010 SP2, Office 2013 SP1, and Office 2016 allow a remote code execution vulnerability when the software fails to properly handle objects in memory, aka \"Office Remote Code Execution Vulnerability\". This CVE ID is unique from CVE-2017-0262 and CVE-2017-0281.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:microsoft:office:2010:sp2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:microsoft:office:2013:sp1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:microsoft:office:2016:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2017-0262",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        -1
+      ],
+      "description" : "Microsoft Office 2010 SP2, Office 2013 SP1, and Office 2016 allow a remote code execution vulnerability when the software fails to properly handle objects in memory, aka \"Office Remote Code Execution Vulnerability\". This CVE ID is unique from CVE-2017-0261 and CVE-2017-0281.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:microsoft:office:2010:sp2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:microsoft:office:2013:sp1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:microsoft:office:2016:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2017-9822",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        94
+      ],
+      "description" : "DNN (aka DotNetNuke) before 9.1.1 has Remote Code Execution via a cookie, aka \"2017-08 (Critical) Possible remote code execution on DNN sites.\"",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:dnnsoftware:dotnetnuke:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2018-6961",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.1,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        78
+      ],
+      "description" : "VMware NSX SD-WAN Edge by VeloCloud prior to version 3.1.0 contains a command injection vulnerability in the local web UI component. This component is disabled by default and should not be enabled on untrusted networks. VeloCloud by VMware will be removing this service from the product in future releases. Successful exploitation of this issue could result in remote code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:vmware:nsx_sd-wan_by_velocloud:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2019-16278",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        22
+      ],
+      "description" : "Directory Traversal in the function http_verify in nostromo nhttpd through 1.9.6 allows an attacker to achieve remote code execution via a crafted HTTP request.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:nazgul:nostromo_nhttpd:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2019-18187",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        22
+      ],
+      "description" : "Trend Micro OfficeScan versions 11.0 and XG (12.0) could be exploited by an attacker utilizing a directory traversal vulnerability to extract files from an arbitrary zip file to a specific folder on the OfficeScan server, which could potentially lead to remote code execution (RCE). The remote process execution is bound to a web service account, which depending on the web platform used may have restricted permissions. An attempted attack requires user authentication.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:trendmicro:officescan:11.0:sp1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:trendmicro:officescan:xg:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:trendmicro:officescan:xg:sp1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2020-1147",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        -1
+      ],
+      "description" : "A remote code execution vulnerability exists in .NET Framework, Microsoft SharePoint, and Visual Studio when the software fails to check the source markup of XML file input, aka '.NET Framework, SharePoint Server, and Visual Studio Remote Code Execution Vulnerability'.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:microsoft:.net_core:2.1:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:microsoft:.net_core:3.1:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2020-8218",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.2,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        94
+      ],
+      "description" : "A code injection vulnerability exists in Pulse Connect Secure <9.1R8 that allows an attacker to crafted a URI to perform an arbitrary code execution via the admin web interface.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r4.1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r4.2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r4.3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r5:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r6:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r7:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2020-1380",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "A remote code execution vulnerability exists in the way that the scripting engine handles objects in memory in Internet Explorer. The vulnerability could corrupt memory in such a way that an attacker could execute arbitrary code in the context of the current user. An attacker who successfully exploited the vulnerability could gain the same user rights as the current user. If the current user is logged on with administrative user rights, an attacker who successfully exploited the vulnerability could take control of an affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. In a web-based attack scenario, an attacker could host a specially crafted website that is designed to exploit the vulnerability through Internet Explorer and then convince a user to view the website. An attacker could also embed an ActiveX control marked &quot;safe for initialization&quot; in an application or Microsoft Office document that hosts the IE rendering engine. The attacker could also take advantage of compromised websites and websites that accept or host user-provided content or advertisements. These websites could contain specially crafted content that could exploit the vulnerability. The security update addresses the vulnerability by modifying how the scripting engine handles objects in memory.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:microsoft:internet_explorer:11:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_1507:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_1607:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_1709:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_1803:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_1809:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_1903:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_1909:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_2004:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_7:-:sp1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_8.1:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_rt_8.1:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_server_2008:r2:sp1:*:*:*:*:x64:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_server_2012:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_server_2012:r2:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_server_2016:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_server_2019:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2020-8243",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.2,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        94
+      ],
+      "description" : "A vulnerability in the Pulse Connect Secure < 9.1R8.2 admin web interface could allow an authenticated attacker to upload custom template to perform an arbitrary code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r4.1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r4.2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r4.3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r5:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r6:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r7:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r8:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r8.1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:policy_secure:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:policy_secure:9.1:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:policy_secure:9.1:r1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:policy_secure:9.1:r2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:policy_secure:9.1:r3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:policy_secure:9.1:r4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:policy_secure:9.1:r4.1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:policy_secure:9.1:r4.2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:policy_secure:9.1:r4.3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:policy_secure:9.1:r5:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:policy_secure:9.1:r6:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:policy_secure:9.1:r7:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:policy_secure:9.1:r8:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:policy_secure:9.1:r8.1:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2020-8260",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.2,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        434
+      ],
+      "description" : "A vulnerability in the Pulse Connect Secure < 9.1R9 admin web interface could allow an authenticated attacker to perform an arbitrary code execution using uncontrolled gzip extraction.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r1.0:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r2.0:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r3.0:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r4.0:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r4.1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r4.2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r4.3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r5.0:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r6.0:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r7.0:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r8.0:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r8.1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r8.2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r8.4:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2021-22899",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        77
+      ],
+      "description" : "A command injection vulnerability exists in Pulse Connect Secure before 9.1R11.4 allows a remote authenticated attacker to perform remote code execution via Windows Resource Profiles Feature",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.0:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.0:r1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.0:r1.0:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.0:r2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.0:r2.0:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.0:r2.1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.0:r3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.0:r3.0:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.0:r3.1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.0:r3.2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.0:r3.3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.0:r3.5:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.0:r4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.0:r4.0:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.0:r4.1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.0:r5.0:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.0:r6.0:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.0:rx:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r10.0:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r10.2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r11.0:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r11.1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r11.3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r4.1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r4.2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r4.3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r5:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r6:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r7:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r8:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r8.1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r8.2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r8.4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r9:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r9.1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:9.1:r9.2:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2022-40139",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.2,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        -1
+      ],
+      "description" : "Improper validation of some components used by the rollback mechanism in Trend Micro Apex One and Trend Micro Apex One as a Service clients could allow a Apex One server administrator to instruct affected clients to download an unverified rollback package, which could lead to remote code execution. Please note: an attacker must first obtain Apex One server administration console access in order to exploit this vulnerability.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:trendmicro:apex_one:-:*:*:*:saas:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:trendmicro:apex_one:2019:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-26817",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        -1
+      ],
+      "description" : "codefever before 2023.2.7-commit-b1c2e7f was discovered to contain a remote code execution (RCE) vulnerability via the component /controllers/api/user.php.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:pgyer:codefever:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-29478",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        22
+      ],
+      "description" : "BiblioCraft before 2.4.6 does not sanitize path-traversal characters in filenames, allowing restricted write access to almost anywhere on the filesystem. This includes the Minecraft mods folder, which results in code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:bibliocraftmod:bibliocraft:*:*:*:*:*:minecraft:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-1406",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        434
+      ],
+      "description" : "The JetEngine WordPress plugin before 3.1.3.1 includes uploaded files without adequately ensuring that they are not executable, leading to a remote code execution vulnerability.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:crocoblock:jetengine_for_elementor:*:*:*:*:*:wordpress:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-1381",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        502
+      ],
+      "description" : "The WP Meta SEO WordPress plugin before 4.5.5 does not validate image file paths before attempting to manipulate the image files, leading to a PHAR deserialization vulnerability. Furthermore, the plugin contains a gadget chain which may be used in certain configurations to achieve remote code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:joomunited:wp_meta_seo:*:*:*:*:*:wordpress:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-20887",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        77
+      ],
+      "description" : "Aria Operations for Networks contains a command injection vulnerability. A malicious actor with network access to VMware Aria Operations for Networks may be able to perform a command injection attack resulting in remote code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:vmware:aria_operations_for_networks:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-34552",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "In certain EZVIZ products, two stack based buffer overflows in mulicast_parse_sadp_packet and mulicast_get_pack_type functions of the SADP multicast protocol can allow an unauthenticated attacker present on the same local network as the camera to achieve remote code execution. This affects CS-C6N-B0-1G2WF Firmware versions before V5.3.0 build 230215 and CS-C6N-R101-1G2WF Firmware versions before V5.3.0 build 230215 and CS-CV310-A0-1B2WFR Firmware versions before V5.3.0 build 230221 and CS-CV310-A0-1C2WFR-C Firmware versions before V5.3.2 build 230221 and CS-C6N-A0-1C2WFR-MUL Firmware versions before V5.3.2 build 230218 and CS-CV310-A0-3C2WFRL-1080p Firmware versions before V5.2.7 build 230302 and CS-CV310-A0-1C2WFR Wifi IP66 2.8mm 1080p Firmware versions before V5.3.2 build 230214 and CS-CV248-A0-32WMFR Firmware versions before V5.2.3 build 230217 and EZVIZ LC1C Firmware versions before V5.3.4 build 230214.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:ezviz:cs-c6n-b0-1g2wf_firmware:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:ezviz:cs-c6n-b0-1g2wf:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-38562",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.7,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:N/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        415
+      ],
+      "description" : "A double-free vulnerability exists in the IP header loopback parsing functionality of Weston Embedded uC-TCP-IP v3.06.01. A specially crafted set of network packets can lead to memory corruption, potentially resulting in code execution. An attacker can send a sequence of unauthenticated packets to trigger this vulnerability.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:weston-embedded:uc-tcp-ip:3.06.01:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-45318",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 10.0,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        122
+      ],
+      "description" : "A heap-based buffer overflow vulnerability exists in the HTTP Server functionality of Weston Embedded uC-HTTP git commit 80d4004. A specially crafted network packet can lead to arbitrary code execution. An attacker can send a malicious packet to trigger this vulnerability.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:silabs:gecko_software_development_kit:4.3.2.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:weston-embedded:uc-http:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-21802",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        122
+      ],
+      "description" : "A heap-based buffer overflow vulnerability exists in the GGUF library info-&gt;ne functionality of llama.cpp Commit 18c2e17. A specially crafted .gguf file can lead to code execution. An attacker can provide a malicious file to trigger this vulnerability.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:ggerganov:llama.cpp:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-21825",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        190
+      ],
+      "description" : "A heap-based buffer overflow vulnerability exists in the GGUF library GGUF_TYPE_ARRAY/GGUF_TYPE_STRING parsing functionality of llama.cpp Commit 18c2e17. A specially crafted .gguf file can lead to code execution. An attacker can provide a malicious file to trigger this vulnerability.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:ggerganov:llama.cpp:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-21836",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        190
+      ],
+      "description" : "A heap-based buffer overflow vulnerability exists in the GGUF library header.n_tensors functionality of llama.cpp Commit 18c2e17. A specially crafted .gguf file can lead to code execution. An attacker can provide a malicious file to trigger this vulnerability.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:ggerganov:llama.cpp:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-23496",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        190
+      ],
+      "description" : "A heap-based buffer overflow vulnerability exists in the GGUF library gguf_fread_str functionality of llama.cpp Commit 18c2e17. A specially crafted .gguf file can lead to code execution. An attacker can provide a malicious file to trigger this vulnerability.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:ggerganov:llama.cpp:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-23605",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        190
+      ],
+      "description" : "A heap-based buffer overflow vulnerability exists in the GGUF library header.n_kv functionality of llama.cpp Commit 18c2e17. A specially crafted .gguf file can lead to code execution. An attacker can provide a malicious file to trigger this vulnerability.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:ggerganov:llama.cpp:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-20758",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.0,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        20
+      ],
+      "description" : "Adobe Commerce versions 2.4.6-p4, 2.4.5-p6, 2.4.4-p7, 2.4.7-beta3 and earlier are affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does not require user interaction, but the attack complexity is high.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.3.7:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.3.7:p1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.3.7:p2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.3.7:p3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.3.7:p4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.3.7:p4-ext1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.3.7:p4-ext2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.3.7:p4-ext3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.3.7:p4-ext4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.0:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.0:ext-1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.0:ext-2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.0:ext-3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.0:ext-4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.1:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.1:ext-1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.1:ext-2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.1:ext-3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.1:ext-4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.2:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.2:ext-1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.2:ext-2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.2:ext-3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.2:ext-4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.2:ext-6:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.2:p1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.2:p2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.3:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.3:ext-1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.3:ext-2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.3:ext-3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.3:ext-4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.3:ext-6:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.3:p1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.3:p2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.4:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.4:p1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.4:p2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.4:p3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.4:p4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.4:p5:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.4:p6:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.4:p7:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.5:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.5:p1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.5:p2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.5:p3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.5:p4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.5:p5:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.5:p6:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.6:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.6:p1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.6:p2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.6:p3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.6:p4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.7:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.7:b1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.7:b2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:commerce:2.4.7:beta3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:magento:2.4.4:-:*:*:open_source:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:magento:2.4.4:p1:*:*:open_source:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:magento:2.4.4:p2:*:*:open_source:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:magento:2.4.4:p3:*:*:open_source:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:magento:2.4.4:p4:*:*:open_source:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:magento:2.4.4:p5:*:*:open_source:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:magento:2.4.4:p6:*:*:open_source:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:magento:2.4.4:p7:*:*:open_source:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:magento:2.4.5:-:*:*:open_source:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:magento:2.4.5:p1:*:*:open_source:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:magento:2.4.5:p2:*:*:open_source:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:magento:2.4.5:p3:*:*:open_source:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:magento:2.4.5:p4:*:*:open_source:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:magento:2.4.5:p5:*:*:open_source:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:magento:2.4.5:p6:*:*:open_source:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:magento:2.4.6:-:*:*:open_source:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:magento:2.4.6:p1:*:*:open_source:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:magento:2.4.6:p2:*:*:open_source:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:magento:2.4.6:p3:*:*:open_source:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:magento:2.4.6:p4:*:*:open_source:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:magento:2.4.7:-:*:*:open_source:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:magento:2.4.7:b1:*:*:open_source:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:magento:2.4.7:b2:*:*:open_source:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:magento:2.4.7:beta3:*:*:open_source:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-35949",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        121
+      ],
+      "description" : "Multiple stack-based buffer overflow vulnerabilities exist in the readOFF.cpp functionality of libigl v2.4.0. A specially-crafted .off file can lead to a buffer overflow. An attacker can arbitrary code execution to trigger these vulnerabilities.This vulnerability exists within the code responsible for parsing geometric faces of an OFF file.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:libigl:libigl:2.4.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:libigl:libigl:2.5.0:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-35950",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        121
+      ],
+      "description" : "Multiple stack-based buffer overflow vulnerabilities exist in the readOFF.cpp functionality of libigl v2.4.0. A specially-crafted .off file can lead to a buffer overflow. An attacker can arbitrary code execution to trigger these vulnerabilities.This vulnerability exists within the code responsible for parsing the header of an OFF file.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:libigl:libigl:2.4.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:libigl:libigl:2.5.0:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-35951",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        121
+      ],
+      "description" : "Multiple stack-based buffer overflow vulnerabilities exist in the readOFF.cpp functionality of libigl v2.4.0. A specially-crafted .off file can lead to a buffer overflow. An attacker can arbitrary code execution to trigger these vulnerabilities.This vulnerability exists within the code responsible for parsing geometric vertices of an OFF file.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:libigl:libigl:2.4.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:libigl:libigl:2.5.0:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-35952",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        121
+      ],
+      "description" : "Multiple stack-based buffer overflow vulnerabilities exist in the readOFF.cpp functionality of libigl v2.4.0. A specially-crafted .off file can lead to a buffer overflow. An attacker can arbitrary code execution to trigger these vulnerabilities.This vulnerability exists within the code responsible for parsing comments within the geometric faces section within an OFF file.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:libigl:libigl:2.4.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:libigl:libigl:2.5.0:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-35953",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        121
+      ],
+      "description" : "Multiple stack-based buffer overflow vulnerabilities exist in the readOFF.cpp functionality of libigl v2.4.0. A specially-crafted .off file can lead to a buffer overflow. An attacker can arbitrary code execution to trigger these vulnerabilities.This vulnerability exists within the code responsible for parsing comments within the geometric vertices section within an OFF file.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:libigl:libigl:2.4.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:libigl:libigl:2.5.0:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-23601",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        345
+      ],
+      "description" : "A code injection vulnerability exists in the scan_lib.bin functionality of AutomationDirect P3-550E 1.2.10.9. A specially crafted scan_lib.bin can lead to arbitrary code execution. An attacker can provide a malicious file to trigger this vulnerability.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:automationdirect:p3-550e_firmware:1.2.10.9:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:automationdirect:p3-550e_firmware:4.1.1.10:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:automationdirect:p3-550e:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-7855",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        434
+      ],
+      "description" : "The WP Hotel Booking plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the update_review() function in all versions up to, and including, 2.1.2. This makes it possible for authenticated attackers, with subscriber-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:thimpress:wp_hotel_booking:*:*:*:*:*:wordpress:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-43383",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.0,
+          "vector" : "CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        502
+      ],
+      "description" : "Deserialization of Untrusted Data vulnerability in Apache Lucene.Net.Replicator. This issue affects Apache Lucene.NET's Replicator library: from 4.8.0-beta00005 through 4.8.0-beta00016. An attacker that can intercept traffic between a replication client and server, or control the target replication node URL, can provide a specially-crafted JSON response that is deserialized as an attacker-provided exception type. This can result in remote code execution or other potential unauthorized access. Users are recommended to upgrade to version 4.8.0-beta00017, which fixes the issue.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:apache:lucene.net:4.8.0:beta00005:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:lucene.net:4.8.0:beta00006:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:lucene.net:4.8.0:beta00007:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:lucene.net:4.8.0:beta00008:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:lucene.net:4.8.0:beta00009:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:lucene.net:4.8.0:beta00010:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:lucene.net:4.8.0:beta00011:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:lucene.net:4.8.0:beta00012:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:lucene.net:4.8.0:beta00013:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:lucene.net:4.8.0:beta00014:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:lucene.net:4.8.0:beta00015:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:lucene.net:4.8.0:beta00016:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-10979",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        15
+      ],
+      "description" : "Incorrect control of environment variables in PostgreSQL PL/Perl allows an unprivileged database user to change sensitive process environment variables (e.g. PATH). That often suffices to enable arbitrary code execution, even if the attacker lacks a database server operating system user. Versions before PostgreSQL 17.1, 16.5, 15.9, 14.14, 13.17, and 12.21 are affected.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:postgresql:postgresql:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:postgresql:postgresql:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:postgresql:postgresql:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:postgresql:postgresql:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:postgresql:postgresql:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:postgresql:postgresql:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-21697",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        -1
+      ],
+      "description" : "This High severity RCE (Remote Code Execution) vulnerability was introduced in versions 4.2.8 of Sourcetree for Mac and 3.4.19 for Sourcetree for Windows. This RCE (Remote Code Execution) vulnerability, with a CVSS Score of 8.8, allows an unauthenticated attacker to execute arbitrary code which has high impact to confidentiality, high impact to integrity, high impact to availability, and requires user interaction. Atlassian recommends that Sourcetree for Mac and Sourcetree for Windows customers upgrade to latest version, if you are unable to do so, upgrade your instance to one of the specified supported fixed versions: Sourcetree for Mac 4.2: Upgrade to a release greater than or equal to 4.2.9 Sourcetree for Windows 3.4: Upgrade to a release greater than or equal to 3.4.20 See the release notes ([https://www.sourcetreeapp.com/download-archives]). You can download the latest version of Sourcetree for Mac and Sourcetree for Windows from the download center ([https://www.sourcetreeapp.com/download-archives]). This vulnerability was reported via our Penetration Testing program.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:atlassian:sourcetree:3.4.19:*:*:*:*:windows:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:atlassian:sourcetree:4.2.8:*:*:*:*:macos:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-52046",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        502
+      ],
+      "description" : "The ObjectSerializationDecoder in Apache MINA uses Java’s native deserialization protocol to process incoming serialized data but lacks the necessary security checks and defenses. This vulnerability allows attackers to exploit the deserialization process by sending specially crafted malicious serialized data, potentially leading to remote code execution (RCE) attacks. This issue affects MINA core versions 2.0.X, 2.1.X and 2.2.X, and will be fixed by the releases 2.0.27, 2.1.10 and 2.2.4. It's also important to note that an application using MINA core library will only be affected if the IoBuffer#getObject() method is called, and this specific method is potentially called when adding a ProtocolCodecFilter instance using the ObjectSerializationCodecFactory class in the filter chain. If your application is specifically using those classes, you have to upgrade to the latest version of MINA core library. Upgrading will  not be enough: you also need to explicitly allow the classes the decoder will accept in the ObjectSerializationDecoder instance, using one of the three new methods: /**      * Accept class names where the supplied ClassNameMatcher matches for * deserialization, unless they are otherwise rejected. * * @param classNameMatcher the matcher to use */ public void accept(ClassNameMatcher classNameMatcher) /** * Accept class names that match the supplied pattern for * deserialization, unless they are otherwise rejected. * * @param pattern standard Java regexp */ public void accept(Pattern pattern) /** * Accept the wildcard specified classes for deserialization, * unless they are otherwise rejected. * * @param patterns Wildcard file name patterns as defined by * {@link org.apache.commons.io.FilenameUtils#wildcardMatch(String, String) FilenameUtils.wildcardMatch} */ public void accept(String... patterns) By default, the decoder will reject *all* classes that will be present in the incoming data. Note: The FtpServer, SSHd and Vysper sub-project are not affected by this issue.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:apache:mina:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:mina:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:apache:mina:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-21122",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        191
+      ],
+      "description" : "Photoshop Desktop versions 25.12, 26.1 and earlier are affected by an Integer Underflow (Wrap or Wraparound) vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:adobe:photoshop:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:photoshop:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:macos:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-21127",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        427
+      ],
+      "description" : "Photoshop Desktop versions 25.12, 26.1 and earlier are affected by an Uncontrolled Search Path Element vulnerability that could lead to arbitrary code execution. An attacker could manipulate the search path environment variable to point to a malicious library, resulting in the execution of arbitrary code when the application loads. Exploitation of this issue requires user interaction in that a victim must run the vulnerable application.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:adobe:photoshop:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:photoshop:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:macos:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-21135",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        191
+      ],
+      "description" : "Animate versions 24.0.6, 23.0.9 and earlier are affected by an Integer Underflow (Wrap or Wraparound) vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:adobe:animate:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:animate:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:apple:macos:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-13472",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        94
+      ],
+      "description" : "The The WooCommerce Product Table Lite plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 3.9.4. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes. The same 'sc_attrs' parameter is vulnerable to Reflected Cross-Site Scripting as well.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:wcproducttable:woocommerce_product_table:*:*:*:*:lite:wordpress:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0994",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        502
+      ],
+      "description" : "Trimble Cityworks versions prior to 15.8.9 and Cityworks with office companion versions prior to 23.10 are vulnerable to a deserialization vulnerability. This could allow an authenticated user to perform a remote code execution attack against a customer’s Microsoft Internet Information Services (IIS) web server.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:trimble:cityworks:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:trimble:cityworks:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-47908",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        78
+      ],
+      "description" : "OS command injection in the admin web console of Ivanti CSA before version 5.0.5 allows a remote authenticated attacker with admin privileges to achieve remote code execution.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-22467",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.9,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        121
+      ],
+      "description" : "A stack-based buffer overflow in Ivanti Connect Secure before version 22.7R2.6 allows a remote authenticated attacker to achieve remote code execution.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0108",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        306
+      ],
+      "description" : "An authentication bypass in the Palo Alto Networks PAN-OS software enables an unauthenticated attacker with network access to the management web interface to bypass the authentication otherwise required by the PAN-OS management web interface and invoke certain PHP scripts. While invoking these PHP scripts does not enable remote code execution, it can negatively impact integrity and confidentiality of PAN-OS. You can greatly reduce the risk of this issue by restricting access to the management web interface to only trusted internal IP addresses according to our recommended best practices deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 . This issue does not affect Cloud NGFW or Prisma Access software.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    }
+  ]
+}

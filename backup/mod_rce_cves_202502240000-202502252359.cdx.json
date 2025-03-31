@@ -1,0 +1,659 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.4",
+  "version" : 1,
+  "vulnerabilities" : [
+    {
+      "id" : "CVE-2017-3066",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        502
+      ],
+      "description" : "Adobe ColdFusion 2016 Update 3 and earlier, ColdFusion 11 update 11 and earlier, ColdFusion 10 Update 22 and earlier have a Java deserialization vulnerability in the Apache BlazeDS library. Successful exploitation could lead to arbitrary code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update10:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update11:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update12:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update13:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update14:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update15:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update16:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update17:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update18:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update19:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update20:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update21:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update22:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update5:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update6:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update7:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update8:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:10.0:update9:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:11.0:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:11.0:update1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:11.0:update10:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:11.0:update11:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:11.0:update2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:11.0:update3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:11.0:update4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:11.0:update5:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:11.0:update6:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:11.0:update7:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:11.0:update8:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:11.0:update9:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:2016:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:2016:update1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:2016:update2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:adobe:coldfusion:2016:update3:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2022-37042",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        22
+      ],
+      "description" : "Zimbra Collaboration Suite (ZCS) 8.8.15 and 9.0 has mboximport functionality that receives a ZIP archive and extracts files from it. By bypassing authentication (i.e., not having an authtoken), an attacker can upload arbitrary files to the system, leading to directory traversal and remote code execution. NOTE: this issue exists because of an incomplete fix for CVE-2022-27925.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:zimbra:collaboration:8.8.15:-:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:zimbra:collaboration:9.0.0:-:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2021-3674",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        119
+      ],
+      "description" : "A flaw was found in rizin. The create_section_from_phdr function allocates space for ELF section data by processing the headers. Crafted values in the headers can cause out of bounds reads, which can lead to memory corruption and possibly code execution through the binary object's callback function.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:rizin:rizin:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-20951",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "In gatt_process_prep_write_rsp of gatt_cl.cc, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-12 Android-12L Android-13Android ID: A-258652631",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:google:android:11.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:google:android:12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:google:android:12.1:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:google:android:13.0:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-20954",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "In SDP_AddAttribute of sdp_db.cc, there is a possible out of bounds write due to an incorrect bounds check. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-12 Android-12L Android-13Android ID: A-261867748",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:google:android:11.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:google:android:12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:google:android:12.1:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:google:android:13.0:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-21020",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.7,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        416
+      ],
+      "description" : "In registerSignalHandlers of main.c, there is a possible local arbitrary code execution due to a use after free. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-13Android ID: A-256591441",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:google:android:13.0:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-0494",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        416
+      ],
+      "description" : "A vulnerability was found in X.Org. This issue occurs due to a dangling pointer in DeepCopyPointerClasses that can be exploited by ProcXkbSetDeviceInfo() and ProcXkbGetDeviceInfo() to read and write into freed memory. This can lead to local privilege elevation on systems where the X server runs privileged and remote code execution for ssh X forwarding sessions.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:x.org:x_server:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-28676",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        352
+      ],
+      "description" : "A cross-site request forgery (CSRF) vulnerability in Jenkins Convert To Pipeline Plugin 1.0 and earlier allows attackers to create a Pipeline based on a Freestyle project, potentially leading to remote code execution (RCE).",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:jenkins:convert_to_pipeline:*:*:*:*:*:jenkins:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-12877",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        502
+      ],
+      "description" : "The GiveWP – Donation Plugin and Fundraising Platform plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 3.19.2 via deserialization of untrusted input from the donation form like 'firstName'. This makes it possible for unauthenticated attackers to inject a PHP Object. The additional presence of a POP chain allows attackers to delete arbitrary files on the server that makes remote code execution possible. Please note this was only partially patched in 3.19.3, a fully sufficient patch was not released until 3.19.4. However, another CVE was assigned by another CNA for version 3.19.3 so we will leave this as affecting 3.19.2 and before. We have recommended the vendor use JSON encoding to prevent any further deserialization vulnerabilities from being present.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:givewp:givewp:*:*:*:*:*:wordpress:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0366",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        98
+      ],
+      "description" : "The Jupiter X Core plugin for WordPress is vulnerable to Local File Inclusion to Remote Code Execution in all versions up to, and including, 4.8.7 via the get_svg() function. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution. In this specific case, an attacker can create a form that allows SVG uploads, upload an SVG file with malicious content and then include the SVG file in a post to achieve remote code execution. This means it is relatively easy to gain remote code execution as a contributor-level user and above by default.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:artbees:jupiter_x_core:*:*:*:*:*:wordpress:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-13365",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        434
+      ],
+      "description" : "The Security & Malware scan by CleanTalk plugin for WordPress is vulnerable to arbitrary file uploads due to the plugin uploading and extracting .zip archives when scanning them for malware through the checkUploadedArchive() function in all versions up to, and including, 2.149. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:cleantalk:security_\\&_malware_scan:*:*:*:*:*:wordpress:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-10763",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        22
+      ],
+      "description" : "The Campress theme for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.35 via the 'campress_woocommerce_get_ajax_products' function. This makes it possible for unauthenticated attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where php file type can be uploaded and included.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:apuswp:campress:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-13345",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        94
+      ],
+      "description" : "The Avada Builder plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 3.11.13. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:theme-fusion:avada:*:*:*:*:*:wordpress:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-13346",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        94
+      ],
+      "description" : "The Avada | Website Builder For WordPress & WooCommerce theme for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 7.11.13. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:theme-fusion:avada:*:*:*:*:*:wordpress:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-13792",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        94
+      ],
+      "description" : "The WooCommerce Food - Restaurant Menu & Food ordering plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 3.3.2. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:ex-themes:woocommerce_food:*:*:*:*:*:wordpress:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-13353",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        98
+      ],
+      "description" : "The Responsive Addons for Elementor – Free Elementor Addons Plugin and Elementor Templates plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.6.4 via several widgets. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other “safe” file types can be uploaded and included.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:cyberchimps:responsive_addons_for_elementor:*:*:*:*:*:wordpress:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-27364",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 10.0,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        78
+      ],
+      "description" : "In MITRE Caldera through 4.2.0 and 5.0.0 before 35bc06e, a Remote Code Execution (RCE) vulnerability was found in the dynamic agent (implant) compilation functionality of the server. This allows remote attackers to execute arbitrary code on the server that Caldera is running on via a crafted web request to the Caldera server API used for compiling and downloading of Caldera's Sandcat or Manx agent (implants). This web request can use the gcc -extldflags linker flag with sub-commands.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-1128",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        434
+      ],
+      "description" : "The Everest Forms – Contact Forms, Quiz, Survey, Newsletter & Payment Form Builder for WordPress plugin for WordPress is vulnerable to arbitrary file upload, read, and deletion due to missing file type and path validation in the 'format' method of the EVF_Form_Fields_Upload class in all versions up to, and including, 3.0.9.4. This makes it possible for unauthenticated attackers to upload, read, and delete arbitrary files on the affected site's server which may make remote code execution, sensitive information disclosure, or a site takeover possible.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-0148",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.6,
+          "vector" : "CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        447
+      ],
+      "description" : "NVIDIA Jetson Linux and IGX OS image contains a vulnerability in the UEFI firmware RCM boot mode, where an unprivileged attacker with physical access to the device could load untrusted code. A successful exploit might lead to code execution, escalation of privileges, data tampering, denial of service, and information disclosure. The scope of the impacts can extend to other components.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    }
+  ]
+}

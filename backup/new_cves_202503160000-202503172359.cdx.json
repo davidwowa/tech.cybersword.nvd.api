@@ -1,0 +1,528 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.4",
+  "version" : 1,
+  "vulnerabilities" : [
+    {
+      "id" : "CVE-2024-48013",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        250
+      ],
+      "description" : "Dell SmartFabric OS10 Software, version(s) 10.5.4.x, 10.5.5.x, 10.5.6.x, 10.6.0.x, contain(s) an Execution with Unnecessary Privileges vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to Elevation of privileges."
+    },
+    {
+      "id" : "CVE-2024-48830",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        77
+      ],
+      "description" : "Dell SmartFabric OS10 Software, version(s) 10.5.4.x, 10.5.5.x, 10.5.6.x, 10.6.0.x, contain(s) an Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Command execution."
+    },
+    {
+      "id" : "CVE-2025-22474",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        918
+      ],
+      "description" : "Dell SmartFabric OS10 Software, version(s) 10.5.4.x, 10.5.5.x, 10.5.6.x, 10.6.0.x, contain(s) a Server-Side Request Forgery (SSRF) vulnerability. A high privileged attacker with remote access could potentially exploit this vulnerability, leading to Server-side request forgery."
+    },
+    {
+      "id" : "CVE-2025-25684",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "A lack of validation in the path parameter (/download) of GL-INet Beryl AX GL-MT3000 v4.7.0 allows attackers to download arbitrary files from the device's file system via a crafted POST request."
+    },
+    {
+      "id" : "CVE-2025-25685",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "An issue was discovered in GL-INet Beryl AX GL-MT3000 v4.7.0. Attackers are able to download arbitrary files from the device's file system via adding symbolic links on an external drive used as a samba share."
+    },
+    {
+      "id" : "CVE-2025-29431",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "Code-projects Online Class and Exam Scheduling System V1.0 is vulnerable to Cross Site Scripting (XSS) in /pages/department.php via the id, code, and name parameters."
+    },
+    {
+      "id" : "CVE-2025-2241",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.2,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:N"
+        }
+      ],
+      "cwes" : [
+        922
+      ],
+      "description" : "A flaw was found in Hive, a component of Multicluster Engine (MCE) and Advanced Cluster Management (ACM). This vulnerability causes VCenter credentials to be exposed in the ClusterProvision object after provisioning a VSphere cluster. Users with read access to ClusterProvision objects can extract sensitive credentials even if they do not have direct access to Kubernetes Secrets. This issue can lead to unauthorized VCenter access, cluster management, and privilege escalation."
+    },
+    {
+      "id" : "CVE-2025-2385",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability has been found in code-projects Modern Bag 1.0 and classified as critical. This vulnerability affects unknown code of the file /login.php. The manipulation of the argument userEmail/userPassword leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-2386",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability was found in PHPGurukul Local Services Search Engine Management System 1.0 and classified as critical. This issue affects some unknown processing of the file /serviceman-search.php. The manipulation of the argument location leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2024-48015",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.7,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        77
+      ],
+      "description" : "Dell SmartFabric OS10 Software, version(s) 10.5.4.x, 10.5.5.x, 10.5.6.x, 10.6.0.x, contain(s) an Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability. A high privileged attacker with local access could potentially exploit this vulnerability, leading to Command execution."
+    },
+    {
+      "id" : "CVE-2024-48017",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "cwes" : [
+        77
+      ],
+      "description" : "Dell SmartFabric OS10 Software, version(s) 10.5.4.x, 10.5.5.x, 10.5.6.x, 10.6.0.x, contain(s) an Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability. A high privileged attacker with remote access could potentially exploit this vulnerability, leading to Code execution."
+    },
+    {
+      "id" : "CVE-2024-48828",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.5,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        269
+      ],
+      "description" : "Dell SmartFabric OS10 Software, version(s) 10.5.4.x, 10.5.5.x, 10.5.6.x, 10.6.0.x, contain(s) an Improper Privilege Management vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Unauthorized access."
+    },
+    {
+      "id" : "CVE-2024-48831",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.4,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        259
+      ],
+      "description" : "Dell SmartFabric OS10 Software, version(s) 10.5.6.x, contain(s) a Use of Hard-coded Password vulnerability. An unauthenticated attacker with local access could potentially exploit this vulnerability, leading to Unauthorized access."
+    },
+    {
+      "id" : "CVE-2024-49559",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        1393
+      ],
+      "description" : "Dell SmartFabric OS10 Software, version(s) 10.5.4.x, 10.5.5.x, 10.5.6.x, 10.6.0.x, contain(s) an Use of Default Password vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to Unauthorized access."
+    },
+    {
+      "id" : "CVE-2024-49561",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        266
+      ],
+      "description" : "Dell SmartFabric OS10 Software, version(s) 10.5.4.x, 10.5.5.x, 10.5.6.x, 10.6.0.x, contain(s) an Incorrect Privilege Assignment vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Elevation of privileges."
+    },
+    {
+      "id" : "CVE-2025-22472",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        77
+      ],
+      "description" : "Dell SmartFabric OS10 Software, version(s) 10.5.4.x, 10.5.5.x, 10.5.6.x, 10.6.0.x, contain(s) an Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to execution of commands with elevated privileges."
+    },
+    {
+      "id" : "CVE-2025-22473",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        77
+      ],
+      "description" : "Dell SmartFabric OS10 Software, version(s) 10.5.4.x, 10.5.5.x, 10.5.6.x, 10.6.0.x, contain(s) an Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Code execution."
+    },
+    {
+      "id" : "CVE-2025-26125",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "An exposed ioctl in the IMFForceDelete driver of IObit Malware Fighter v12.1.0 allows attackers to arbitrarily delete files and escalate privileges."
+    },
+    {
+      "id" : "CVE-2025-29429",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "Code-projects Online Class and Exam Scheduling System V1.0 is vulnerable to Cross Site Scripting (XSS) in /pages/program.php via the id, code, and name parameters."
+    },
+    {
+      "id" : "CVE-2025-29430",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "Code-projects Online Class and Exam Scheduling System V1.0 is vulnerable to Cross Site Scripting (XSS) in /pages/room.php via the id and rome parameters."
+    },
+    {
+      "id" : "CVE-2025-2387",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability was found in SourceCodester Online Food Ordering System 2.0. It has been classified as critical. Affected is an unknown function of the file /admin/ajax.php?action=add_to_cart. The manipulation of the argument pid leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-2388",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        287
+      ],
+      "description" : "A vulnerability was found in Keytop 路内停车收费系统 2.7.1. It has been declared as critical. Affected by this vulnerability is an unknown functionality of the file /saas/commonApi/park/getParks of the component API. The manipulation leads to improper authentication. The attack can be launched remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2024-44866",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "A buffer overflow in the GuitarPro1::read function of MuseScore Studio v4.3.2 allows attackers to to execute arbitrary code or cause a Denial of Service (DoS) via opening a crafted GuitarPro file."
+    },
+    {
+      "id" : "CVE-2024-8510",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        22,
+        23
+      ],
+      "description" : "N-central is vulnerable to a path traversal that allows unintended access to the Apache Tomcat WEB-INF directory. Customer data is not exposed. This vulnerability is present in all deployments of N-central prior to N-central 2024.6."
+    },
+    {
+      "id" : "CVE-2025-26042",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "Uptime Kuma >== 1.23.0 has a ReDoS vulnerability, specifically when an administrator creates a notification through the web service. If a string is provided it triggers catastrophic backtracking in the regular expression, leading to a ReDoS attack."
+    },
+    {
+      "id" : "CVE-2025-29425",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "Code-projects Online Class and Exam Scheduling System 1.0 is vulnerable to SQL Injection in exam_save.php via the parameters member and first."
+    },
+    {
+      "id" : "CVE-2025-29427",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "Code-projects Online Class and Exam Scheduling System V1.0 is vulnerable to Cross Site Scripting (XSS) in profile.php via the member_first and member_last parameters."
+    },
+    {
+      "id" : "CVE-2025-2389",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.7,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability was found in code-projects Blood Bank Management System 1.0. It has been rated as critical. Affected by this issue is some unknown functionality of the file /admin/add_city.php. The manipulation leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-2390",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability classified as critical has been found in code-projects Blood Bank Management System 1.0. This affects an unknown part of the file /user_dashboard/add_donor.php. The manipulation leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2024-44276",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "This issue was addressed by using HTTPS when sending information over the network. This issue is fixed in iOS 18.2 and iPadOS 18.2. A user in a privileged network position may be able to leak sensitive information."
+    },
+    {
+      "id" : "CVE-2024-54525",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "A logic issue was addressed with improved file handling. This issue is fixed in visionOS 2.2, watchOS 11.2, tvOS 18.2, macOS Sequoia 15.2, iOS 18.2 and iPadOS 18.2. Restoring a maliciously crafted backup file may lead to modification of protected system files."
+    },
+    {
+      "id" : "CVE-2024-54559",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "The issue was addressed with improved checks. This issue is fixed in macOS Sequoia 15.2. An app may be able to access sensitive user data."
+    },
+    {
+      "id" : "CVE-2024-54565",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "The issue was addressed with improved checks. This issue is fixed in macOS Sequoia 15.2. An app may be able to access sensitive user data."
+    },
+    {
+      "id" : "CVE-2025-0495",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        532
+      ],
+      "description" : "Buildx is a Docker CLI plugin that extends build capabilities using BuildKit. Cache backends support credentials by setting secrets directly as attribute values in cache-to/cache-from configuration. When supplied as user input, these secure values may be inadvertently captured in OpenTelemetry traces as part of the arguments and flags for the traced CLI command. OpenTelemetry traces are also saved in BuildKit daemon's history records. This vulnerability does not impact secrets passed to the Github cache backend via environment variables or registry authentication."
+    },
+    {
+      "id" : "CVE-2025-24185",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "An out-of-bounds write issue was addressed with improved input validation. This issue is fixed in macOS Sequoia 15.3, macOS Ventura 13.7.3, macOS Sonoma 14.7.3. Parsing a maliciously crafted file may lead to an unexpected app termination."
+    },
+    {
+      "id" : "CVE-2025-25914",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "SQL injection vulnerability in Online Exam Mastering System v.1.0 allows a remote attacker to execute arbitrary code via the fid parameter"
+    },
+    {
+      "id" : "CVE-2025-26393",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.4,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        653
+      ],
+      "description" : "SolarWinds Service Desk is affected by a broken access control vulnerability. The issue allows authenticated users to escalate privileges, leading to unauthorized data manipulation."
+    },
+    {
+      "id" : "CVE-2025-2391",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability classified as critical was found in code-projects Blood Bank Management System 1.0. This vulnerability affects unknown code of the file /admin/admin_login.php of the component Admin Login Page. The manipulation leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-2392",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.7,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability, which was classified as critical, has been found in code-projects Online Class and Exam Scheduling System 1.0. This issue affects some unknown processing of the file /pages/activate.php. The manipulation of the argument id leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used."
+    }
+  ]
+}

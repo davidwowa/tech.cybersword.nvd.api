@@ -1,0 +1,1660 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.4",
+  "version" : 1,
+  "vulnerabilities" : [
+    {
+      "id" : "CVE-2024-48013",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        250
+      ],
+      "description" : "Dell SmartFabric OS10 Software, version(s) 10.5.4.x, 10.5.5.x, 10.5.6.x, 10.6.0.x, contain(s) an Execution with Unnecessary Privileges vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to Elevation of privileges."
+    },
+    {
+      "id" : "CVE-2024-48830",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        77
+      ],
+      "description" : "Dell SmartFabric OS10 Software, version(s) 10.5.4.x, 10.5.5.x, 10.5.6.x, 10.6.0.x, contain(s) an Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Command execution."
+    },
+    {
+      "id" : "CVE-2025-22474",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        918
+      ],
+      "description" : "Dell SmartFabric OS10 Software, version(s) 10.5.4.x, 10.5.5.x, 10.5.6.x, 10.6.0.x, contain(s) a Server-Side Request Forgery (SSRF) vulnerability. A high privileged attacker with remote access could potentially exploit this vulnerability, leading to Server-side request forgery."
+    },
+    {
+      "id" : "CVE-2025-25684",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "A lack of validation in the path parameter (/download) of GL-INet Beryl AX GL-MT3000 v4.7.0 allows attackers to download arbitrary files from the device's file system via a crafted POST request."
+    },
+    {
+      "id" : "CVE-2025-25685",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "An issue was discovered in GL-INet Beryl AX GL-MT3000 v4.7.0. Attackers are able to download arbitrary files from the device's file system via adding symbolic links on an external drive used as a samba share."
+    },
+    {
+      "id" : "CVE-2025-29431",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "Code-projects Online Class and Exam Scheduling System V1.0 is vulnerable to Cross Site Scripting (XSS) in /pages/department.php via the id, code, and name parameters."
+    },
+    {
+      "id" : "CVE-2025-2241",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.2,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:N"
+        }
+      ],
+      "cwes" : [
+        922
+      ],
+      "description" : "A flaw was found in Hive, a component of Multicluster Engine (MCE) and Advanced Cluster Management (ACM). This vulnerability causes VCenter credentials to be exposed in the ClusterProvision object after provisioning a VSphere cluster. Users with read access to ClusterProvision objects can extract sensitive credentials even if they do not have direct access to Kubernetes Secrets. This issue can lead to unauthorized VCenter access, cluster management, and privilege escalation."
+    },
+    {
+      "id" : "CVE-2025-2385",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability has been found in code-projects Modern Bag 1.0 and classified as critical. This vulnerability affects unknown code of the file /login.php. The manipulation of the argument userEmail/userPassword leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-2386",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability was found in PHPGurukul Local Services Search Engine Management System 1.0 and classified as critical. This issue affects some unknown processing of the file /serviceman-search.php. The manipulation of the argument location leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2024-48015",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.7,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        77
+      ],
+      "description" : "Dell SmartFabric OS10 Software, version(s) 10.5.4.x, 10.5.5.x, 10.5.6.x, 10.6.0.x, contain(s) an Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability. A high privileged attacker with local access could potentially exploit this vulnerability, leading to Command execution."
+    },
+    {
+      "id" : "CVE-2024-48017",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "cwes" : [
+        77
+      ],
+      "description" : "Dell SmartFabric OS10 Software, version(s) 10.5.4.x, 10.5.5.x, 10.5.6.x, 10.6.0.x, contain(s) an Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability. A high privileged attacker with remote access could potentially exploit this vulnerability, leading to Code execution."
+    },
+    {
+      "id" : "CVE-2024-48828",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.5,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        269
+      ],
+      "description" : "Dell SmartFabric OS10 Software, version(s) 10.5.4.x, 10.5.5.x, 10.5.6.x, 10.6.0.x, contain(s) an Improper Privilege Management vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Unauthorized access."
+    },
+    {
+      "id" : "CVE-2024-48831",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.4,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        259
+      ],
+      "description" : "Dell SmartFabric OS10 Software, version(s) 10.5.6.x, contain(s) a Use of Hard-coded Password vulnerability. An unauthenticated attacker with local access could potentially exploit this vulnerability, leading to Unauthorized access."
+    },
+    {
+      "id" : "CVE-2024-49559",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        1393
+      ],
+      "description" : "Dell SmartFabric OS10 Software, version(s) 10.5.4.x, 10.5.5.x, 10.5.6.x, 10.6.0.x, contain(s) an Use of Default Password vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to Unauthorized access."
+    },
+    {
+      "id" : "CVE-2024-49561",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        266
+      ],
+      "description" : "Dell SmartFabric OS10 Software, version(s) 10.5.4.x, 10.5.5.x, 10.5.6.x, 10.6.0.x, contain(s) an Incorrect Privilege Assignment vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Elevation of privileges."
+    },
+    {
+      "id" : "CVE-2025-22472",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        77
+      ],
+      "description" : "Dell SmartFabric OS10 Software, version(s) 10.5.4.x, 10.5.5.x, 10.5.6.x, 10.6.0.x, contain(s) an Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to execution of commands with elevated privileges."
+    },
+    {
+      "id" : "CVE-2025-22473",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        77
+      ],
+      "description" : "Dell SmartFabric OS10 Software, version(s) 10.5.4.x, 10.5.5.x, 10.5.6.x, 10.6.0.x, contain(s) an Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Code execution."
+    },
+    {
+      "id" : "CVE-2025-26125",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "An exposed ioctl in the IMFForceDelete driver of IObit Malware Fighter v12.1.0 allows attackers to arbitrarily delete files and escalate privileges."
+    },
+    {
+      "id" : "CVE-2025-29429",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Code-projects Online Class and Exam Scheduling System V1.0 is vulnerable to Cross Site Scripting (XSS) in /pages/program.php via the id, code, and name parameters."
+    },
+    {
+      "id" : "CVE-2025-29430",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "Code-projects Online Class and Exam Scheduling System V1.0 is vulnerable to Cross Site Scripting (XSS) in /pages/room.php via the id and rome parameters."
+    },
+    {
+      "id" : "CVE-2025-2387",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability was found in SourceCodester Online Food Ordering System 2.0. It has been classified as critical. Affected is an unknown function of the file /admin/ajax.php?action=add_to_cart. The manipulation of the argument pid leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-2388",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        287
+      ],
+      "description" : "A vulnerability was found in Keytop 路内停车收费系统 2.7.1. It has been declared as critical. Affected by this vulnerability is an unknown functionality of the file /saas/commonApi/park/getParks of the component API. The manipulation leads to improper authentication. The attack can be launched remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2024-44866",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "A buffer overflow in the GuitarPro1::read function of MuseScore Studio v4.3.2 allows attackers to to execute arbitrary code or cause a Denial of Service (DoS) via opening a crafted GuitarPro file."
+    },
+    {
+      "id" : "CVE-2024-8510",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        22,
+        23
+      ],
+      "description" : "N-central is vulnerable to a path traversal that allows unintended access to the Apache Tomcat WEB-INF directory. Customer data is not exposed. This vulnerability is present in all deployments of N-central prior to N-central 2024.6."
+    },
+    {
+      "id" : "CVE-2025-26042",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "Uptime Kuma >== 1.23.0 has a ReDoS vulnerability, specifically when an administrator creates a notification through the web service. If a string is provided it triggers catastrophic backtracking in the regular expression, leading to a ReDoS attack."
+    },
+    {
+      "id" : "CVE-2025-29425",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "Code-projects Online Class and Exam Scheduling System 1.0 is vulnerable to SQL Injection in exam_save.php via the parameters member and first."
+    },
+    {
+      "id" : "CVE-2025-29427",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "Code-projects Online Class and Exam Scheduling System V1.0 is vulnerable to Cross Site Scripting (XSS) in profile.php via the member_first and member_last parameters."
+    },
+    {
+      "id" : "CVE-2025-2389",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.7,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability was found in code-projects Blood Bank Management System 1.0. It has been rated as critical. Affected by this issue is some unknown functionality of the file /admin/add_city.php. The manipulation leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-2390",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability classified as critical has been found in code-projects Blood Bank Management System 1.0. This affects an unknown part of the file /user_dashboard/add_donor.php. The manipulation leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2024-44276",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "This issue was addressed by using HTTPS when sending information over the network. This issue is fixed in iOS 18.2 and iPadOS 18.2. A user in a privileged network position may be able to leak sensitive information."
+    },
+    {
+      "id" : "CVE-2024-54525",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "A logic issue was addressed with improved file handling. This issue is fixed in visionOS 2.2, watchOS 11.2, tvOS 18.2, macOS Sequoia 15.2, iOS 18.2 and iPadOS 18.2. Restoring a maliciously crafted backup file may lead to modification of protected system files."
+    },
+    {
+      "id" : "CVE-2024-54559",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "The issue was addressed with improved checks. This issue is fixed in macOS Sequoia 15.2. An app may be able to access sensitive user data."
+    },
+    {
+      "id" : "CVE-2024-54565",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "The issue was addressed with improved checks. This issue is fixed in macOS Sequoia 15.2. An app may be able to access sensitive user data."
+    },
+    {
+      "id" : "CVE-2025-0495",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        532
+      ],
+      "description" : "Buildx is a Docker CLI plugin that extends build capabilities using BuildKit. Cache backends support credentials by setting secrets directly as attribute values in cache-to/cache-from configuration. When supplied as user input, these secure values may be inadvertently captured in OpenTelemetry traces as part of the arguments and flags for the traced CLI command. OpenTelemetry traces are also saved in BuildKit daemon's history records. This vulnerability does not impact secrets passed to the Github cache backend via environment variables or registry authentication."
+    },
+    {
+      "id" : "CVE-2025-24185",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "An out-of-bounds write issue was addressed with improved input validation. This issue is fixed in macOS Sequoia 15.3, macOS Ventura 13.7.3, macOS Sonoma 14.7.3. Parsing a maliciously crafted file may lead to an unexpected app termination."
+    },
+    {
+      "id" : "CVE-2025-25914",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        89
+      ],
+      "description" : "SQL injection vulnerability in Online Exam Mastering System v.1.0 allows a remote attacker to execute arbitrary code via the fid parameter"
+    },
+    {
+      "id" : "CVE-2025-26393",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.4,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        653
+      ],
+      "description" : "SolarWinds Service Desk is affected by a broken access control vulnerability. The issue allows authenticated users to escalate privileges, leading to unauthorized data manipulation."
+    },
+    {
+      "id" : "CVE-2025-2391",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability classified as critical was found in code-projects Blood Bank Management System 1.0. This vulnerability affects unknown code of the file /admin/admin_login.php of the component Admin Login Page. The manipulation leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-2392",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.7,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability, which was classified as critical, has been found in code-projects Online Class and Exam Scheduling System 1.0. This issue affects some unknown processing of the file /pages/activate.php. The manipulation of the argument id leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-29426",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "Code-projects Online Class and Exam Scheduling System V1.0 is vulnerable to Cross Site Scripting (XSS) in /pages/class.php via the id and cys parameters."
+    },
+    {
+      "id" : "CVE-2025-2393",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.7,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability, which was classified as critical, was found in code-projects Online Class and Exam Scheduling System 1.0. Affected is an unknown function of the file /pages/salut_del.php. The manipulation of the argument id leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-2397",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 2.4,
+          "vector" : "CVSS:3.1/AV:A/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        266,
+        285
+      ],
+      "description" : "A vulnerability was found in China Mobile P22g-CIac, ZXWT-MIG-P4G4V, ZXWT-MIG-P8G8V, GT3200-4G4P and GT3200-8G8P up to 20250305. It has been declared as problematic. This vulnerability affects unknown code of the component Telnet Service. The manipulation leads to improper authorization. The attack can only be initiated within the local network. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way."
+    },
+    {
+      "id" : "CVE-2024-40635",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.6,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        190
+      ],
+      "description" : "containerd is an open-source container runtime. A bug was found in containerd prior to versions 1.6.38, 1.7.27, and 2.0.4 where containers launched with a User set as a `UID:GID` larger than the maximum 32-bit signed integer can cause an overflow condition where the container ultimately runs as root (UID 0). This could cause unexpected behavior for environments that require containers to run as a non-root user. This bug has been fixed in containerd 1.6.38, 1.7.27, and 2.04. As a workaround, ensure that only trusted images are used and that only trusted users have permissions to import images."
+    },
+    {
+      "id" : "CVE-2025-29781",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        200,
+        653
+      ],
+      "description" : "The Bare Metal Operator (BMO) implements a Kubernetes API for managing bare metal hosts in Metal3. Baremetal Operator enables users to load Secret from arbitrary namespaces upon deployment of the namespace scoped Custom Resource `BMCEventSubscription`. Prior to versions 0.8.1 and 0.9.1, an adversary Kubernetes account with only namespace level roles (e.g. a tenant controlling a namespace) may create a `BMCEventSubscription` in his authorized namespace and then load Secrets from his unauthorized namespaces to his authorized namespace via the Baremetal Operator, causing Secret Leakage. The patch makes BMO refuse to read Secrets from other namespace than where the corresponding BMH resource is. The patch does not change the `BMCEventSubscription` API in BMO, but stricter validation will fail the request at admission time. It will also prevent the controller reading such Secrets, in case the BMCES CR has already been deployed. The issue exists for all versions of BMO, and is patched in BMO releases v0.9.1 and v0.8.1. Prior upgrading to patched BMO version, duplicate any existing Secret pointed to by `BMCEventSubscription`'s `httpHeadersRef` to the same namespace where the corresponding BMH exists. After upgrade, remove the old Secrets. As a workaround, the operator can configure BMO RBAC to be namespace scoped, instead of cluster scoped, to prevent BMO from accessing Secrets from other namespaces, and/or use `WATCH_NAMESPACE` configuration option to limit BMO to single namespace."
+    },
+    {
+      "id" : "CVE-2025-29909",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        191,
+        787
+      ],
+      "description" : "CryptoLib provides a software-only solution using the CCSDS Space Data Link Security Protocol - Extended Procedures (SDLS-EP) to secure communications between a spacecraft running the core Flight System (cFS) and a ground station. In versions 1.3.3 and prior, a heap buffer overflow vulnerability in CryptoLib's `Crypto_TC_ApplySecurity()` allows an attacker to craft a malicious TC frame that causes out-of-bounds memory writes. This can result in denial of service (DoS) or, under certain conditions, remote code execution (RCE). Any application or system that relies on CryptoLib for Telecommand (TC) processing and does not strictly validate incoming TC frames is at risk. This includes satellite ground stations or mission control software where attackers can inject malformed frames. A patch is available at commit c7e8a8745ff4b5e9bd7e500e91358e86d5abedcc.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-29910",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        401
+      ],
+      "description" : "CryptoLib provides a software-only solution using the CCSDS Space Data Link Security Protocol - Extended Procedures (SDLS-EP) to secure communications between a spacecraft running the core Flight System (cFS) and a ground station. A memory leak vulnerability was identified in the `crypto_handle_incrementing_nontransmitted_counter` function of CryptoLib versions 1.3.3 and prior. This vulnerability can lead to resource exhaustion and degraded system performance over time, particularly in long-running processes or systems processing large volumes of data. The vulnerability is present in the `crypto_handle_incrementing_nontransmitted_counter` function within `crypto_tc.c`. The function allocates memory using `malloc` without ensuring the allocated memory is always freed. This issue can lead to resource exhaustion, reduced system performance, and potentially a Denial of Service (DoS) in environments where CryptoLib is used in long-running processes or with large volumes of data. Any system using CryptoLib, especially those handling high-throughput or continuous data streams, could be impacted. As of time of publication, no known patched versions are available."
+    },
+    {
+      "id" : "CVE-2025-2398",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.2,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        1392
+      ],
+      "description" : "A vulnerability was found in China Mobile P22g-CIac, ZXWT-MIG-P4G4V, ZXWT-MIG-P8G8V, GT3200-4G4P and GT3200-8G8P up to 20250305. It has been rated as critical. This issue affects some unknown processing of the component CLI su Command Handler. The manipulation leads to use of default credentials. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way."
+    },
+    {
+      "id" : "CVE-2025-2419",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability classified as critical has been found in code-projects Real Estate Property Management System 1.0. Affected is an unknown function of the file /InsertFeedback.php. The manipulation of the argument txtName/txtEmail/txtMobile/txtFeedback leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-29911",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        122
+      ],
+      "description" : "CryptoLib provides a software-only solution using the CCSDS Space Data Link Security Protocol - Extended Procedures (SDLS-EP) to secure communications between a spacecraft running the core Flight System (cFS) and a ground station. A critical heap buffer overflow vulnerability was identified in the `Crypto_AOS_ProcessSecurity` function of CryptoLib versions 1.3.3 and prior. This vulnerability allows an attacker to trigger a Denial of Service (DoS) or potentially execute arbitrary code (RCE) by providing a maliciously crafted AOS frame with an insufficient length. The vulnerability lies in the function `Crypto_AOS_ProcessSecurity`, specifically during the processing of the Frame Error Control Field (FECF). The affected code attempts to read from the `p_ingest` buffer at indices `current_managed_parameters_struct.max_frame_size - 2` and `current_managed_parameters_struct.max_frame_size - 1` without verifying if `len_ingest` is sufficiently large. This leads to a heap buffer overflow when `len_ingest` is smaller than `max_frame_size`. As of time of publication, no known patched versions exist.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-29912",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        122,
+        191
+      ],
+      "description" : "CryptoLib provides a software-only solution using the CCSDS Space Data Link Security Protocol - Extended Procedures (SDLS-EP) to secure communications between a spacecraft running the core Flight System (cFS) and a ground station. In versions 1.3.3 and prior, an unsigned integer underflow in the `Crypto_TC_ProcessSecurity` function of CryptoLib leads to a heap buffer overflow. The vulnerability is triggered when the `fl` (frame length) field in a Telecommand (TC) packet is set to 0. This underflow causes the frame length to be interpreted as 65535, resulting in out-of-bounds memory access. This critical vulnerability can be exploited to cause a denial of service (DoS) or potentially achieve remote code execution. Users of CryptoLib are advised to apply the recommended patch or avoid processing untrusted TC packets until a fix is available.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-29913",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        125,
+        191
+      ],
+      "description" : "CryptoLib provides a software-only solution using the CCSDS Space Data Link Security Protocol - Extended Procedures (SDLS-EP) to secure communications between a spacecraft running the core Flight System (cFS) and a ground station. A critical heap buffer overflow vulnerability was identified in the `Crypto_TC_Prep_AAD` function of CryptoLib versions 1.3.3 and prior. This vulnerability allows an attacker to trigger a Denial of Service (DoS) or potentially execute arbitrary code (RCE) by providing a maliciously crafted telecommand (TC) frame that causes an unsigned integer underflow. The vulnerability lies in the function `Crypto_TC_Prep_AAD`, specifically during the computation of `tc_mac_start_index`. The affected code incorrectly calculates the MAC start index without ensuring it remains within the bounds of the `ingest` buffer. When `tc_mac_start_index` underflows due to an incorrect length calculation, the function attempts to access an out-of-bounds memory location, leading to a segmentation fault. The vulnerability is still present in the repository as of commit `d3cc420ace96d02a5b7e83d88cbd2e48010d5723`.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-2420",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        352,
+        862
+      ],
+      "description" : "A vulnerability classified as problematic was found in 猫宁i Morning up to bc782730c74ff080494f145cc363a0b4f43f7d3e. Affected by this vulnerability is an unknown functionality. The manipulation leads to cross-site request forgery. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. This product takes the approach of rolling releases to provide continious delivery. Therefore, version details for affected and updated releases are not available."
+    },
+    {
+      "id" : "CVE-2025-2471",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability, which was classified as critical, was found in PHPGurukul Boat Booking System 1.0. Affected is an unknown function of the file /boat-details.php. The manipulation of the argument bid leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-2472",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability has been found in PHPGurukul Apartment Visitors Management System 1.0 and classified as critical. Affected by this vulnerability is an unknown functionality of the file /index.php of the component Sign In. The manipulation of the argument username leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-2473",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability was found in PHPGurukul Company Visitor Management System 2.0 and classified as critical. Affected by this issue is some unknown functionality of the file /index.php of the component Sign In. The manipulation of the argument username leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-2262",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        862
+      ],
+      "description" : "The The Logo Slider – Logo Showcase, Logo Carousel, Logo Gallery and Client Logo Presentation plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 3.7.3. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0755",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.4,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        122
+      ],
+      "description" : "The various bson_append functions in the MongoDB C driver library may be susceptible to buffer overflow when performing operations that could result in a final BSON document which exceeds the maximum allowable size (INT32_MAX), resulting in a segmentation fault and possible application crash. This issue affected libbson versions prior to 1.27.5, MongoDB Server v8.0 versions prior to 8.0.1 and MongoDB Server v7.0 versions prior to 7.0.16"
+    },
+    {
+      "id" : "CVE-2025-24306",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.2,
+          "vector" : "CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        78
+      ],
+      "description" : "Improper neutralization of special elements used in an OS command ('OS Command Injection') issue exists in +F FS010M versions prior to V2.0.0_1101. If this vulnerability is exploited, an arbitrary OS command may be executed by a remote authenticated attacker with an administrative privilege."
+    },
+    {
+      "id" : "CVE-2025-25220",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        78
+      ],
+      "description" : "Improper neutralization of special elements used in an OS command ('OS Command Injection') issue exists in +F FS010M versions prior to V2.0.1_1101. If this vulnerability is exploited, an arbitrary OS command may be executed by a remote authenticated attacker."
+    },
+    {
+      "id" : "CVE-2024-23942",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.1,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        311
+      ],
+      "description" : "A local user may find a configuration file on the client workstation with unencrypted sensitive data. This allows an attacker to impersonate the device or prevent the device from accessing the cloud portal which leads to a DoS."
+    },
+    {
+      "id" : "CVE-2024-23943",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "cwes" : [
+        306
+      ],
+      "description" : "An unauthenticated remote attacker can gain access to the cloud API due to a lack of authentication for a critical function in the affected devices. Availability is not affected."
+    },
+    {
+      "id" : "CVE-2024-41975",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        1188
+      ],
+      "description" : "An unauthenticated remote attacker can gain limited information of the PLC network but the user management of the PLCs prevents the actual access to the PLCs."
+    },
+    {
+      "id" : "CVE-2025-0694",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.6,
+          "vector" : "CVSS:3.1/AV:P/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        22
+      ],
+      "description" : "Insufficient path validation in CODESYS Control allows low privileged attackers with physical access to gain full filesystem access."
+    },
+    {
+      "id" : "CVE-2025-1468",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        203
+      ],
+      "description" : "An unauthenticated remote attacker can gain access to sensitive information including authentication information when using CODESYS OPC UA Server with the non-default Basic128Rsa15 security policy."
+    },
+    {
+      "id" : "CVE-2025-2489",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        922
+      ],
+      "description" : "Insecure information storage vulnerability in NTFS Tools version 3.5.1. Exploitation of this vulnerability could allow an attacker to know the application password, stored in /Users/user/Library/Application Support/ntfs-tool/config.json."
+    },
+    {
+      "id" : "CVE-2025-2493",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        22
+      ],
+      "description" : "Path Traversal vulnerability in Softdial Contact Center of Sytel Ltd. This vulnerability allows an attacker to manipulate the ‘id’ parameter of the ‘/softdial/scheduler/load.php’ endpoint to navigate beyond the intended directory. This can allow unauthorised access to sensitive files outside the expected scope, posing a security risk."
+    },
+    {
+      "id" : "CVE-2025-2494",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        434
+      ],
+      "description" : "Unrestricted file upload to Softdial Contact Center of Sytel Ltd. This vulnerability could allow an attacker to upload files to the server via the ‘/softdial/phpconsole/upload.php’ endpoint, which is protected by basic HTTP authentication. The files are uploaded to a directory exposed by the web application, which could result in code execution, giving the attacker full control over the server.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-2495",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        79
+      ],
+      "description" : "Stored Cross-Site Scripting (XSS) in Softdial Contact Center of Sytel Ltd. This vulnerability allows an attacker to upload XML files to the server with JavaScript code injected via the ‘/softdial/scheduler/save.php’ resource. The injected code will execute when the uploaded file is loaded via the ‘/softdial/scheduler/load.php’ resource and can redirect the victim to malicious sites or steal their login information to spoof their identity."
+    },
+    {
+      "id" : "CVE-2023-47539",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        284
+      ],
+      "description" : "An improper access control vulnerability in FortiMail version 7.4.0 configured with RADIUS authentication and remote_wildcard enabled may allow a remote unauthenticated attacker to bypass admin login via a crafted HTTP request."
+    },
+    {
+      "id" : "CVE-2024-21760",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.4,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        94
+      ],
+      "description" : "An improper control of generation of code ('Code Injection') vulnerability [CWE-94] in FortiSOAR Connector FortiSOAR 7.4 all versions, 7.3 all versions, 7.2 all versions, 7.0 all versions, 6.4 all versions may allow an authenticated attacker to execute arbitrary code on the host via a playbook code snippet."
+    },
+    {
+      "id" : "CVE-2024-8997",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        89
+      ],
+      "description" : "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Vestel EVC04 Configuration Interface allows SQL Injection.This issue affects EVC04 Configuration Interface: through 18.03.2025."
+    },
+    {
+      "id" : "CVE-2025-25500",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "An issue in CosmWasm prior to v2.2.0 allows attackers to bypass capability restrictions in blockchains by exploiting a lack of runtime capability validation. This allows attackers to deploy a contract without capability enforcement, and execute unauthorized actions on the blockchain."
+    },
+    {
+      "id" : "CVE-2025-2449",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        22
+      ],
+      "description" : "NI FlexLogger usiReg URI File Parsing Directory Traversal Remote Code Execution Vulnerability. This vulnerability allows remote attackers to create arbitrary files on affected installations of NI FlexLogger. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of URI files by the usiReg component. The issue results from the lack of proper validation of a user-supplied path prior to using it in file operations. An attacker can leverage this vulnerability to execute code in the context of the current user. Was ZDI-CAN-21805."
+    },
+    {
+      "id" : "CVE-2025-2450",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        356
+      ],
+      "description" : "NI Vision Builder AI VBAI File Processing Missing Warning Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of NI Vision Builder AI. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the processing of VBAI files. The issue results from allowing the execution of dangerous script without user warning. An attacker can leverage this vulnerability to execute code in the context of the current user. Was ZDI-CAN-22833."
+    },
+    {
+      "id" : "CVE-2025-2490",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 2.4,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79,
+        94
+      ],
+      "description" : "A vulnerability was found in Dromara ujcms 9.7.5. It has been rated as problematic. Affected by this issue is the function uploadZip/upload of the file /main/java/com/ujcms/cms/ext/web/backendapi/WebFileUploadController.java of the component File Upload. The manipulation leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-30106",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "On IROAD v9 devices, the dashcam has hardcoded default credentials (\"qwertyuiop\") that cannot be changed by the user. This allows an attacker within Wi-Fi range to connect to the device's network to perform sniffing."
+    },
+    {
+      "id" : "CVE-2024-44313",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "TastyIgniter 3.7.6 contains an Incorrect Access Control vulnerability in the invoice() function within Orders.php which allows unauthorized users to access and generate invoices due to missing permission checks."
+    },
+    {
+      "id" : "CVE-2024-44314",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "TastyIgniter 3.7.6 contains an Incorrect Access Control vulnerability in the Orders Management System, allowing unauthorized users to update order statuses. The issue occurs in the index_onUpdateStatus() function within Orders.php, which fails to verify if the user has permission to modify an order's status. This flaw can be exploited remotely, leading to unauthorized order manipulation."
+    },
+    {
+      "id" : "CVE-2024-49822",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        918
+      ],
+      "description" : "IBM QRadar Advisor 1.0.0 through 2.6.5 is vulnerable to server-side request forgery (SSRF). This may allow an authenticated attacker to send unauthorized requests from the system, potentially leading to network enumeration or facilitating other attacks."
+    },
+    {
+      "id" : "CVE-2025-25580",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "yimioa before v2024.07.04 was discovered to contain a SQL injection vulnerability via the listNameBySql() method at /xml/UserMapper.xml."
+    },
+    {
+      "id" : "CVE-2025-25585",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "Incorrect access control in the component /config/WebSecurityConfig.java of yimioa before v2024.07.04 allows unauthorized attackers to arbitrarily modify Administrator passwords."
+    },
+    {
+      "id" : "CVE-2025-25590",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "yimioa before v2024.07.04 was discovered to contain a SQL injection vulnerability via the component /mapper/xml/AddressDao.xml."
+    },
+    {
+      "id" : "CVE-2025-2491",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 2.4,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79,
+        94
+      ],
+      "description" : "A vulnerability classified as problematic has been found in Dromara ujcms 9.7.5. This affects the function update of the file /main/java/com/ujcms/cms/ext/web/backendapi/WebFileTemplateController.java of the component Edit Template File Page. The manipulation leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-30107",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "On IROAD V9 devices, Managing Settings and Obtaining Sensitive Data and Sabotaging the Car Battery can be performed by unauthorized parties. A vulnerability in the dashcam's configuration management allows unauthorized users to modify settings, disable critical functions, and turn off battery protection, potentially causing physical damage to the vehicle."
+    },
+    {
+      "id" : "CVE-2025-30109",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "In the IROAD APK 5.2.5, there are Hardcoded Credentials in the APK for ports 9091 and 9092. The mobile application for the dashcam contains hardcoded credentials that allow an attacker on the local Wi-Fi network to access API endpoints and retrieve sensitive device information, including live and recorded footage."
+    },
+    {
+      "id" : "CVE-2025-30110",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "On IROAD X5 devices, a Bypass of Device Pairing can occur via MAC Address Spoofing. The dashcam's pairing mechanism relies solely on MAC address verification, allowing an attacker to bypass authentication by spoofing an already-paired MAC address that can be captured via an ARP scan."
+    },
+    {
+      "id" : "CVE-2025-30111",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "On IROAD v9 devices, one can Remotely Dump Video Footage and the Live Video Stream. The dashcam exposes endpoints that allow unauthorized users, who gained access through other means, to list and download recorded videos, as well as access live video streams without proper authentication."
+    },
+    {
+      "id" : "CVE-2025-30113",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "An issue was discovered on the Forvia Hella HELLA Driving Recorder DR 820. Hardcoded Credentials exist in the APK for Ports 9091 and 9092. The dashcam's Android application contains hardcoded credentials that allow unauthorized access to device settings through ports 9091 and 9092. These credentials, stored in cleartext, can be exploited by an attacker who gains access to the dashcam's network."
+    },
+    {
+      "id" : "CVE-2025-30114",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "An issue was discovered on the Forvia Hella HELLA Driving Recorder DR 820. Bypassing of Device Pairing can occur. The pairing mechanism relies solely on the connecting device's MAC address. By obtaining the MAC address through network scanning and spoofing it, an attacker can bypass the authentication process and gain full access to the dashcam's features without proper authorization."
+    },
+    {
+      "id" : "CVE-2025-30115",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "An issue was discovered on the Forvia Hella HELLA Driving Recorder DR 820. Default Credentials Cannot Be Changed. It uses a fixed default SSID and password (\"qwertyuiop\"), which cannot be modified by users. The SSID is continuously broadcast, allowing unauthorized access to the device network."
+    },
+    {
+      "id" : "CVE-2025-30116",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "An issue was discovered on the Forvia Hella HELLA Driving Recorder DR 820. Remotely Dumping of Video Footage and the Live Video Stream can occur. It allows remote attackers to access and download recorded video footage from the SD card via port 9091. Additionally, attackers can connect to port 9092 to stream the live video feed by bypassing the challenge-response authentication mechanism. This exposes sensitive location and personal data."
+    },
+    {
+      "id" : "CVE-2025-30117",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "An issue was discovered on the Forvia Hella HELLA Driving Recorder DR 820. Managing Settings and Obtaining Sensitive Data and Sabotaging the Car Battery can be performed by unauthorized parties. After bypassing the device pairing, an attacker can obtain sensitive user and vehicle information through the settings interface. Remote attackers can modify power management settings, disable recording, delete stored footage, and turn off battery protection, leading to potential denial-of-service conditions and vehicle battery drainage."
+    },
+    {
+      "id" : "CVE-2025-30122",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "An issue was discovered on ROADCAM X3 devices. It has a uniform default credential set that cannot be modified by users, making it easy for attackers to gain unauthorized access to multiple devices."
+    },
+    {
+      "id" : "CVE-2025-30123",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "An issue was discovered on ROADCAM X3 devices. The mobile app APK (Viidure) contains hardcoded FTP credentials for the FTPX user account, enabling attackers to gain unauthorized access and extract sensitive recorded footage from the device."
+    },
+    {
+      "id" : "CVE-2025-30132",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "An issue was discovered on IROAD Dashcam V devices. It uses an unregistered public domain name as an internal domain, creating a security risk. During analysis, it was found that this domain was not owned by IROAD, allowing an attacker to register it and potentially intercept sensitive device traffic. If the dashcam or related services attempt to resolve this domain over the public Internet instead of locally, it could lead to data exfiltration or man-in-the-middle attacks."
+    },
+    {
+      "id" : "CVE-2024-57169",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "A file upload bypass vulnerability exists in SOPlanning 1.53.00, specifically in /process/upload.php. This vulnerability allows remote attackers to bypass upload restrictions and potentially achieve remote code execution by uploading malicious files.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-57170",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "SOPlanning 1.53.00 is vulnerable to a directory traversal issue in /process/upload.php. The \"fichier_to_delete\" parameter allows authenticated attackers to specify file paths containing directory traversal sequences (e.g., ../). This vulnerability enables attackers to delete arbitrary files outside the intended upload directory, potentially leading to denial of service or disruption of application functionality."
+    },
+    {
+      "id" : "CVE-2025-25582",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "yimioa before v2024.07.04 was discovered to contain a SQL injection vulnerability via the selectNoticeList() method at /xml/OaNoticeMapper.xml."
+    },
+    {
+      "id" : "CVE-2025-25586",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "yimioa before v2024.07.04 was discovered to contain an information disclosure vulnerability via the component /resources/application.yml."
+    },
+    {
+      "id" : "CVE-2025-25589",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "An XML external entity (XXE) injection vulnerability in the component /weixin/aes/XMLParse.java of yimioa before v2024.07.04 allows attackers to execute arbitrary code via supplying a crafted XML file."
+    },
+    {
+      "id" : "CVE-2025-27688",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        732
+      ],
+      "description" : "Dell ThinOS 2408 and prior, contains an improper permissions vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Elevation of privileges."
+    },
+    {
+      "id" : "CVE-2024-56346",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 10.0,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        114
+      ],
+      "description" : "IBM AIX 7.2 and 7.3 nimesis NIM master service could allow a remote attacker to execute arbitrary commands due to improper process controls."
+    },
+    {
+      "id" : "CVE-2024-56347",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.6,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        114
+      ],
+      "description" : "IBM AIX 7.2 and 7.3 nimsh service SSL/TLS protection mechanisms could allow a remote attacker to execute arbitrary commands due to improper process controls."
+    },
+    {
+      "id" : "CVE-2025-25595",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "A lack of rate limiting in the login page of Safe App version a3.0.9 allows attackers to bypass authentication via a brute force attack."
+    },
+    {
+      "id" : "CVE-2025-26137",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "Systemic Risk Value <=2.8.0 is vulnerable to Local File Inclusion via /GetFile.aspx?ReportUrl=. An unauthenticated attacker can exploit this issue to read arbitrary system files by supplying a crafted file path, potentially exposing sensitive information."
+    },
+    {
+      "id" : "CVE-2025-26138",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "Systemic Risk Value <=2.8.0 is vulnerable to improper access control in /RiskValue/GroupingEntities/Controls/GetFile.aspx?ID=. Uploaded files are accessible via a predictable numerical ID parameter, allowing unauthorized users to increment or decrement the ID to access and download files they do not have permission to view."
+    },
+    {
+      "id" : "CVE-2025-2487",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.9,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        476
+      ],
+      "description" : "A flaw was found in the 389-ds-base LDAP Server. This issue occurs when issuing a Modify DN LDAP operation through the ldap protocol, when the function return value is not tested and a NULL pointer is dereferenced. If a privileged user performs a ldap MODDN operation after a failed operation, it could lead to a Denial of Service (DoS) or system crash."
+    },
+    {
+      "id" : "CVE-2025-21619",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        89
+      ],
+      "description" : "GLPI is a free asset and IT management software package. An administrator user can perfom a SQL injection through the rules configuration forms. This vulnerability is fixed in 10.0.18."
+    },
+    {
+      "id" : "CVE-2025-24799",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        89
+      ],
+      "description" : "GLPI is a free asset and IT management software package. An unauthenticated user can perform a SQL injection through the inventory endpoint. This vulnerability is fixed in 10.0.18."
+    },
+    {
+      "id" : "CVE-2025-24801",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.5,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        434
+      ],
+      "description" : "GLPI is a free asset and IT management software package. An authenticated user can upload and force the execution of *.php files located on the GLPI server. This vulnerability is fixed in 10.0.18."
+    },
+    {
+      "id" : "CVE-2025-25040",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.3,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        863
+      ],
+      "description" : "A vulnerability has been identified in the port ACL functionality of AOS-CX software running on the HPE Aruba Networking CX 9300 Switch Series only and affects: - AOS-CX 10.14.xxxx : All patches - AOS-CX 10.15.xxxx : 10.15.1000 and below The vulnerability is specific to traffic originated by the CX 9300 switch platform and could allow an attacker to bypass ACL rules applied to routed ports on egress. As a result, port ACLs are not correctly enforced, which could lead to unauthorized traffic flow and violations of security policies. Egress VLAN ACLs and Routed VLAN ACLs are not affected by this vulnerability."
+    },
+    {
+      "id" : "CVE-2025-25042",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        359
+      ],
+      "description" : "A vulnerability in the AOS-CX REST interface could allow an authenticated remote attacker with low privileges to view sensitive information. Successful exploitation could allow an attacker to read encrypted credentials of other users on the switch, potentially leading to further unauthorized access or data breaches."
+    },
+    {
+      "id" : "CVE-2025-27080",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.0,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        359
+      ],
+      "description" : "Vulnerabilities in the command line interface of AOS-CX could allow an authenticated remote attacker to expose sensitive information. Successful exploitation could allow an attacker to gain unauthorized access to services outside of the impacted switch, potentially leading to lateral movement involving those services."
+    },
+    {
+      "id" : "CVE-2025-29790",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        79
+      ],
+      "description" : "Contao is an Open Source CMS. Users can upload SVG files with malicious code, which is then executed in the back end and/or front end. This vulnerability is fixed in Contao 4.13.54, 5.3.30, or 5.5.6."
+    },
+    {
+      "id" : "CVE-2025-29907",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        400,
+        770
+      ],
+      "description" : "jsPDF is a library to generate PDFs in JavaScript. Prior to 3.0.1, user control of the first argument of the addImage method results in CPU utilization and denial of service. If given the possibility to pass unsanitised image urls to the addImage method, a user can provide a harmful data-url that results in high CPU utilization and denial of service. Other affected methods are html and addSvgAsImage. The vulnerability was fixed in jsPDF 3.0.1."
+    },
+    {
+      "id" : "CVE-2025-29930",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        73
+      ],
+      "description" : "imFAQ is an advanced questions and answers management system for ImpressCMS. Prior to 1.0.1, if the $_GET['seoOp'] parameter is manipulated to include malicious input (e.g., seoOp=php://filter/read=convert.base64-encode/resource=/var/www/html/config.php), the application could allow an attacker to read sensitive files on the server (Local File Inclusion, LFI). The $_GET['seoOp'] and $_GET['seoArg'] parameters are directly used without sanitization or validation. This is partly mitigated by the fact that the ImpressCMS sensitive files are stored outside the web root, in a folder with a randomized name. The issue has been resolved in imFaq 1.0.1."
+    },
+    {
+      "id" : "CVE-2025-30137",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "An issue was discovered in the G-Net GNET APK 2.6.2. Hardcoded credentials exist in in APK for ports 9091 and 9092. The GNET mobile application contains hardcoded credentials that provide unauthorized access to the dashcam's API endpoints on ports 9091 and 9092. Once the GNET SSID is connected to, the attacker sends a crafted authentication command with TibetList and 000000 to list settings of the dashcam at port 9091. There's a separate set of credentials for port 9092 (stream) that is also exposed in cleartext: admin + tibet. For settings, the required credentials are adim + 000000."
+    },
+    {
+      "id" : "CVE-2025-30138",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "An issue was discovered on G-Net Dashcam BB GONX devices. Managing Settings and Obtaining Sensitive Data and Sabotaging Car Battery can be performed by unauthorized persons. It allows unauthorized users to modify critical system settings once connected to its network. Attackers can extract sensitive car and driver information, mute dashcam alerts to prevent detection, disable recording functionality, or even factory reset the device. Additionally, they can disable battery protection, causing the dashcam to drain the car battery when left on overnight. These actions not only compromise privacy but also pose potential physical harm by rendering the dashcam non-functional or causing vehicle battery failure."
+    },
+    {
+      "id" : "CVE-2025-30139",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "An issue was discovered on G-Net Dashcam BB GONX devices. Default credentials for SSID cannot be changed. It broadcasts a fixed SSID with default credentials that cannot be changed. This allows any nearby attacker to connect to the dashcam's network without restriction. Once connected, an attacker can sniff on connected devices such as the user's smartphone. The SSID is also always broadcasted."
+    },
+    {
+      "id" : "CVE-2025-30141",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "An issue was discovered on G-Net Dashcam BB GONX devices. One can Remotely Dump Video Footage and the Live Video Stream. It exposes API endpoints on ports 9091 and 9092 that allow remote access to recorded and live video feeds. An attacker who connects to the dashcam's network can retrieve all stored recordings and convert them from JDR format to MP4. Additionally, port 9092's RTSP stream can be accessed remotely, allowing real-time video feeds to be extracted without the owner's knowledge."
+    },
+    {
+      "id" : "CVE-2025-30142",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "An issue was discovered on G-Net Dashcam BB GONX devices. Bypassing of Device Pairing can occur. It uses MAC address verification as the sole mechanism for recognizing paired devices, allowing attackers to bypass authentication. By capturing the MAC address of an already-paired device through ARP scanning or other means, an attacker can spoof the MAC address and connect to the dashcam without going through the pairing process. This enables full access to the device."
+    },
+    {
+      "id" : "CVE-2024-12563",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        98
+      ],
+      "description" : "The s2Member Pro plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 250214 via the 'template' attribute. This makes it possible for authenticated attackers, with contributor-level and above permissions, to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-57151",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "SQL Injection vulnerability in rainrocka xinhu v.2.6.5 and before allows a remote attacker to execute arbitrary code via the inputAction.php file and the saveAjax function"
+    },
+    {
+      "id" : "CVE-2025-30140",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "An issue was discovered on G-Net Dashcam BB GONX devices. A Public Domain name is Used for the Internal Domain Name. It uses an unregistered public domain name as an internal domain, creating a security risk. This domain was not owned by GNET originally, allowing an attacker to register it and potentially intercept sensitive device traffic (it has since been registered by the vulnerability discoverer). If the dashcam or related services attempt to resolve this domain over the public Internet instead of locally, it could lead to data exfiltration or man-in-the-middle attacks."
+    }
+  ]
+}

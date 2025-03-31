@@ -1,0 +1,2639 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.4",
+  "version" : 1,
+  "vulnerabilities" : [
+    {
+      "id" : "CVE-2024-13440",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        89
+      ],
+      "description" : "The Super Store Finder plugin for WordPress is vulnerable to SQL Injection via the ‘ssf_wp_user_name’ parameter in all versions up to, and including, 7.0 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into an already existing query to store cross-site scripting in store reviews.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:superstorefinder:super_store_finder:*:*:*:*:*:wordpress:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-57949",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.5,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        667
+      ],
+      "description" : "In the Linux kernel, the following vulnerability has been resolved: irqchip/gic-v3-its: Don't enable interrupts in its_irq_set_vcpu_affinity() The following call-chain leads to enabling interrupts in a nested interrupt disabled section: irq_set_vcpu_affinity() irq_get_desc_lock() raw_spin_lock_irqsave() <--- Disable interrupts its_irq_set_vcpu_affinity() guard(raw_spinlock_irq) <--- Enables interrupts when leaving the guard() irq_put_desc_unlock() <--- Warns because interrupts are enabled This was broken in commit b97e8a2f7130, which replaced the original raw_spin_[un]lock() pair with guard(raw_spinlock_irq). Fix the issue by using guard(raw_spinlock). [ tglx: Massaged change log ]",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:linux:linux_kernel:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:linux:linux_kernel:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:linux:linux_kernel:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:linux:linux_kernel:6.13:rc1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:linux:linux_kernel:6.13:rc2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:linux:linux_kernel:6.13:rc3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:linux:linux_kernel:6.13:rc4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:linux:linux_kernel:6.13:rc5:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:linux:linux_kernel:6.13:rc6:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:linux:linux_kernel:6.13:rc7:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-21684",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.5,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        667
+      ],
+      "description" : "In the Linux kernel, the following vulnerability has been resolved: gpio: xilinx: Convert gpio_lock to raw spinlock irq_chip functions may be called in raw spinlock context. Therefore, we must also use a raw spinlock for our own internal locking. This fixes the following lockdep splat: [ 5.349336] ============================= [ 5.353349] [ BUG: Invalid wait context ] [ 5.357361] 6.13.0-rc5+ #69 Tainted: G W [ 5.363031] ----------------------------- [ 5.367045] kworker/u17:1/44 is trying to lock: [ 5.371587] ffffff88018b02c0 (&chip->gpio_lock){....}-{3:3}, at: xgpio_irq_unmask (drivers/gpio/gpio-xilinx.c:433 (discriminator 8)) [ 5.380079] other info that might help us debug this: [ 5.385138] context-{5:5} [ 5.387762] 5 locks held by kworker/u17:1/44: [ 5.392123] #0: ffffff8800014958 ((wq_completion)events_unbound){+.+.}-{0:0}, at: process_one_work (kernel/workqueue.c:3204) [ 5.402260] #1: ffffffc082fcbdd8 (deferred_probe_work){+.+.}-{0:0}, at: process_one_work (kernel/workqueue.c:3205) [ 5.411528] #2: ffffff880172c900 (&dev->mutex){....}-{4:4}, at: __device_attach (drivers/base/dd.c:1006) [ 5.419929] #3: ffffff88039c8268 (request_class#2){+.+.}-{4:4}, at: __setup_irq (kernel/irq/internals.h:156 kernel/irq/manage.c:1596) [ 5.428331] #4: ffffff88039c80c8 (lock_class#2){....}-{2:2}, at: __setup_irq (kernel/irq/manage.c:1614) [ 5.436472] stack backtrace: [ 5.439359] CPU: 2 UID: 0 PID: 44 Comm: kworker/u17:1 Tainted: G W 6.13.0-rc5+ #69 [ 5.448690] Tainted: [W]=WARN [ 5.451656] Hardware name: xlnx,zynqmp (DT) [ 5.455845] Workqueue: events_unbound deferred_probe_work_func [ 5.461699] Call trace: [ 5.464147] show_stack+0x18/0x24 C [ 5.467821] dump_stack_lvl (lib/dump_stack.c:123) [ 5.471501] dump_stack (lib/dump_stack.c:130) [ 5.474824] __lock_acquire (kernel/locking/lockdep.c:4828 kernel/locking/lockdep.c:4898 kernel/locking/lockdep.c:5176) [ 5.478758] lock_acquire (arch/arm64/include/asm/percpu.h:40 kernel/locking/lockdep.c:467 kernel/locking/lockdep.c:5851 kernel/locking/lockdep.c:5814) [ 5.482429] _raw_spin_lock_irqsave (include/linux/spinlock_api_smp.h:111 kernel/locking/spinlock.c:162) [ 5.486797] xgpio_irq_unmask (drivers/gpio/gpio-xilinx.c:433 (discriminator 8)) [ 5.490737] irq_enable (kernel/irq/internals.h:236 kernel/irq/chip.c:170 kernel/irq/chip.c:439 kernel/irq/chip.c:432 kernel/irq/chip.c:345) [ 5.494060] __irq_startup (kernel/irq/internals.h:241 kernel/irq/chip.c:180 kernel/irq/chip.c:250) [ 5.497645] irq_startup (kernel/irq/chip.c:270) [ 5.501143] __setup_irq (kernel/irq/manage.c:1807) [ 5.504728] request_threaded_irq (kernel/irq/manage.c:2208)",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:linux:linux_kernel:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:linux:linux_kernel:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:linux:linux_kernel:6.13:rc1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:linux:linux_kernel:6.13:rc2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:linux:linux_kernel:6.13:rc3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:linux:linux_kernel:6.13:rc4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:linux:linux_kernel:6.13:rc5:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:linux:linux_kernel:6.13:rc6:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:linux:linux_kernel:6.13:rc7:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-21685",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.7,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        476
+      ],
+      "description" : "In the Linux kernel, the following vulnerability has been resolved: platform/x86: lenovo-yoga-tab2-pro-1380-fastcharger: fix serdev race The yt2_1380_fc_serdev_probe() function calls devm_serdev_device_open() before setting the client ops via serdev_device_set_client_ops(). This ordering can trigger a NULL pointer dereference in the serdev controller's receive_buf handler, as it assumes serdev->ops is valid when SERPORT_ACTIVE is set. This is similar to the issue fixed in commit 5e700b384ec1 (\"platform/chrome: cros_ec_uart: properly fix race condition\") where devm_serdev_device_open() was called before fully initializing the device. Fix the race by ensuring client ops are set before enabling the port via devm_serdev_device_open(). Note, serdev_device_set_baudrate() and serdev_device_set_flow_control() calls should be after the devm_serdev_device_open() call.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:linux:linux_kernel:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:linux:linux_kernel:6.13:rc1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:linux:linux_kernel:6.13:rc2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:linux:linux_kernel:6.13:rc3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:linux:linux_kernel:6.13:rc4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:linux:linux_kernel:6.13:rc5:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:linux:linux_kernel:6.13:rc6:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:linux:linux_kernel:6.13:rc7:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-1099",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        321
+      ],
+      "description" : "The TP-Link Tapo C500 V1 and V2 are a pan-and-tilt outdoor Wi-Fi security cameras designed for comprehensive surveillance. This vulnerability exists in Tapo C500 Wi-Fi camera due to hard-coded RSA private key embedded within the device firmware. An attacker with physical access could exploit this vulnerability to obtain cryptographic private keys which can then be used to perform impersonation, data decryption and man in the middle attacks on the targeted device."
+    },
+    {
+      "id" : "CVE-2025-25247",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Apache Felix Webconsole. This issue affects Apache Felix Webconsole 4.x up to 4.9.8 and 5.x up to 5.0.8. Users are recommended to upgrade to version 4.9.10 or 5.0.10 or higher, which fixes the issue."
+    },
+    {
+      "id" : "CVE-2024-8684",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        78
+      ],
+      "description" : "OS Command Injection vulnerability in Revolution Pi version 2022-07-28-revpi-buster from KUNBUS GmbH. This vulnerability could allow an authenticated attacker to execute OS commands on the device via the ‘php/dal.php’ endpoint, in the ‘arrSaveConfig’ parameter."
+    },
+    {
+      "id" : "CVE-2024-8685",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        22
+      ],
+      "description" : "Path-Traversal vulnerability in Revolution Pi version 2022-07-28-revpi-buster from KUNBUS GmbH. This vulnerability could allow an authenticated attacker to list device directories via the ‘/pictory/php/getFileList.php’ endpoint in the ‘dir’ parameter."
+    },
+    {
+      "id" : "CVE-2025-1175",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "Reflected Cross-Site Scripting (XSS) vulnerability in Kelio Visio 1, Kelio Visio X7 and Kelio Visio X4, in versions between 3.2C and 5.1K. This vulnerability could allow an attacker to execute a JavaScript payload by making a POST request and injecting malicious code into the editable ‘username’ parameter of the ‘/PageLoginVisio.do’ endpoint."
+    },
+    {
+      "id" : "CVE-2024-11621",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        295
+      ],
+      "description" : "Missing certificate validation in Devolutions Remote Desktop Manager on macOS, iOS, Android, Linux allows an attacker to intercept and modify encrypted communications via a man-in-the-middle attack. Versions affected are : Remote Desktop Manager macOS 2024.3.9.0 and earlier Remote Desktop Manager Linux 2024.3.2.5 and earlier Remote Desktop Manager Android 2024.3.3.7 and earlier Remote Desktop Manager iOS 2024.3.3.0 and earlier Remote Desktop Manager Powershell 2024.3.6.0 and earlier"
+    },
+    {
+      "id" : "CVE-2025-1147",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.1,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        119,
+        120
+      ],
+      "description" : "A vulnerability has been found in GNU Binutils 2.43 and classified as problematic. Affected by this vulnerability is the function __sanitizer::internal_strlen of the file binutils/nm.c of the component nm. The manipulation of the argument const leads to buffer overflow. The attack can be launched remotely. The complexity of an attack is rather high. The exploitation appears to be difficult. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-1148",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.1,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        401,
+        404
+      ],
+      "description" : "A vulnerability was found in GNU Binutils 2.43 and classified as problematic. Affected by this issue is the function link_order_scan of the file ld/ldelfgen.c of the component ld. The manipulation leads to memory leak. The attack may be launched remotely. The complexity of an attack is rather high. The exploitation is known to be difficult. The exploit has been disclosed to the public and may be used. It is recommended to apply a patch to fix this issue. The code maintainer explains: \"I'm not going to commit some of the leak fixes I've been working on to the 2.44 branch due to concern that would destabilise ld. All of the reported leaks in this bugzilla have been fixed on binutils master.\""
+    },
+    {
+      "id" : "CVE-2025-1193",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "cwes" : [
+        295
+      ],
+      "description" : "Improper host validation in the certificate validation component in Devolutions Remote Desktop Manager on 2024.3.19 and earlier on Windows allows an attacker to intercept and modify encrypted communications via a man-in-the-middle attack by presenting a certificate for a different host."
+    },
+    {
+      "id" : "CVE-2024-10334",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:H"
+        }
+      ],
+      "cwes" : [
+        256
+      ],
+      "description" : "A vulnerability exists in the VideONet product included in the listed System 800xA versions, where VideONet is used.  An attacker who successfully exploited the vulnerability could, in the worst case scenario, stop or manipulate the video feed. This issue affects System 800xA: 5.1.X; System 800xA: 6.0.3.X; System 800xA: 6.1.1.X; System 800xA: 6.2.X."
+    },
+    {
+      "id" : "CVE-2025-1149",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.1,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        401,
+        404
+      ],
+      "description" : "A vulnerability was found in GNU Binutils 2.43. It has been classified as problematic. This affects the function xstrdup of the file libiberty/xmalloc.c of the component ld. The manipulation leads to memory leak. It is possible to initiate the attack remotely. The complexity of an attack is rather high. The exploitability is told to be difficult. The exploit has been disclosed to the public and may be used. It is recommended to apply a patch to fix this issue. The code maintainer explains: \"I'm not going to commit some of the leak fixes I've been working on to the 2.44 branch due to concern that would destabilise ld. All of the reported leaks in this bugzilla have been fixed on binutils master.\""
+    },
+    {
+      "id" : "CVE-2024-12133",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        407
+      ],
+      "description" : "A flaw in libtasn1 causes inefficient handling of specific certificate data. When processing a large number of elements in a certificate, libtasn1 takes much longer than expected, which can slow down or even crash the system. This flaw allows an attacker to send a specially crafted certificate, causing a denial of service attack."
+    },
+    {
+      "id" : "CVE-2024-12243",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        407
+      ],
+      "description" : "A flaw was found in GnuTLS, which relies on libtasn1 for ASN.1 data processing. Due to an inefficient algorithm in libtasn1, decoding certain DER-encoded certificate data can take excessive time, leading to increased resource consumption. This flaw allows a remote attacker to send a specially crafted certificate, causing GnuTLS to become unresponsive or slow, resulting in a denial-of-service condition."
+    },
+    {
+      "id" : "CVE-2024-57950",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "In the Linux kernel, the following vulnerability has been resolved: drm/amd/display: Initialize denominator defaults to 1 [WHAT & HOW] Variables, used as denominators and maybe not assigned to other values, should be initialized to non-zero to avoid DIVIDE_BY_ZERO, as reported by Coverity. (cherry picked from commit e2c4c6c10542ccfe4a0830bb6c9fd5b177b7bbb7)"
+    },
+    {
+      "id" : "CVE-2025-21686",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "In the Linux kernel, the following vulnerability has been resolved: io_uring/rsrc: require cloned buffers to share accounting contexts When IORING_REGISTER_CLONE_BUFFERS is used to clone buffers from uring instance A to uring instance B, where A and B use different MMs for accounting, the accounting can go wrong: If uring instance A is closed before uring instance B, the pinned memory counters for uring instance B will be decremented, even though the pinned memory was originally accounted through uring instance A; so the MM of uring instance B can end up with negative locked memory."
+    },
+    {
+      "id" : "CVE-2025-21687",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "In the Linux kernel, the following vulnerability has been resolved: vfio/platform: check the bounds of read/write syscalls count and offset are passed from user space and not checked, only offset is capped to 40 bits, which can be used to read/write out of bounds of the device."
+    },
+    {
+      "id" : "CVE-2025-21688",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "In the Linux kernel, the following vulnerability has been resolved: drm/v3d: Assign job pointer to NULL before signaling the fence In commit e4b5ccd392b9 (\"drm/v3d: Ensure job pointer is set to NULL after job completion\"), we introduced a change to assign the job pointer to NULL after completing a job, indicating job completion. However, this approach created a race condition between the DRM scheduler workqueue and the IRQ execution thread. As soon as the fence is signaled in the IRQ execution thread, a new job starts to be executed. This results in a race condition where the IRQ execution thread sets the job pointer to NULL simultaneously as the `run_job()` function assigns a new job to the pointer. This race condition can lead to a NULL pointer dereference if the IRQ execution thread sets the job pointer to NULL after `run_job()` assigns it to the new job. When the new job completes and the GPU emits an interrupt, `v3d_irq()` is triggered, potentially causing a crash. [ 466.310099] Unable to handle kernel NULL pointer dereference at virtual address 00000000000000c0 [ 466.318928] Mem abort info: [ 466.321723] ESR = 0x0000000096000005 [ 466.325479] EC = 0x25: DABT (current EL), IL = 32 bits [ 466.330807] SET = 0, FnV = 0 [ 466.333864] EA = 0, S1PTW = 0 [ 466.337010] FSC = 0x05: level 1 translation fault [ 466.341900] Data abort info: [ 466.344783] ISV = 0, ISS = 0x00000005, ISS2 = 0x00000000 [ 466.350285] CM = 0, WnR = 0, TnD = 0, TagAccess = 0 [ 466.355350] GCS = 0, Overlay = 0, DirtyBit = 0, Xs = 0 [ 466.360677] user pgtable: 4k pages, 39-bit VAs, pgdp=0000000089772000 [ 466.367140] [00000000000000c0] pgd=0000000000000000, p4d=0000000000000000, pud=0000000000000000 [ 466.375875] Internal error: Oops: 0000000096000005 [#1] PREEMPT SMP [ 466.382163] Modules linked in: rfcomm snd_seq_dummy snd_hrtimer snd_seq snd_seq_device algif_hash algif_skcipher af_alg bnep binfmt_misc vc4 snd_soc_hdmi_codec drm_display_helper cec brcmfmac_wcc spidev rpivid_hevc(C) drm_client_lib brcmfmac hci_uart drm_dma_helper pisp_be btbcm brcmutil snd_soc_core aes_ce_blk v4l2_mem2mem bluetooth aes_ce_cipher snd_compress videobuf2_dma_contig ghash_ce cfg80211 gf128mul snd_pcm_dmaengine videobuf2_memops ecdh_generic sha2_ce ecc videobuf2_v4l2 snd_pcm v3d sha256_arm64 rfkill videodev snd_timer sha1_ce libaes gpu_sched snd videobuf2_common sha1_generic drm_shmem_helper mc rp1_pio drm_kms_helper raspberrypi_hwmon spi_bcm2835 gpio_keys i2c_brcmstb rp1 raspberrypi_gpiomem rp1_mailbox rp1_adc nvmem_rmem uio_pdrv_genirq uio i2c_dev drm ledtrig_pattern drm_panel_orientation_quirks backlight fuse dm_mod ip_tables x_tables ipv6 [ 466.458429] CPU: 0 UID: 1000 PID: 2008 Comm: chromium Tainted: G C 6.13.0-v8+ #18 [ 466.467336] Tainted: [C]=CRAP [ 466.470306] Hardware name: Raspberry Pi 5 Model B Rev 1.0 (DT) [ 466.476157] pstate: 404000c9 (nZcv daIF +PAN -UAO -TCO -DIT -SSBS BTYPE=--) [ 466.483143] pc : v3d_irq+0x118/0x2e0 [v3d] [ 466.487258] lr : __handle_irq_event_percpu+0x60/0x228 [ 466.492327] sp : ffffffc080003ea0 [ 466.495646] x29: ffffffc080003ea0 x28: ffffff80c0c94200 x27: 0000000000000000 [ 466.502807] x26: ffffffd08dd81d7b x25: ffffff80c0c94200 x24: ffffff8003bdc200 [ 466.509969] x23: 0000000000000001 x22: 00000000000000a7 x21: 0000000000000000 [ 466.517130] x20: ffffff8041bb0000 x19: 0000000000000001 x18: 0000000000000000 [ 466.524291] x17: ffffffafadfb0000 x16: ffffffc080000000 x15: 0000000000000000 [ 466.531452] x14: 0000000000000000 x13: 0000000000000000 x12: 0000000000000000 [ 466.538613] x11: 0000000000000000 x10: 0000000000000000 x9 : ffffffd08c527eb0 [ 466.545777] x8 : 0000000000000000 x7 : 0000000000000000 x6 : 0000000000000000 [ 466.552941] x5 : ffffffd08c4100d0 x4 : ffffffafadfb0000 x3 : ffffffc080003f70 [ 466.560102] x2 : ffffffc0829e8058 x1 : 0000000000000001 x0 : 0000000000000000 [ 466.567263] Call trace: [ 466.569711] v3d_irq+0x118/0x2e0 [v3d] (P) [ 466. ---truncated---"
+    },
+    {
+      "id" : "CVE-2025-21689",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "In the Linux kernel, the following vulnerability has been resolved: USB: serial: quatech2: fix null-ptr-deref in qt2_process_read_urb() This patch addresses a null-ptr-deref in qt2_process_read_urb() due to an incorrect bounds check in the following: if (newport > serial->num_ports) { dev_err(&port->dev, \"%s - port change to invalid port: %i\\n\", __func__, newport); break; } The condition doesn't account for the valid range of the serial->port buffer, which is from 0 to serial->num_ports - 1. When newport is equal to serial->num_ports, the assignment of \"port\" in the following code is out-of-bounds and NULL: serial_priv->current_port = newport; port = serial->port[serial_priv->current_port]; The fix checks if newport is greater than or equal to serial->num_ports indicating it is out-of-bounds."
+    },
+    {
+      "id" : "CVE-2025-21690",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "In the Linux kernel, the following vulnerability has been resolved: scsi: storvsc: Ratelimit warning logs to prevent VM denial of service If there's a persistent error in the hypervisor, the SCSI warning for failed I/O can flood the kernel log and max out CPU utilization, preventing troubleshooting from the VM side. Ratelimit the warning so it doesn't DoS the VM."
+    },
+    {
+      "id" : "CVE-2025-21691",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "In the Linux kernel, the following vulnerability has been resolved: cachestat: fix page cache statistics permission checking When the 'cachestat()' system call was added in commit cf264e1329fb (\"cachestat: implement cachestat syscall\"), it was meant to be a much more convenient (and performant) version of mincore() that didn't need mapping things into the user virtual address space in order to work. But it ended up missing the \"check for writability or ownership\" fix for mincore(), done in commit 134fca9063ad (\"mm/mincore.c: make mincore() more conservative\"). This just adds equivalent logic to 'cachestat()', modified for the file context (rather than vma)."
+    },
+    {
+      "id" : "CVE-2025-21692",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "In the Linux kernel, the following vulnerability has been resolved: net: sched: fix ets qdisc OOB Indexing Haowei Yan <g1042620637@gmail.com> found that ets_class_from_arg() can index an Out-Of-Bound class in ets_class_from_arg() when passed clid of 0. The overflow may cause local privilege escalation. [ 18.852298] ------------[ cut here ]------------ [ 18.853271] UBSAN: array-index-out-of-bounds in net/sched/sch_ets.c:93:20 [ 18.853743] index 18446744073709551615 is out of range for type 'ets_class [16]' [ 18.854254] CPU: 0 UID: 0 PID: 1275 Comm: poc Not tainted 6.12.6-dirty #17 [ 18.854821] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014 [ 18.856532] Call Trace: [ 18.857441] <TASK> [ 18.858227] dump_stack_lvl+0xc2/0xf0 [ 18.859607] dump_stack+0x10/0x20 [ 18.860908] __ubsan_handle_out_of_bounds+0xa7/0xf0 [ 18.864022] ets_class_change+0x3d6/0x3f0 [ 18.864322] tc_ctl_tclass+0x251/0x910 [ 18.864587] ? lock_acquire+0x5e/0x140 [ 18.865113] ? __mutex_lock+0x9c/0xe70 [ 18.866009] ? __mutex_lock+0xa34/0xe70 [ 18.866401] rtnetlink_rcv_msg+0x170/0x6f0 [ 18.866806] ? __lock_acquire+0x578/0xc10 [ 18.867184] ? __pfx_rtnetlink_rcv_msg+0x10/0x10 [ 18.867503] netlink_rcv_skb+0x59/0x110 [ 18.867776] rtnetlink_rcv+0x15/0x30 [ 18.868159] netlink_unicast+0x1c3/0x2b0 [ 18.868440] netlink_sendmsg+0x239/0x4b0 [ 18.868721] ____sys_sendmsg+0x3e2/0x410 [ 18.869012] ___sys_sendmsg+0x88/0xe0 [ 18.869276] ? rseq_ip_fixup+0x198/0x260 [ 18.869563] ? rseq_update_cpu_node_id+0x10a/0x190 [ 18.869900] ? trace_hardirqs_off+0x5a/0xd0 [ 18.870196] ? syscall_exit_to_user_mode+0xcc/0x220 [ 18.870547] ? do_syscall_64+0x93/0x150 [ 18.870821] ? __memcg_slab_free_hook+0x69/0x290 [ 18.871157] __sys_sendmsg+0x69/0xd0 [ 18.871416] __x64_sys_sendmsg+0x1d/0x30 [ 18.871699] x64_sys_call+0x9e2/0x2670 [ 18.871979] do_syscall_64+0x87/0x150 [ 18.873280] ? do_syscall_64+0x93/0x150 [ 18.874742] ? lock_release+0x7b/0x160 [ 18.876157] ? do_user_addr_fault+0x5ce/0x8f0 [ 18.877833] ? irqentry_exit_to_user_mode+0xc2/0x210 [ 18.879608] ? irqentry_exit+0x77/0xb0 [ 18.879808] ? clear_bhb_loop+0x15/0x70 [ 18.880023] ? clear_bhb_loop+0x15/0x70 [ 18.880223] ? clear_bhb_loop+0x15/0x70 [ 18.880426] entry_SYSCALL_64_after_hwframe+0x76/0x7e [ 18.880683] RIP: 0033:0x44a957 [ 18.880851] Code: ff ff e8 fc 00 00 00 66 2e 0f 1f 84 00 00 00 00 00 66 90 f3 0f 1e fa 64 8b 04 25 18 00 00 00 85 c0 75 10 b8 2e 00 00 00 0f 05 <48> 3d 00 f0 ff ff 77 51 c3 48 83 ec 28 89 54 24 1c 48 8974 24 10 [ 18.881766] RSP: 002b:00007ffcdd00fad8 EFLAGS: 00000246 ORIG_RAX: 000000000000002e [ 18.882149] RAX: ffffffffffffffda RBX: 00007ffcdd010db8 RCX: 000000000044a957 [ 18.882507] RDX: 0000000000000000 RSI: 00007ffcdd00fb70 RDI: 0000000000000003 [ 18.885037] RBP: 00007ffcdd010bc0 R08: 000000000703c770 R09: 000000000703c7c0 [ 18.887203] R10: 0000000000000080 R11: 0000000000000246 R12: 0000000000000001 [ 18.888026] R13: 00007ffcdd010da8 R14: 00000000004ca7d0 R15: 0000000000000001 [ 18.888395] </TASK> [ 18.888610] ---[ end trace ]---"
+    },
+    {
+      "id" : "CVE-2025-21693",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        416
+      ],
+      "description" : "In the Linux kernel, the following vulnerability has been resolved: mm: zswap: properly synchronize freeing resources during CPU hotunplug In zswap_compress() and zswap_decompress(), the per-CPU acomp_ctx of the current CPU at the beginning of the operation is retrieved and used throughout. However, since neither preemption nor migration are disabled, it is possible that the operation continues on a different CPU. If the original CPU is hotunplugged while the acomp_ctx is still in use, we run into a UAF bug as some of the resources attached to the acomp_ctx are freed during hotunplug in zswap_cpu_comp_dead() (i.e. acomp_ctx.buffer, acomp_ctx.req, or acomp_ctx.acomp). The problem was introduced in commit 1ec3b5fe6eec (\"mm/zswap: move to use crypto_acomp API for hardware acceleration\") when the switch to the crypto_acomp API was made. Prior to that, the per-CPU crypto_comp was retrieved using get_cpu_ptr() which disables preemption and makes sure the CPU cannot go away from under us. Preemption cannot be disabled with the crypto_acomp API as a sleepable context is needed. Use the acomp_ctx.mutex to synchronize CPU hotplug callbacks allocating and freeing resources with compression/decompression paths. Make sure that acomp_ctx.req is NULL when the resources are freed. In the compression/decompression paths, check if acomp_ctx.req is NULL after acquiring the mutex (meaning the CPU was offlined) and retry on the new CPU. The initialization of acomp_ctx.mutex is moved from the CPU hotplug callback to the pool initialization where it belongs (where the mutex is allocated). In addition to adding clarity, this makes sure that CPU hotplug cannot reinitialize a mutex that is already locked by compression/decompression. Previously a fix was attempted by holding cpus_read_lock() [1]. This would have caused a potential deadlock as it is possible for code already holding the lock to fall into reclaim and enter zswap (causing a deadlock). A fix was also attempted using SRCU for synchronization, but Johannes pointed out that synchronize_srcu() cannot be used in CPU hotplug notifiers [2]. Alternative fixes that were considered/attempted and could have worked: - Refcounting the per-CPU acomp_ctx. This involves complexity in handling the race between the refcount dropping to zero in zswap_[de]compress() and the refcount being re-initialized when the CPU is onlined. - Disabling migration before getting the per-CPU acomp_ctx [3], but that's discouraged and is a much bigger hammer than needed, and could result in subtle performance issues. [1]https://lkml.kernel.org/20241219212437.2714151-1-yosryahmed@google.com/ [2]https://lkml.kernel.org/20250107074724.1756696-2-yosryahmed@google.com/ [3]https://lkml.kernel.org/20250107222236.2715883-2-yosryahmed@google.com/ [yosryahmed@google.com: remove comment] Link: https://lkml.kernel.org/r/CAJD7tkaxS1wjn+swugt8QCvQ-rVF5RZnjxwPGX17k8x9zSManA@mail.gmail.com"
+    },
+    {
+      "id" : "CVE-2025-24031",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        476
+      ],
+      "description" : "PAM-PKCS#11 is a Linux-PAM login module that allows a X.509 certificate based user login. In versions 0.6.12 and prior, the pam_pkcs11 module segfaults when a user presses ctrl-c/ctrl-d when they are asked for a PIN. When a user enters no PIN at all, `pam_get_pwd` will never initialize the password buffer pointer and as such `cleanse` will try to dereference an uninitialized pointer. On my system this pointer happens to have the value 3 most of the time when running sudo and as such it will segfault. The most likely impact to a system affected by this issue is an availability impact due to a daemon that uses PAM crashing. As of time of publication, a patch for the issue is unavailable."
+    },
+    {
+      "id" : "CVE-2025-24032",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        287
+      ],
+      "description" : "PAM-PKCS#11 is a Linux-PAM login module that allows a X.509 certificate based user login. Prior to version 0.6.13, if cert_policy is set to none (the default value), then pam_pkcs11 will only check if the user is capable of logging into the token. An attacker may create a different token with the user's public data (e.g. the user's certificate) and a PIN known to the attacker. If no signature with the private key is required, then the attacker may now login as user with that created token. The default to *not* check the private key's signature has been changed with commit commi6638576892b59a99389043c90a1e7dd4d783b921, so that all versions starting with pam_pkcs11-0.6.0 should be affected. As a workaround, in `pam_pkcs11.conf`, set at least `cert_policy = signature;`."
+    },
+    {
+      "id" : "CVE-2025-24892",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "OpenProject is open-source, web-based project management software. In versions prior to 15.2.1, the application fails to properly sanitize user input before displaying it in the Group Management section. Groups created with HTML script tags are not properly escaped before rendering them in a project. The issue has been resolved in OpenProject version 15.2.1. Those who are unable to upgrade may apply the patch manually."
+    },
+    {
+      "id" : "CVE-2025-25186",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        400,
+        405,
+        409,
+        770,
+        789,
+        1287
+      ],
+      "description" : "Net::IMAP implements Internet Message Access Protocol (IMAP) client functionality in Ruby. Starting in version 0.3.2 and prior to versions 0.3.8, 0.4.19, and 0.5.6, there is a possibility for denial of service by memory exhaustion in `net-imap`'s response parser. At any time while the client is connected, a malicious server can send can send highly compressed `uid-set` data which is automatically read by the client's receiver thread. The response parser uses `Range#to_a` to convert the `uid-set` data into arrays of integers, with no limitation on the expanded size of the ranges. Versions 0.3.8, 0.4.19, 0.5.6, and higher fix this issue. Additional details for proper configuration of fixed versions and backward compatibility are available in the GitHub Security Advisory."
+    },
+    {
+      "id" : "CVE-2025-1150",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.1,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        401,
+        404
+      ],
+      "description" : "A vulnerability was found in GNU Binutils 2.43. It has been declared as problematic. This vulnerability affects the function bfd_malloc of the file libbfd.c of the component ld. The manipulation leads to memory leak. The attack can be initiated remotely. The complexity of an attack is rather high. The exploitation appears to be difficult. The exploit has been disclosed to the public and may be used. It is recommended to apply a patch to fix this issue. The code maintainer explains: \"I'm not going to commit some of the leak fixes I've been working on to the 2.44 branch due to concern that would destabilise ld. All of the reported leaks in this bugzilla have been fixed on binutils master.\""
+    },
+    {
+      "id" : "CVE-2025-1151",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.1,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        401,
+        404
+      ],
+      "description" : "A vulnerability was found in GNU Binutils 2.43. It has been rated as problematic. This issue affects the function xmemdup of the file xmemdup.c of the component ld. The manipulation leads to memory leak. The attack may be initiated remotely. The complexity of an attack is rather high. The exploitation is known to be difficult. The exploit has been disclosed to the public and may be used. It is recommended to apply a patch to fix this issue. The code maintainer explains: \"I'm not going to commit some of the leak fixes I've been working on to the 2.44 branch due to concern that would destabilise ld. All of the reported leaks in this bugzilla have been fixed on binutils master.\""
+    },
+    {
+      "id" : "CVE-2024-48170",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "PHPGurukul Small CRM 3.0 is vulnerable to Cross Site Scripting (XSS) via a crafted payload injected into the name in the profile.php."
+    },
+    {
+      "id" : "CVE-2024-54954",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "OneBlog v2.3.6 was discovered to contain a template injection vulnerability via the template management department."
+    },
+    {
+      "id" : "CVE-2024-57407",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "An arbitrary file upload vulnerability in the component /userPicture of Timo v2.0.3 allows attackers to execute arbitrary code via uploading a crafted file."
+    },
+    {
+      "id" : "CVE-2024-57408",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.2,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        434
+      ],
+      "description" : "An arbitrary file upload vulnerability in the component /comm/upload of cool-admin-java v1.0 allows attackers to execute arbitrary code via uploading a crafted file."
+    },
+    {
+      "id" : "CVE-2024-57409",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "A stored cross-site scripting (XSS) vulnerability in the Parameter List module of cool-admin-java v1.0 allows attackers to execute arbitrary web scripts or HTML via injecting a crafted payload into the internet pictures field."
+    },
+    {
+      "id" : "CVE-2025-1152",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.1,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        401,
+        404
+      ],
+      "description" : "A vulnerability classified as problematic has been found in GNU Binutils 2.43. Affected is the function xstrdup of the file xstrdup.c of the component ld. The manipulation leads to memory leak. It is possible to launch the attack remotely. The complexity of an attack is rather high. The exploitability is told to be difficult. The exploit has been disclosed to the public and may be used. It is recommended to apply a patch to fix this issue. The code maintainer explains: \"I'm not going to commit some of the leak fixes I've been working on to the 2.44 branch due to concern that would destabilise ld. All of the reported leaks in this bugzilla have been fixed on binutils master.\""
+    },
+    {
+      "id" : "CVE-2025-25188",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        345
+      ],
+      "description" : "Hickory DNS is a Rust based DNS client, server, and resolver. A vulnerability present starting in version 0.8.0 and prior to versions 0.24.3 and 0.25.0-alpha.5 impacts Hickory DNS users relying on DNSSEC verification in the client library, stub resolver, or recursive resolver. The DNSSEC validation routines treat entire RRsets of DNSKEY records as trusted once they have established trust in only one of the DNSKEYs. As a result, if a zone includes a DNSKEY with a public key that matches a configured trust anchor, all keys in that zone will be trusted to authenticate other records in the zone. There is a second variant of this vulnerability involving DS records, where an authenticated DS record covering one DNSKEY leads to trust in signatures made by an unrelated DNSKEY in the same zone. Versions 0.24.3 and 0.25.0-alpha.5 fix the issue."
+    },
+    {
+      "id" : "CVE-2024-10649",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.1,
+          "vector" : "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        306
+      ],
+      "description" : "wandb/openui latest commit c945bb859979659add5f490a874140ad17c56a5d contains a vulnerability where unauthenticated endpoints allow file uploads and downloads from an AWS S3 bucket. This can lead to multiple security issues including denial of service, stored XSS, and information disclosure. The affected endpoints are '/v1/share/{id:str}' for uploading and '/v1/share/{id:str}' for downloading JSON files. The lack of authentication allows any user to upload and overwrite files, potentially causing the S3 bucket to run out of space, injecting malicious scripts, and accessing sensitive information."
+    },
+    {
+      "id" : "CVE-2024-13010",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "The WP Foodbakery plugin for WordPress is vulnerable to Reflected Cross-Site Scripting in versions up to, and including, 4.7 due to insufficient input sanitization and output escaping on the 'search_type' parameter. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link."
+    },
+    {
+      "id" : "CVE-2024-13011",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        434
+      ],
+      "description" : "The WP Foodbakery plugin for WordPress is vulnerable to arbitrary file uploads due to insufficient file type validation in the 'upload_publisher_profile_image' function in versions up to, and including, 4.7. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-13059",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.2,
+          "vector" : "CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        29
+      ],
+      "description" : "A vulnerability in mintplex-labs/anything-llm prior to version 1.3.1 allows for path traversal due to improper handling of non-ASCII filenames in the multer library. This vulnerability can lead to arbitrary file write, which can subsequently result in remote code execution. The issue arises when the filename transformation introduces '../' sequences, which are not sanitized by multer, allowing attackers with manager or admin roles to write files to arbitrary locations on the server.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-27859",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        94
+      ],
+      "description" : "The issue was addressed with improved memory handling. This issue is fixed in iOS 17.4 and iPadOS 17.4, tvOS 17.4, watchOS 10.4, visionOS 1.1, macOS Sonoma 14.4. Processing web content may lead to arbitrary code execution.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-42512",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.6,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        208
+      ],
+      "description" : "Vulnerability in the OPC UA .NET Standard Stack before 1.5.374.158 allows an unauthorized attacker to bypass application authentication when the deprecated Basic128Rsa15 security policy is enabled."
+    },
+    {
+      "id" : "CVE-2024-42513",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        305
+      ],
+      "description" : "Vulnerability in the OPC UA .NET Standard Stack before 1.5.374.158 allows an unauthorized attacker to bypass application authentication when using HTTPS endpoints."
+    },
+    {
+      "id" : "CVE-2024-46429",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        798
+      ],
+      "description" : "A hardcoded credentials vulnerability in Tenda W18E V16.01.0.8(1625) allows unauthenticated remote attackers to access the web management portal using a default guest account with administrative privileges."
+    },
+    {
+      "id" : "CVE-2024-46430",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+        }
+      ],
+      "cwes" : [
+        284
+      ],
+      "description" : "Tenda W18E V16.01.0.8(1625) is vulnerable to Incorrect Access Control. Unauthorized password change via the web management portal allows an unauthenticated remote attacker to change the administrator password by sending a specially crafted HTTP POST request to the setLoginPassword function, bypassing the authentication mechanism."
+    },
+    {
+      "id" : "CVE-2024-46431",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.0,
+          "vector" : "CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        120
+      ],
+      "description" : "Tenda W18E V16.01.0.8(1625) is vulnerable to Buffer Overflow. An attacker with access to the web management portal can exploit this vulnerability by sending specially crafted data to the delWewifiPic function."
+    },
+    {
+      "id" : "CVE-2024-46432",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        284
+      ],
+      "description" : "Tenda W18E V16.01.0.8(1625) is vulnerable to Incorrect Access Control. An attacker can send a specially crafted HTTP POST request to the setQuickCfgWifiAndLogin function, which allows unauthorized changes to WiFi configuration settings and administrative credentials."
+    },
+    {
+      "id" : "CVE-2024-46433",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        798
+      ],
+      "description" : "A default credentials vulnerability in Tenda W18E V16.01.0.8(1625) allows unauthenticated remote attackers to access the web management portal using the default rzadmin account with administrative privileges."
+    },
+    {
+      "id" : "CVE-2024-46434",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        287
+      ],
+      "description" : "Tenda W18E V16.01.0.8(1625) suffers from authentication bypass in the web management portal allowing an unauthorized remote attacker to gain administrative access by sending a specially crafted HTTP request."
+    },
+    {
+      "id" : "CVE-2024-46435",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.0,
+          "vector" : "CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        121
+      ],
+      "description" : "A stack overflow vulnerability in the Tenda W18E V16.01.0.8(1625) web management portal allows an authenticated remote attacker to cause a denial of service or potentially execute arbitrary code. This vulnerability occurs due to improper input validation when handling user-supplied data in the delFacebookPic function."
+    },
+    {
+      "id" : "CVE-2024-46436",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.3,
+          "vector" : "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L"
+        }
+      ],
+      "cwes" : [
+        798
+      ],
+      "description" : "Hardcoded credentials in Tenda W18E V16.01.0.8(1625) allows unauthenticated remote attackers to gain root access to the device over the telnet service."
+    },
+    {
+      "id" : "CVE-2024-46437",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        200
+      ],
+      "description" : "A sensitive information disclosure vulnerability in the Tenda W18E V16.01.0.8(1625) web management portal allows an unauthenticated remote attacker to retrieve sensitive configuration information, including WiFi SSID, WiFi password, and base64-encoded administrator credentials, by sending a specially crafted HTTP POST request to the getQuickCfgWifiAndLogin function, bypassing authentication checks."
+    },
+    {
+      "id" : "CVE-2024-54658",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        770
+      ],
+      "description" : "The issue was addressed with improved memory handling. This issue is fixed in iOS 17.4 and iPadOS 17.4, Safari 17.4, tvOS 17.4, watchOS 10.4, visionOS 1.1, macOS Sonoma 14.4. Processing web content may lead to a denial-of-service."
+    },
+    {
+      "id" : "CVE-2024-8550",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        497
+      ],
+      "description" : "A Local File Inclusion (LFI) vulnerability exists in the /load-workflow endpoint of modelscope/agentscope version v0.0.4. This vulnerability allows an attacker to read arbitrary files from the server, including sensitive files such as API keys, by manipulating the filename parameter. The issue arises due to improper sanitization of user input passed to the os.path.join function, which can be exploited to access files outside the intended directory."
+    },
+    {
+      "id" : "CVE-2025-1153",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.1,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes" : [
+        119
+      ],
+      "description" : "A vulnerability classified as problematic was found in GNU Binutils 2.43/2.44. Affected by this vulnerability is the function bfd_set_format of the file format.c. The manipulation leads to memory corruption. The attack can be launched remotely. The complexity of an attack is rather high. The exploitation appears to be difficult. Upgrading to version 2.45 is able to address this issue. The identifier of the patch is 8d97c1a53f3dc9fd8e1ccdb039b8a33d50133150. It is recommended to upgrade the affected component."
+    },
+    {
+      "id" : "CVE-2025-24200",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.6,
+          "vector" : "CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        863
+      ],
+      "description" : "An authorization issue was addressed with improved state management. This issue is fixed in iPadOS 17.7.5, iOS 18.3.1 and iPadOS 18.3.1. A physical attack may disable USB Restricted Mode on a locked device. Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals."
+    },
+    {
+      "id" : "CVE-2024-57177",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74
+      ],
+      "description" : "A host header injection vulnerability exists in the NPM package of perfood/couch-auth <= 0.21.2. By sending a specially crafted host header in the email change confirmation request, it is possible to trigger a SSTI which can be leveraged to run limited commands or leak server-side information"
+    },
+    {
+      "id" : "CVE-2024-57178",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.9,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        89
+      ],
+      "description" : "An SQL injection vulnerability exists in Stock-Forecaster <=01-04-2020. By sending a specially crafted 'stock-symbol' parameter to the portofolio() endpoint, it is possible to trigger an SQL injection in the application. As a result, the attacker will be able the user data or manipulate the software behavior."
+    },
+    {
+      "id" : "CVE-2025-1154",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability, which was classified as critical, has been found in xxyopen Novel up to 3.4.1. Affected by this issue is some unknown functionality of the file /api/front/search/books. The manipulation of the argument sort leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. Other parameters might be affected as well."
+    },
+    {
+      "id" : "CVE-2025-1155",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79,
+        94
+      ],
+      "description" : "A vulnerability, which was classified as problematic, was found in Webkul QloApps 1.6.1. This affects an unknown part of the file /stores of the component Your Location Search. The manipulation leads to cross site scripting. It is possible to initiate the attack remotely. It is planned to remove this page in the long term."
+    },
+    {
+      "id" : "CVE-2025-24016",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.9,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        502
+      ],
+      "description" : "Wazuh is a free and open source platform used for threat prevention, detection, and response. Starting in version 4.4.0 and prior to version 4.9.1, an unsafe deserialization vulnerability allows for remote code execution on Wazuh servers. DistributedAPI parameters are a serialized as JSON and deserialized using `as_wazuh_object` (in `framework/wazuh/core/cluster/common.py`). If an attacker manages to inject an unsanitized dictionary in DAPI request/response, they can forge an unhandled exception (`__unhandled_exc__`) to evaluate arbitrary python code. The vulnerability can be triggered by anybody with API access (compromised dashboard or Wazuh servers in the cluster) or, in certain configurations, even by a compromised agent. Version 4.9.1 contains a fix.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-1002",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.7,
+          "vector" : "CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N"
+        }
+      ],
+      "cwes" : [
+        295
+      ],
+      "description" : "MicroDicom DICOM Viewer version 2024.03 fails to adequately verify the update server's certificate, which could make it possible for attackers in a privileged network position to alter network traffic and carry out a machine-in-the-middle (MITM) attack. This allows the attackers to modify the server's response and deliver a malicious update to the user."
+    },
+    {
+      "id" : "CVE-2025-1156",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability has been found in Pix Software Vivaz 6.0.10 and classified as critical. This vulnerability affects unknown code of the file /servlet?act=login. The manipulation of the argument usuario leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way."
+    },
+    {
+      "id" : "CVE-2025-1157",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability was found in Allims lab.online up to 20250201 and classified as critical. This issue affects some unknown processing of the file /model/model_recuperar_senha.php. The manipulation of the argument recuperacao leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way."
+    },
+    {
+      "id" : "CVE-2025-1158",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability was found in ESAFENET CDG 5.6.3.154.205_20250114. It has been classified as critical. Affected is an unknown function of the file addPolicyToSafetyGroup.jsp. The manipulation of the argument safetyGroupId leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way."
+    },
+    {
+      "id" : "CVE-2025-1159",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79,
+        94
+      ],
+      "description" : "A vulnerability was found in CampCodes School Management Software 1.0. It has been declared as problematic. Affected by this vulnerability is an unknown functionality of the file /academic-calendar. The manipulation leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-24970",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        20
+      ],
+      "description" : "Netty, an asynchronous, event-driven network application framework, has a vulnerability starting in version 4.1.91.Final and prior to version 4.1.118.Final. When a special crafted packet is received via SslHandler it doesn't correctly handle validation of such a packet in all cases which can lead to a native crash. Version 4.1.118.Final contains a patch. As workaround its possible to either disable the usage of the native SSLEngine or change the code manually."
+    },
+    {
+      "id" : "CVE-2025-25189",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        79
+      ],
+      "description" : "The ZOO-Project is an open source processing platform. A reflected Cross-Site Scripting vulnerability exists in the ZOO-Project Web Processing Service (WPS) publish.py CGI script prior to commit 7a5ae1a. The script reflects user input from the `jobid` parameter in its HTTP response without proper HTML encoding or sanitization. When a victim visits a specially crafted URL pointing to this endpoint, arbitrary JavaScript code can be executed in their browser context. The vulnerability occurs because the CGI script directly outputs the query string parameters into the HTML response without escaping HTML special characters. An attacker can inject malicious JavaScript code through the `jobid` parameter which will be executed when rendered by the victim's browser. Commit 7a5ae1a contains a fix for the issue."
+    },
+    {
+      "id" : "CVE-2025-25190",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        79
+      ],
+      "description" : "The ZOO-Project is an open source processing platform. The ZOO-Project Web Processing Service (WPS) Server contains a Cross-Site Scripting (XSS) vulnerability in its EchoProcess service prior to commit 7a5ae1a. The vulnerability exists because the EchoProcess service directly reflects user input in its output without proper sanitization when handling complex inputs.The service accepts various input formats including XML, JSON, and SVG, and returns the content based on the requested MIME type. When processing SVG content and returning it with the image/svg+xml MIME type, the server fails to sanitize potentially malicious JavaScript in attributes like onload, allowing arbitrary JavaScript execution in the victim's browser context. This vulnerability is particularly dangerous because it exists in a service specifically designed to echo back user input, and the lack of proper sanitization in combination with SVG handling creates a reliable XSS vector. Commit 7a5ae1a contains a fix for the issue."
+    },
+    {
+      "id" : "CVE-2025-25193",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.5,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "cwes" : [
+        400
+      ],
+      "description" : "Netty, an asynchronous, event-driven network application framework, has a vulnerability in versions up to and including 4.1.118.Final. An unsafe reading of environment file could potentially cause a denial of service in Netty. When loaded on an Windows application, Netty attempts to load a file that does not exist. If an attacker creates such a large file, the Netty application crash. A similar issue was previously reported as CVE-2024-47535. This issue was fixed, but the fix was incomplete in that null-bytes were not counted against the input limit. Commit d1fbda62d3a47835d3fb35db8bd42ecc205a5386 contains an updated fix."
+    },
+    {
+      "id" : "CVE-2025-1162",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability classified as critical has been found in code-projects Job Recruitment 1.0. This affects an unknown part of the file /\\_parse/load\\_user-profile.php. The manipulation of the argument userhash leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-0054",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.4,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "SAP NetWeaver Application Server Java does not sufficiently handle user input, resulting in a stored cross-site scripting vulnerability. The application allows attackers with basic user privileges to store a Javascript payload on the server, which could be later executed in the victim's web browser. With this the attacker might be able to read or modify information associated with the vulnerable web page."
+    },
+    {
+      "id" : "CVE-2025-1165",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        284,
+        434
+      ],
+      "description" : "A vulnerability, which was classified as critical, was found in Lumsoft ERP 8. Affected is the function DoUpload/DoWebUpload of the file /Api/FileUploadApi.ashx. The manipulation of the argument file leads to unrestricted upload. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-24869",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        863
+      ],
+      "description" : "SAP NetWeaver Application Server Java allows an attacker to access an endpoint that can disclose information about deployed server components, including their XML definitions. This information should ideally be restricted to customer administrators, even though they may not need it. These XML files are not entirely SAP-internal as they are deployed with the server. In such a scenario, sensitive information could be exposed without compromising its integrity or availability."
+    },
+    {
+      "id" : "CVE-2025-24870",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.0,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        921
+      ],
+      "description" : "SAP GUI for Windows & RFC service credentials are incorrectly stored in the memory of the program allowing an unauthenticated attacker to access information within systems, resulting in privilege escalation. On successful exploitation, this could result in disclosure of highly sensitive information. This has no impact on integrity, and availability."
+    },
+    {
+      "id" : "CVE-2025-24872",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        863
+      ],
+      "description" : "The ABAP Build Framework in SAP ABAP Platform allows an authenticated attacker to gain unauthorized access to a specific transaction. By executing the add-on build functionality within the ABAP Build Framework, an attacker could call the transaction and view its details. This has a limited impact on the confidentiality of the application with no effect on the integrity and availability of the application."
+    },
+    {
+      "id" : "CVE-2025-24874",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.8,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "cwes" : [
+        1021
+      ],
+      "description" : "SAP Commerce (Backoffice) uses the deprecated X-FRAME-OPTIONS header to protect against clickjacking. While this protection remains effective now, it may not be the case in the future as browsers might discontinue support for this header in favor of the frame-ancestors CSP directive. Hence, clickjacking could become possible then, and lead to exposure and modification of sensitive information."
+    },
+    {
+      "id" : "CVE-2025-24875",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.8,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "cwes" : [
+        352
+      ],
+      "description" : "SAP Commerce, by default, sets certain cookies with the SameSite attribute configured to None (SameSite=None). This includes authentication cookies utilized in SAP Commerce Backoffice. Applying this setting reduces defense in depth against CSRF and may lead to future compatibility issues."
+    },
+    {
+      "id" : "CVE-2025-24876",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "cwes" : [
+        601
+      ],
+      "description" : "The SAP Approuter Node.js package version v16.7.1 and before is vulnerable to Authentication bypass. When trading an authorization code an attacker can steal the session of the victim by injecting malicious payload causing High impact on confidentiality and integrity of the application"
+    },
+    {
+      "id" : "CVE-2025-25241",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.4,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        862
+      ],
+      "description" : "Due to a missing authorization check, an attacker who is logged in to application can view/ delete �My Overtime Requests� which could allow the attacker to access employee information. This leads to low impact on confidentiality, integrity of the application. There is no impact on availability."
+    },
+    {
+      "id" : "CVE-2025-25243",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.6,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        22
+      ],
+      "description" : "SAP Supplier Relationship Management (Master Data Management Catalog) allows an unauthenticated attacker to use a publicly available servlet to download an arbitrary file over the network without any user interaction. This can reveal highly sensitive information with no impact to integrity or availability."
+    },
+    {
+      "id" : "CVE-2025-1166",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        284,
+        434
+      ],
+      "description" : "A vulnerability has been found in SourceCodester Food Menu Manager 1.0 and classified as critical. Affected by this vulnerability is an unknown functionality of the file endpoint/update.php. The manipulation leads to unrestricted upload. The attack can be launched remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-1167",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability was found in Mayuri K Employee Management System up to 192.168.70.3 and classified as critical. Affected by this issue is some unknown functionality of the file /hr_soft/admin/Update_User.php. The manipulation of the argument id leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-1168",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability was found in SourceCodester Contact Manager with Export to VCF 1.0. It has been declared as critical. This vulnerability affects unknown code of the file /endpoint/delete-contact.php. The manipulation of the argument contact leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-1169",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79,
+        94
+      ],
+      "description" : "A vulnerability was found in SourceCodester Image Compressor Tool 1.0. It has been rated as problematic. This issue affects some unknown processing of the file /image-compressor/compressor.php. The manipulation of the argument image leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-1170",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79,
+        94
+      ],
+      "description" : "A vulnerability classified as problematic has been found in code-projects Real Estate Property Management System 1.0. Affected is an unknown function of the file /Admin/Category.php. The manipulation of the argument Desc leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-1143",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.4,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        798
+      ],
+      "description" : "Certain models of routers from Billion Electric has hard-coded embedded linux credentials, allowing attackers to log in through the SSH service using these credentials and obtain root privilege of the system."
+    },
+    {
+      "id" : "CVE-2025-1144",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        497
+      ],
+      "description" : "School Affairs System from Quanxun has an Exposure of Sensitive Information, allowing unauthenticated attackers to view specific pages and obtain database information as well as plaintext administrator credentials."
+    },
+    {
+      "id" : "CVE-2025-1145",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "NetVision Information ISOinsight has a Reflected Cross-site Scripting vulnerability, allowing unauthenticated remote attackers to execute arbitrary JavaScript code in the user's browser through phishing techniques."
+    },
+    {
+      "id" : "CVE-2025-1171",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.5,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79,
+        94
+      ],
+      "description" : "A vulnerability classified as problematic was found in code-projects Real Estate Property Management System 1.0. Affected by this vulnerability is an unknown functionality of the file /Admin/CustomerReport.php. The manipulation of the argument Address leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-1172",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        74,
+        89
+      ],
+      "description" : "A vulnerability, which was classified as critical, has been found in 1000 Projects Bookstore Management System 1.0. Affected by this issue is some unknown functionality of the file addtocart.php. The manipulation of the argument bcid leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-1176",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.0,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        119,
+        122
+      ],
+      "description" : "A vulnerability was found in GNU Binutils 2.43 and classified as critical. This issue affects the function _bfd_elf_gc_mark_rsec of the file elflink.c of the component ld. The manipulation leads to heap-based buffer overflow. The attack may be initiated remotely. The complexity of an attack is rather high. The exploitation is known to be difficult. The exploit has been disclosed to the public and may be used. The patch is named f9978defb6fab0bd8583942d97c112b0932ac814. It is recommended to apply a patch to fix this issue."
+    },
+    {
+      "id" : "CVE-2025-1177",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        20,
+        502
+      ],
+      "description" : "A vulnerability was found in dayrui XunRuiCMS 4.6.3. It has been classified as critical. Affected is the function import_add of the file dayrui/Fcms/Control/Admin/Linkage.php. The manipulation leads to deserialization. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used."
+    },
+    {
+      "id" : "CVE-2025-0180",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        269
+      ],
+      "description" : "The WP Foodbakery plugin for WordPress is vulnerable to privilege escalation in all versions up to, and including, 3.3. This is due to the plugin not properly restricting what user meta can be updated during profile registration. This makes it possible for unauthenticated attackers to register on the site as an administrator."
+    },
+    {
+      "id" : "CVE-2025-0181",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        288
+      ],
+      "description" : "The WP Foodbakery plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions up to, and including, 4.7. This is due to the plugin not properly validating a user's identity prior to setting the current user and their authentication cookie. This makes it possible for unauthenticated attackers to gain access to a target user's (e.g. administrators) account."
+    },
+    {
+      "id" : "CVE-2025-1179",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.0,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        119
+      ],
+      "description" : "A vulnerability was found in GNU Binutils 2.43. It has been rated as critical. Affected by this issue is the function bfd_putl64 of the file bfd/libbfd.c of the component ld. The manipulation leads to memory corruption. The attack may be launched remotely. The complexity of an attack is rather high. The exploitation is known to be difficult. The exploit has been disclosed to the public and may be used. Upgrading to version 2.44 is able to address this issue. It is recommended to upgrade the affected component. The code maintainer explains, that \"[t]his bug has been fixed at some point between the 2.43 and 2.44 releases\"."
+    },
+    {
+      "id" : "CVE-2024-13643",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        862
+      ],
+      "description" : "The Zox News - Professional WordPress News & Magazine Theme plugin for WordPress is vulnerable to unauthorized data modification. This vulnerability can lead to privilege escalation and denial of service conditions due to missing capability checks on the backup_options() and reset_options() functions in all versions up to and including 3.17.0. This vulnerability allows authenticated attackers with Subscriber-level access and above to update and delete arbitrary option values on the WordPress site. Attackers can exploit this issue to update the default user role for registration to Administrator and enable user registration, thereby gaining administrative access to the vulnerable site. Additionally, they could delete critical options, causing errors that may disrupt the site's functionality and deny service to legitimate users."
+    },
+    {
+      "id" : "CVE-2024-28989",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.5,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        321
+      ],
+      "description" : "SolarWinds Web Help Desk was found to have a hardcoded cryptographic key that could allow the disclosure of sensitive information from the software."
+    },
+    {
+      "id" : "CVE-2024-45718",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 4.6,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        312
+      ],
+      "description" : "Sensitive data could be exposed to non- privileged users in a configuration file. Local access to the computer with a low- privileged account is required to access the configuration file containing the sensitive data."
+    },
+    {
+      "id" : "CVE-2024-52606",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.5,
+          "vector" : "CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        918
+      ],
+      "description" : "SolarWinds Platform is affected by server-side request forgery vulnerability. Proper input sanitation was not applied allowing for the possibility of a malicious web request."
+    },
+    {
+      "id" : "CVE-2024-52611",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.5,
+          "vector" : "CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        209
+      ],
+      "description" : "The SolarWinds Platform is vulnerable to an information disclosure vulnerability through an error message. While the data does not provide anything sensitive, the information could assist an attacker in other malicious actions."
+    },
+    {
+      "id" : "CVE-2023-37482",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.3,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        203
+      ],
+      "description" : "The login functionality of the web server in affected devices does not normalize the response times of login attempts. An unauthenticated remote attacker could exploit this side-channel information to distinguish between valid and invalid usernames."
+    },
+    {
+      "id" : "CVE-2024-13506",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.4,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "The GeoDirectory – WP Business Directory Plugin and Classified Listings Directory plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the display_name profile parameter in all versions up to, and including, 2.8.97 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Subscriber-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page."
+    },
+    {
+      "id" : "CVE-2025-24973",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.3,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        613
+      ],
+      "description" : "Concorde, formerly know as Nexkey, is a fork of the federated microblogging platform Misskey. Prior to version 12.25Q1.1, due to an improper implementation of the logout process, authentication credentials remain in cookies even after a user has explicitly logged out, which may allow an attacker to steal authentication tokens. This could have devastating consequences if a user with admin privileges is (or was) using a shared device. Users who have logged in on a shared device should go to Settings > Security and regenerate their login tokens. Version 12.25Q1.1 fixes the issue. As a workaround, clear cookies and site data in the browser after logging out."
+    },
+    {
+      "id" : "CVE-2025-21391",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.1,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        59
+      ],
+      "description" : "Windows Storage Elevation of Privilege Vulnerability",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_1507:*:*:*:*:*:*:x64:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_1507:*:*:*:*:*:*:x86:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_1607:*:*:*:*:*:*:x64:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_1607:*:*:*:*:*:*:x86:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_1809:*:*:*:*:*:*:x64:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_1809:*:*:*:*:*:*:x86:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_21h2:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_22h2:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_11_22h2:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_11_23h2:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_11_24h2:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_server_2016:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_server_2019:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_server_2022:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_server_2022_23h2:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_server_2025:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-21418",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        122
+      ],
+      "description" : "Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_1607:*:*:*:*:*:*:x64:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_1607:*:*:*:*:*:*:x86:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_1809:*:*:*:*:*:*:x64:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_1809:*:*:*:*:*:*:x86:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_21h2:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_10_22h2:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_11_22h2:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_11_23h2:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_11_24h2:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_server_2008:-:sp2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_server_2008:r2:sp1:*:*:*:*:x64:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_server_2012:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_server_2012:r2:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_server_2016:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_server_2019:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_server_2022:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_server_2022_23h2:*:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:microsoft:windows_server_2025:*:*:*:*:*:*:x64:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-25202",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "cwes" : [
+        269
+      ],
+      "description" : "Ash Authentication is an authentication framework for Elixir applications. Applications which have been bootstrapped by the igniter installer present since AshAuthentication v4.1.0 and who have used the magic link strategy _or_ are manually revoking tokens are affected by revoked tokens being allowed to verify as valid. Unless one hase implemented any kind of custom token revocation feature in your application, then one will not be affected. The impact here for users using builtin functionality is that magic link tokens are reusable until they expire. With that said, magic link tokens are only valid for 10 minutes, so the surface area for abuse is extremely low here. The flaw is patched in version 4.4.9. Additionally a compile time warning is shown to users with remediation instructions if they upgrade. 4.4.9 ships with an upgrader, so those who use `mix igniter.upgrade ash_authentication` will have the necessary patch applied. Otherwise, one may run the upgrader manually as described in the error message. As a workaround, delete the generated `:revoked?` generic action in the token resource. This will cause it to use the one internal to Ash Authentication which has always been correct. Alternatively, manually make the changes that are included in the patch."
+    },
+    {
+      "id" : "CVE-2023-31361",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.3,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        427
+      ],
+      "description" : "A DLL hijacking vulnerability in AMD Integrated Management Technology (AIM-T) Manageability Service could allow an attacker to achieve privilege escalation potentially resulting in arbitrary code execution.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0899",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        416
+      ],
+      "description" : "PDF-XChange Editor AcroForm Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the handling of AcroForms. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-25349.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:pdf-xchange:pdf-xchange_editor:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0901",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "PDF-XChange Editor Doc Object Out-Of-Bounds Read Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the handling of Doc objects. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-25372.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:pdf-xchange:pdf-xchange_editor:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0902",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "PDF-XChange Editor XPS File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of XPS files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated object. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-25405.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:pdf-xchange:pdf-xchange_editor:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0903",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        122
+      ],
+      "description" : "PDF-XChange Editor RTF File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of RTF files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-25421.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:pdf-xchange:pdf-xchange_editor:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0904",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "PDF-XChange Editor XPS File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of XPS files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated object. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-25422.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:pdf-xchange:pdf-xchange_editor:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0905",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "PDF-XChange Editor JB2 File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of JB2 files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated object. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-25433.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:pdf-xchange:pdf-xchange_editor:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0906",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "PDF-XChange Editor JB2 File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of JB2 files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated buffer. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-25434.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:pdf-xchange:pdf-xchange_editor:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0907",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "PDF-XChange Editor JB2 File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of JB2 files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated object. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-25435.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:pdf-xchange:pdf-xchange_editor:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0908",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "PDF-XChange Editor U3D File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of U3D files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated buffer. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-25557.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:pdf-xchange:pdf-xchange_editor:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0909",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "PDF-XChange Editor XPS File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of XPS files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated object. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-25678.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:pdf-xchange:pdf-xchange_editor:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0910",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "PDF-XChange Editor U3D File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of U3D files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-25748.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:pdf-xchange:pdf-xchange_editor:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0911",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        125
+      ],
+      "description" : "PDF-XChange Editor U3D File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of U3D files. The issue results from the lack of proper validation of user-supplied data, which can result in a read past the end of an allocated object. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the current process. Was ZDI-CAN-25957.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:pdf-xchange:pdf-xchange_editor:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-0179",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.2,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        20
+      ],
+      "description" : "SMM Callout vulnerability within the AmdCpmDisplayFeatureSMM driver could allow locally authenticated attackers to overwrite SMRAM, potentially resulting in arbitrary code execution.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-21924",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.2,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        250
+      ],
+      "description" : "SMM callout vulnerability within the AmdPlatformRasSspSmm driver could allow a ring 0 attacker to modify boot services handlers, potentially resulting in arbitrary code execution.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-21925",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.2,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        20
+      ],
+      "description" : "Improper input validation within the AmdPspP2CmboxV2 driver may allow a privileged attacker to overwrite SMRAM, leading to arbitrary code execution.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2022-3180",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        290
+      ],
+      "description" : "The WPGateway Plugin for WordPress is vulnerable to privilege escalation in versions up to, and including, 3.5. This allows unauthenticated attackers to create arbitrary malicious administrator accounts."
+    },
+    {
+      "id" : "CVE-2023-20515",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.7,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        1284
+      ],
+      "description" : "Improper access control in the fTPM driver in the trusted OS could allow a privileged attacker to corrupt system memory, potentially leading to loss of integrity, confidentiality, or availability."
+    },
+    {
+      "id" : "CVE-2023-20581",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 2.5,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:N/I:L/A:N"
+        }
+      ],
+      "cwes" : [
+        1284
+      ],
+      "description" : "Improper access control in the IOMMU may allow a privileged attacker to bypass RMP checks, potentially leading to a loss of guest memory integrity."
+    },
+    {
+      "id" : "CVE-2023-20582",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 5.3,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:N/I:H/A:N"
+        }
+      ],
+      "cwes" : [
+        1284
+      ],
+      "description" : "Improper handling of invalid nested page table entries in the IOMMU may allow a privileged attacker to induce page table entry (PTE) faults to bypass RMP checks in SEV-SNP, potentially leading to a loss of guest memory integrity."
+    },
+    {
+      "id" : "CVE-2023-31331",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 3.0,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:N/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        1284
+      ],
+      "description" : "Improper access control in the DRTM firmware could allow a privileged attacker to perform multiple driver initializations, resulting in stack memory corruption that could potentially lead to loss of integrity or availability."
+    },
+    {
+      "id" : "CVE-2024-32037",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 0.0,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        200
+      ],
+      "description" : "GeoNetwork is a catalog application to manage spatially referenced resources. In versions prior to 4.2.10 and 4.4.5, the search end-point response headers contain information about Elasticsearch software in use. This information is valuable from a security point of view because it allows software used by the server to be easily identified. GeoNetwork 4.4.5 and 4.2.10 fix this issue. No known workarounds are available."
+    },
+    {
+      "id" : "CVE-2024-51324",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "An issue in the BdApiUtil driver of Baidu Antivirus v5.2.3.116083 allows attackers to terminate arbitrary process via executing a BYOVD (Bring Your Own Vulnerable Driver) attack."
+    },
+    {
+      "id" : "CVE-2024-55212",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "DNNGo xBlog v6.5.0 was discovered to contain a SQL injection vulnerability via the Categorys parameter at /DNNGo_xBlog/Resource_Service.aspx."
+    },
+    {
+      "id" : "CVE-2024-57241",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "Dedecms 5.71sp1 and earlier is vulnerable to URL redirect. In the web application, a logic error does not judge the input GET request resulting in URL redirection."
+    },
+    {
+      "id" : "CVE-2024-57777",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "Directory Traversal vulnerability in Ianproxy v.0.1 and before allows a remote attacker to obtain sensitive information"
+    },
+    {
+      "id" : "CVE-2025-1240",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "WinZip 7Z File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of WinZip. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of 7Z files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-24986."
+    },
+    {
+      "id" : "CVE-2022-37660",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "In hostapd 2.10 and earlier, the PKEX code remains active even after a successful PKEX association. An attacker that successfully bootstrapped public keys with another entity using PKEX in the past, will be able to subvert a future bootstrapping by passively observing public keys, re-using the encrypting element Qi and subtracting it from the captured message M (X = M - Qi). This will result in the public ephemeral key X; the only element required to subvert the PKEX association."
+    },
+    {
+      "id" : "CVE-2023-31342",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        20
+      ],
+      "description" : "Improper input validation in the SMM handler may allow a privileged attacker to overwrite SMRAM, potentially leading to arbitrary code execution.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-31343",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.5,
+          "vector" : "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        20
+      ],
+      "description" : "Improper input validation in the SMM handler may allow a privileged attacker to overwrite SMRAM, potentially leading to arbitrary code execution.",
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2023-31352",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.0,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:N"
+        }
+      ],
+      "cwes" : [
+        119
+      ],
+      "description" : "A bug in the SEV firmware may allow an attacker with privileges to read unencrypted memory, potentially resulting in loss of guest private data."
+    },
+    {
+      "id" : "CVE-2024-33469",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "An issue in Team Amaze Amaze File Manager v.3.8.5 and fixed in v.3.10 allows a local attacker to execute arbitrary code via the onCreate method of DatabaseViewerActivity.java."
+    },
+    {
+      "id" : "CVE-2024-44336",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "An issue in AnkiDroid Android Application v2.17.6 allows attackers to retrieve internal files from the /data/data/com.ichi2.anki/ directory and save it into publicly available storage."
+    },
+    {
+      "id" : "CVE-2024-54772",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "description" : "An issue was discovered in the Winbox service of MikroTik RouterOS v6.43 through v7.16.1. A discrepancy in response times between connection attempts made with a valid username and those with an invalid username allows attackers to enumerate for valid accounts."
+    },
+    {
+      "id" : "CVE-2024-54916",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 6.8,
+          "vector" : "CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        287
+      ],
+      "description" : "An issue in the SharedConfig class of Telegram Android APK v.11.7.0 allows a physically proximate attacker to bypass authentication and escalate privileges by manipulating the return value of the checkPasscode method."
+    },
+    {
+      "id" : "CVE-2024-57000",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        94
+      ],
+      "description" : "An issue in Anyscale Inc Ray between v.2.9.3 and v.2.40.0 allows a remote attacker to execute arbitrary code via a crafted script."
+    },
+    {
+      "id" : "CVE-2025-25203",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 8.1,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "cwes" : [
+        79
+      ],
+      "description" : "CtrlPanel is open-source billing software for hosting providers. Prior to version 1.0, a Cross-Site Scripting (XSS) vulnerability exists in the `TicketsController` and `Moderation/TicketsController` due to insufficient input validation on the `priority` field during ticket creation and unsafe rendering of this field in the moderator panel. Version 1.0 contains a patch for the issue."
+    }
+  ]
+}

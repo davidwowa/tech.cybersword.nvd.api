@@ -1,0 +1,431 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.4",
+  "version" : 1,
+  "vulnerabilities" : [
+    {
+      "id" : "CVE-2023-20655",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.8,
+          "vector" : "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        269
+      ],
+      "description" : "In mmsdk, there is a possible escalation of privilege due to a parcel format mismatch. This could lead to local code execution with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07203022; Issue ID: ALPS07203022.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:google:android:10.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:google:android:11.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:google:android:12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:o:google:android:13.0:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt2715:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6580:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6735:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6737:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6739:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6753:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6761:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6765:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6768:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6771:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6779:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6781:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6785:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6789:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6833:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6853:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6853t:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6855:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6873:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6877:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6879:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6883:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6885:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6889:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6893:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6895:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt6983:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8167:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8167s:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8168:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8173:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8175:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8185:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8192:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8195:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8321:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8362a:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8365:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8385:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8395:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8666:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8667:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8673:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8675:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8765:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8766:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8768:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8771:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8781:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8786:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8788:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8789:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8791:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8791t:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8795t:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8797:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8798:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8871:-:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:mediatek:mt8891:-:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2024-3116",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.4,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:L"
+        }
+      ],
+      "cwes" : [
+        -1
+      ],
+      "description" : "pgAdmin <= 8.4 is affected by a Remote Code Execution (RCE) vulnerability through the validate binary path API. This vulnerability allows attackers to execute arbitrary code on the server hosting PGAdmin, posing a severe risk to the database management system's integrity and the security of the underlying data.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:pgadmin:pgadmin_4:*:*:*:*:*:postgresql:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-0282",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.0,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        121
+      ],
+      "description" : "A stack-based buffer overflow in Ivanti Connect Secure before version 22.7R2.5, Ivanti Policy Secure before version 22.7R1.2, and Ivanti Neurons for ZTA gateways before version 22.7R2.3 allows a remote unauthenticated attacker to achieve remote code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r2.1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r2.2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r2.3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:connect_secure:22.7:r2.4:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:neurons_for_zero-trust_access:22.7:r2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:neurons_for_zero-trust_access:22.7:r2.2:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:neurons_for_zero-trust_access:22.7:r2.3:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:policy_secure:22.7:r1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:policy_secure:22.7:r1.1:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:a:ivanti:policy_secure:22.7:r1.2:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-29384",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "In Tenda AC9 v1.0 V15.03.05.14_multi, the wanMTU parameter of /goform/AdvSetMacMtuWan has a stack overflow vulnerability, which can lead to remote arbitrary code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:tenda:ac9_firmware:15.03.05.14:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:tenda:ac9:1.0:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-29385",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "In Tenda AC9 v1.0 V15.03.05.14_multi, the cloneType parameter of /goform/AdvSetMacMtuWan has a stack overflow vulnerability, which can lead to remote arbitrary code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:tenda:ac9_firmware:15.03.05.14:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:tenda:ac9:1.0:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-29386",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 9.8,
+          "vector" : "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "In Tenda AC9 v1.0 V15.03.05.14_multi, the mac parameter of /goform/AdvSetMacMtuWan has a stack overflow vulnerability, which can lead to remote arbitrary code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:tenda:ac9_firmware:15.03.05.14:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:tenda:ac9:1.0:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    },
+    {
+      "id" : "CVE-2025-29387",
+      "source" : {
+        "name" : "NVD",
+        "url" : "https://nvd.nist.gov/"
+      },
+      "ratings" : [
+        {
+          "score" : 7.1,
+          "vector" : "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H"
+        }
+      ],
+      "cwes" : [
+        787
+      ],
+      "description" : "In Tenda AC9 v1.0 V15.03.05.14_multi, the wanSpeed parameter of /goform/AdvSetMacMtuWan has a stack overflow vulnerability, which can lead to remote arbitrary code execution.",
+      "affects" : [
+        {
+          "ref" : "cpe:2.3:o:tenda:ac9_firmware:15.03.05.14:*:*:*:*:*:*:*"
+        },
+        {
+          "ref" : "cpe:2.3:h:tenda:ac9:1.0:*:*:*:*:*:*:*"
+        }
+      ],
+      "properties" : [
+        {
+          "name" : "remoteCodeExecutionInDescription",
+          "value" : "true"
+        }
+      ]
+    }
+  ]
+}
